@@ -1,0 +1,464 @@
+---
+title: Penhawk 会社概要
+---
+<style>
+    *,
+    *:before,
+    *:after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    .full-hero {
+        background: url("../images/hero-images/richard-profile2g-2a.jpg");
+        background-size: cover;
+        background-position: top center;
+    }
+    /* anagram
+  --------------------------------------------- */
+    
+    .double-column > .anagram {
+        display: flex;
+        min-width: 50%;
+        justify-content: center;
+        height: auto;
+        padding-left: 1em;
+        -webkit-flex: 1 1 50%;
+        flex: 1 1 50%;
+        -webkit-order: 2;
+        order: 2;
+        flex-direction: row;
+    }
+    
+    .anagram > .acronym {
+        display: flex;
+        width: 37%;
+        margin: 0px;
+        -webkit-order: 1;
+        order: 1;
+        flex-direction: column;
+    }
+    
+    .letter {
+        display: flex;
+        -webkit-flex: 1 1 0;
+        flex: 1 1 0;
+    }
+    
+    .letter > h4 {
+        font-size: 1.3em;
+        font-weight: 400;
+        line-height: 0;
+        color: #241E1B;
+        text-align: left;
+        margin-top: auto;
+        margin-bottom: auto
+    }
+    
+    .letter > h6 {
+        font-size: 0.85em;
+        letter-spacing: 0px;
+        line-height: 0;
+        color: #241E1B;
+        text-align: left;
+        margin-top: auto;
+        margin-bottom: auto
+    }
+    
+    .anagram > .values {
+        display: flex;
+        width: 63%;
+        margin: 0px;
+        line-height: 0;
+        -webkit-order: 1;
+        order: 1;
+        flex-direction: column;
+    }
+    
+        /* middle anagram
+  --------------------------------------------- */
+    
+    .double-column > .anagram-tablet {
+        display: -webkit-flex;
+        display: flex;
+        width: 585px;
+        height: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-flow: wrap;
+    }
+    
+    .anagram-tablet > .letter-tablet {
+        display: -webkit-flex;
+        display: flex;
+        width: 50%;
+        padding-left:1em;
+        height: auto;
+        justify-content: flex-start;
+        padding-top: auto;
+    }
+    
+    .anagram-tablet > .letter-tablet > h4 {
+        line-height: 100%;
+        color: #241E1B
+    }
+    
+    .anagram-tablet > .value-tablet {
+        display: -webkit-flex;
+        display: flex;
+        width: 50%;
+        height: auto;
+        padding-top: auto;
+    }
+    
+    .value-tablet > h6 {
+        font-size: 0.9em;
+        color: #241E1B;
+        margin-bottom:0;
+    }
+    
+    /* anagram-phone
+  --------------------------------------------- */
+    
+    .anagram-phone {
+        height: auto;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        padding-bottom: 0px;
+        justify-content: center;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: column;
+        flex-flow: column;
+    }
+    
+    .anagram-phone > .letter-phone {
+        display: flex;
+        justify-content: center;
+        height: 35px;
+        margin-top: 15px;
+    }
+    
+    .anagram-phone > .letter-phone:nth-child(1) {
+        margin-top:0px;
+    }
+    
+    .anagram-phone > .letter-phone > h4 {
+        font-size: 1.5em;
+        color: #241E1B
+    }
+    
+    .anagram-phone > .letter-phone-value > h6 {
+        font-size: 1em;
+        color: #241E1B
+    }
+    
+    .anagram-phone > .letter-phone-value {
+        display: flex;
+        justify-content: center;
+        height: 15px;
+        margin-bottom: 20px;
+        padding-top:0.5em;
+    }
+    /* company details
+  --------------------------------------------- */
+    
+    .double-column > .company-details {
+        display: -webkit-flex;
+        display: flex;
+        width: 555px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        flex-flow: wrap;
+    }
+    
+    .company-details > .guide {
+        display: -webkit-flex;
+        display: flex;
+        width: 27%;
+        height: auto;
+        align-items:center;
+    }
+    
+    .company-details > .guide > h4 {
+        color: #241E1B;
+        margin-top:auto;
+        margin-bottom:auto;
+    }
+    
+    .company-details > .info {
+        display: -webkit-flex;
+        display: flex;
+        width: 73%;
+        height: auto;
+        align-items: center;
+    }
+    
+    /* media queries
+  --------------------------------------------- */
+    
+    @media all and (min-width: 1156px) {
+        .line-break {
+            display: none;
+        }
+        .double-column > .anagram-tablet {
+            display: none;
+        }
+    }
+    
+    @media all and (max-width: 1156px) {
+        .double-column > .anagram {
+            display: none;
+        }
+        .double-column:nth-of-type(4) {
+            margin-bottom: 10px
+        }
+    }
+    
+    
+    @media all and (min-width: 660px) {
+        .anagram-phone {
+            display: none;
+        }
+        .line-break {
+            display: none;
+        }
+        .hero-heading, .hero-mid-symbol{
+            display:none;
+        }
+    }
+    
+    @media all and (max-width: 659px) {
+        
+        
+         .double-column:nth-of-type(4) {
+            margin-bottom: 0;
+        }
+        
+        .double-column > .anagram-tablet {
+            display: none;
+        }
+        .double-column > .company-details {
+            width: 100%
+        }
+        .company-details > .guide {
+            width: 30%;
+            height: 50px;
+            align-items: flex-end
+        }
+        
+        .company-details > .guide > h4{
+            margin-top:auto;
+            margin-bottom:auto;
+        
+        }
+        
+        .company-details > .info {
+            width: 70%;
+            height: 50px
+        }
+    }
+    
+    @media all and (max-width: 542px) {
+        
+        .full-hero {
+        background-position: 55% 0%;
+    }
+        .guide > h4 {
+            font-size: 1.2em;
+        }
+        .anagram-phone > .letter-phone > h4 {
+            font-size: 1.2em;
+        }
+        .anagram-phone > .letter-phone-value > h6 {
+            font-size: 0.8em;
+        }
+        .anagram-phone > .letter-phone {
+            height: 25px;
+            margin-bottom: 10px;
+        }
+        .anagram-phone > .letter-phone-value {
+            height: 15px;
+            margin-bottom: 15px;
+        }
+    }
+    
+    @media all and (max-width: 400px) {
+        .line-break {
+            display: none;
+        }
+        .company-details > .guide {
+            width: 35%;
+        }
+        .company-details > .info {
+            width: 65%;
+        }
+    }
+</style>
+<section class="full-hero">
+    <div class="about-heading-left"></div>
+    <div class="about-heading">
+        <img src="../images/logos/Penhawk-logo-symbol.svg" alt="penhawk-logo" style="padding-left:auto; padding-right:auto" />
+                <h1>Hi! I'm Richard<br><span style="font-size:0.6em">I'll be your translator</span></h1>
+    </div>
+</section>
+<div class="page-title">
+    <h2>CORE PURPOSE</h2>
+    <h1>「言葉の先にあるものを」</h1></div>
+<div class="double-column">
+    <div class="column">
+        <p>どのビジネスにも目標や戦略が大切です。Penhawkの目標は、日本人がもっとスムーズに海外とつながれるように、その架け橋となることです。日本語の原稿を外国人の視点からも見やすくレイアウトし、わかりやすい言葉を使って表現いたします。そのために、日本人や日本の中小企業にとってもわかりやすい方法で、英語圏の人や企業と積極的に関わっていく手段や様々なアイディアを無料でシェアしていきたいと思っています。</p>
+    </div>
+    <div class="column">
+        <p>これらの背景にはPenhawkにとって根本的な理念があります。目標や戦略と違って、理念とは本来行き着かずに永遠に追求するもので、Penhawkの理念は「言葉の先にあるものを」という考えを具体的な形にすることです。言葉や文字だけを翻訳するのではなく、言葉の先にあるものを相手に伝わる言語で表現する。そしてお互いにより深いコミュニケーションを確立出来るよう、その架け橋となることがPenhawkにとって重要な理念となります。</p>
+    </div>
+</div>
+<div class="page-title">
+    <h2>CORE VALUES</h2>
+    <h1>「利益ではなく、価値観」</h1></div>
+<div class="double-column">
+    <div class="column">
+        <p>事業の成功はよく利益で定義されます。ただ利益のために事業が存在すると思う人もいますが、実際は価値と価値観のためです。Penhawkにとっては「価値」とは上記の理念を通して様々な人に価値をもたらすということです。</p>
+        <p>Penhawkの価値観は、その理念を追求するのに指針となっています。外的根拠を必要とせずに、Penhawkにとってこの価値観が本質的な価値となっています。利益はただの結果です。いつでも結果です。</p>
+        <p>なお、この価値観は競争優位性の達成につながるかもしれませんが、そのために持っているわけではありません。Penhawkのアイデンティティを明確にし、何を象徴するのか定義します。</p>
+        <div class="anagram-phone">
+    <div class="letter-phone">
+        <h4><span style="font-size:1.4em">P</span>ERSPICUOUS</h4></div>
+    <div class="letter-phone-value">
+        <h6>「明快」に説明をし、</h6></div>
+    <div class="letter-phone">
+        <h4><span style="font-size:1.4em">E</span>GALITARIAN</h4></div>
+    <div class="letter-phone-value">
+        <h6>「平等主義的」な考えで</h6></div>
+    <div class="letter-phone">
+        <h4><span style="font-size:1.4em">N</span>OTEWORTHY</h4></div>
+    <div class="letter-phone-value">
+        <h6>「特筆に値する」ものを常に目指していく。</h6></div>
+    <div class="letter-phone">
+        <h4><span style="font-size:1.4em">H</span>ONEST</h4></div>
+    <div class="letter-phone-value">
+        <h6>「正直」に話し合える環境を作り、</h6></div>
+    <div class="letter-phone">
+        <h4><span style="font-size:1.4em">A</span>CCOUNTABLE</h4></div>
+    <div class="letter-phone-value">
+        <h6>「責任」を全うし、</h6></div>
+    <div class="letter-phone">
+        <h4><span style="font-size:1.4em">W</span>ISE</h4></div>
+    <div class="letter-phone-value">
+        <h6>「賢明」に応える。</h6></div>
+    <div class="letter-phone">
+        <h4><span style="font-size:1.4em">K</span>IND</h4></div>
+    <div class="letter-phone-value">
+        <h6>「親切」な心をいつでも持ち続ける。</h6></div>
+</div>
+    </div>
+    <div class="anagram">
+        <div class="acronym">
+            <div class="letter">
+                <h4><span style="font-size:1.4em">P</span>ERSPICUOUS</h4></div>
+            <div class="letter">
+                <h4><span style="font-size:1.4em">E</span>GALITARIAN</h4></div>
+            <div class="letter">
+                <h4><span style="font-size:1.4em">N</span>OTEWORTHY</h4></div>
+            <div class="letter">
+                <h4><span style="font-size:1.4em">H</span>ONEST</h4></div>
+            <div class="letter">
+                <h4><span style="font-size:1.4em">A</span>CCOUNTABLE</h4></div>
+            <div class="letter">
+                <h4><span style="font-size:1.4em">W</span>ISE</h4></div>
+            <div class="letter">
+                <h4><span style="font-size:1.4em">K</span>IND</h4></div>
+        </div>
+        <div class="values">
+            <div class="letter">
+                <h6>「明快」に説明をし、</h6></div>
+            <div class="letter">
+                <h6>「平等主義的」な考えで</h6></div>
+            <div class="letter">
+                <h6>「特筆に値する」ものを常に目指していく。</h6></div>
+            <div class="letter">
+                <h6>「正直」に話し合える環境を作り、</h6></div>
+            <div class="letter">
+                <h6>「責任」を全うし、</h6></div>
+            <div class="letter">
+                <h6>「賢明」に応える。</h6></div>
+            <div class="letter">
+                <h6>「親切」な心をいつでも持ち続ける。</h6></div>
+        </div>
+    </div>
+</div>
+<div class="double-column">
+    <div class="anagram-tablet">
+        <div class="letter-tablet">
+            <h4><span style="font-size:1.4em">P</span>ERSPICUOUS</h4></div>
+        <div class="value-tablet">
+            <h6>「明快」に説明をし、</h6>
+        </div>
+        <div class="letter-tablet">
+            <h4><span style="font-size:1.4em">E</span>GALITARIAN</h4></div>
+        <div class="value-tablet">
+            <h6>「平等主義的」な考えで</h6>
+        </div>
+        <div class="letter-tablet">
+            <h4><span style="font-size:1.4em">N</span>OTEWORTHY</h4></div>
+        <div class="value-tablet">
+            <h6>「特筆に値する」ものを常に目指していく。</h6>
+        </div>
+        <div class="letter-tablet">
+            <h4><span style="font-size:1.4em">H</span>ONEST</h4></div>
+        <div class="value-tablet">
+            <h6>「正直」に話し合える環境を作り、</h6>
+        </div>
+        <div class="letter-tablet">
+            <h4><span style="font-size:1.4em">A</span>CCOUNTABLE</h4></div>
+        <div class="value-tablet">
+            <h6>「責任」を全うし、</h6>
+        </div>
+        <div class="letter-tablet">
+            <h4><span style="font-size:1.4em">W</span>ISE</h4></div>
+        <div class="value-tablet">
+            <h6>「賢明」に応える。</h6>
+        </div>
+        <div class="letter-tablet">
+            <h4><span style="font-size:1.4em">K</span>IND</h4></div>
+        <div class="value-tablet">
+            <h6>「親切」な心をいつでも持ち続ける。</h6>
+        </div>
+    </div>
+</div>
+<div class="page-title">
+    <h2>KEY COMPANY DETAILS</h2>
+    <h1>会社概要</h1></div>
+<div class="double-column">
+    <div class="company-details">
+        <div class="guide">
+            <h4>本社名</h4></div>
+        <div class="info">
+            <p>PENHAWK (ABN:76279206583)</p>
+        </div>
+        <div class="guide">
+            <h4>本社住所</h4></div>
+        <div class="info">
+            <p>3 Peter Court Langwarrin, 3910, Melbourne, AUS</p>
+        </div>
+        <div class="guide">
+            <h4>日本住所</h4></div>
+        <div class="info">
+            <p>〒173-0026東京都板橋区中丸町36-7<br class="line-break" />コーポ早川Ⅱ102</p>
+        </div>
+        <div class="guide">
+            <h4>代表取締役</h4></div>
+        <div class="info">
+            <p>Richard Millar</p>
+        </div>
+        <div class="guide">
+            <h4>設立</h4></div>
+        <div class="info">
+            <p>2015年1月</p>
+        </div>
+    </div>
+</div>

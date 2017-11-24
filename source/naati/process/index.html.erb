@@ -1,0 +1,173 @@
+---
+title: NAATI認定翻訳　ー　ご利用手順
+---
+<style>
+        /* ensure no empty gaps
+  --------------------------------------------- */
+    
+    *,
+    *:before,
+    *:after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+
+    /* top section
+--------------------------------------------- */
+    
+    .small-hero {
+        background: url("../images/hero-images/degraves2.jpg") no-repeat 50% 30%;
+        background-size: cover;
+        background-position: center right;
+    }
+    /* main section
+  --------------------------------------------- */
+    
+    #process {
+        width: 98%;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: wrap;
+        flex-flow: wrap;
+        -webkit-flex: 0 1 auto;
+        flex: 0 1 auto;
+    }
+    
+    #process > .section {
+        display: flex;
+        width: 33.33%;
+        min-height: 200px;
+        margin: 0px;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        -webkit-flex: 0 1 1;
+        flex: 0 1 1;
+        -webkit-order: 1;
+        order: 1;
+        flex-wrap: wrap;
+    }
+    
+    .section > img {
+        height: 120px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .section > .description {
+        display: block;
+        margin-bottom: 90px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .section > .description > h3,
+    h4 {
+        line-height: 0%
+    }
+    /* media queries
+  --------------------------------------------- */
+    
+    @media all and (max-width: 900px) {
+        #process > .section {
+            width: 50%;
+        }
+        @media all and (max-width: 640px) {
+            #process {
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-flow: column;
+                flex-direction: column;
+            }
+            #process > .section {
+                width: 100%
+            }
+            .section > .description {
+                height: 150px;
+                margin-bottom: 60px;
+                width: 430px
+            }
+            
+            h4 {
+                font-size: 1.3em;
+            }
+            .section:nth-of-type(3n+0) > .description > p {text-align:center
+            }
+        }
+        @media all and (max-width: 540px) {
+            #process > .section {
+                padding-left: 1em;
+                padding-right: 1em
+            }
+            .section > img {
+                height: 100px;
+            }
+        }
+</style>
+<section class="small-hero">
+        <ul id="breadcrumb">
+        <li><a href="/" title="Home"><img src="http://cssdeck.com/uploads/media/items/6/6f4WQkA.gif" alt="Home" class="home" /></a></li>
+            <li><a href="/naati" title="NAATIサービスの概要">O<span style="font-size:0.9em">UTLINE</span></a></li>
+            <li>P<span style="font-size:0.9em">ROCESS</span></li>
+            <li><a href="/naati/pricing-and-schedule" title="料金とスケジュール">P<span style="font-size:0.9em">RICING</span></a></li>
+            <li><a href="/enquiry" title="ご注文">O<span style="font-size:0.9em">RDER</span></a></li>
+    </ul>
+    <div class="hero-bottom-symbol"> <img src="../images/logos/Penhawk-logo-symbol.svg" alt="logo" /> </div>
+</section>
+<div class="page-title">
+    <h2>PROCESS</h2>
+    <h1>Penhawkのご利用手順</h1></div>
+<div id="process">
+    <div class="section"><img src="../images/process/explore.svg" alt="Penhawk" />
+        <div class="description">
+            <h4>STEP 1</h4>
+            <h3>EXPLORE</h3>
+            <p>Penhawkの見積もり依頼フォームに必要事項を記入の上、依頼ファイルを添付し送信してください。</p>
+        </div>
+    </div>
+    <div class="section"><img src="../images/process/submit.svg" alt="Penhawk" />
+        <div class="description">
+            <h4>STEP 2</h4>
+            <h3>SUBMIT</h3>
+            <p>Penhawkよりお客様へ、お見積もりを２４時間以内にメールにてお送りします。</p>
+        </div>
+    </div>
+    <div class="section"><img src="../images/process/confirm.svg" alt="Penhawk" />
+        <div class="description">
+            <h4>STEP 3</h4>
+            <h3>CONFIRM</h3>
+            <p>お客様よりPenhawkへ、メールにてご発注ください。</p>
+        </div>
+    </div>
+    <div class="section"><img src="../images/process/translate.svg" alt="Penhawk" />
+        <div class="description">
+            <h4>STEP 4</h4>
+            <h3>TRANSLATE</h3>
+            <p>翻訳を完成したら「仮翻訳版」としてPenhawkよりお客様へメールにてお送りします。</p>
+        </div>
+    </div>
+    <div class="section"><img src="../images/process/check-out.svg" alt="Penhawk" />
+        <div class="description">
+            <h4>STEP 5</h4>
+            <h3>CHECK OUT</h3>
+            <p>お客様に、氏名、生年月日などの基本事項に間違いのないことをご最終確認いただきます。</p>
+        </div>
+    </div>
+    <div class="section"><img src="../images/process/deliver.svg" alt="Penhawk" />
+        <div class="description">
+            <h4>STEP 6</h4>
+            <h3>DELIVER</h3>
+            <p>納期予定に合わせて納品を郵送にていたします。</p>
+        </div>
+    </div>
+</div>
+<div id="button-line">
+    <div class="button-wide"><a href="/naati/pricing-and-schedule" title="料金とスケジュール"><span style="font-family:'Droid Sans'; color:#fff; margin-bottom:50%;">Next ｜</span> 料金とスケジュール</a></div>
+</div>

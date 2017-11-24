@@ -1,0 +1,221 @@
+---
+title: Penhawk ご注文・お問い合わせ
+---
+<style>
+    
+ *,
+    *:before,
+    *:after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    .small-hero {
+        background-image: url("../images/hero-images/melbourne_night1.jpg");
+        background-position: center center;
+        background-size: cover;
+    }
+  
+    /* blog columns
+  --------------------------------------------- */
+
+  .double-column-blog {
+   height:auto;
+   margin-top:3em;
+   margin-left: auto;
+   margin-right:auto;
+   width:1084px;
+   margin-bottom: 50px;
+   padding-bottom:0px;
+   display: -webkit-flex;
+   display:         flex;
+   -webkit-flex-flow: wrap;
+           flex-flow: wrap;
+   }
+    
+   .double-column-blog > .column-blog{
+   display: -webkit-flex;
+   display:flex;
+   width:50%;
+   height:auto;
+   margin: 0px;
+   padding-left:1.5em;
+   padding-right:1.5em;
+		   flex-flow:wrap;
+   }
+
+    
+    .column-blog > .blog-post {
+        min-height:350px;
+        background: rgba(255, 255, 255, 0.9);
+        width:100%;
+        margin-bottom: 2.5em;
+        border-top: 1px solid #999;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .blog-thumbnail {
+        display:flex;
+        width:100%;
+        min-height:40%;
+    }
+    
+    .by-when {
+        display:flex;
+        width:90%;
+        height:2em;
+        margin-top:0.5em;
+        margin-left:5%;
+        margin-right:5%;
+        margin-bottom:0em;
+        font-size:0.9em;
+        color:rgb(115,103,89);
+    }
+    
+    .by {
+        display:flex;
+        width:50%;
+        padding-top:0.5em;
+        justify-content:flex-start;
+    }
+    
+    .when {
+        display:flex;
+        width:50%;
+        padding-top:0.5em;
+        justify-content:flex-end;
+    }
+    
+    .blog-title {
+        display:flex;
+        width:90%;
+        min-height:2em;
+        margin-top:1.5em;
+        margin-left:5%;
+        margin-right:5%;
+        justify-content:center;
+        padding-bottom:0px;
+        background: rgba(255, 255, 255, 0.9);
+    }
+    
+    .blog-title > h3{text-align:start}
+    
+     .introtext {
+        width:90%;
+        min-height:5em;
+        margin-top:0em;
+        margin-left:5%;
+        margin-right:5%;
+        margin-bottom:2em;
+        padding-top:0em;
+        padding-bottom;0.5em;
+        background: rgba(255, 255, 255, 0.9);
+    }
+    
+    h3{
+        margin-top:0px; margin-bottom:0px; line-height: 100%;
+    }
+    h3 a{text-decoration: none; color:#54504E}
+
+/* media queries
+  --------------------------------------------- */
+
+@media all and (max-width: 1156px) {
+
+.double-column-blog{
+height:auto;
+width:960px;
+}
+    
+.double-column-blog > .column-blog {
+    display:flex;
+    width:50%;
+    height:auto;
+    margin: 0px;
+    padding-left:1em;
+   padding-right:1em;
+    flex-wrap:wrap;
+   }
+
+@media all and (max-width: 960px) {
+
+.double-column-blog{
+height:auto;
+width:768px;
+}
+    
+.double-column-blog > .column-blog {
+    display:flex;
+    width:50%;
+    height:auto;
+    margin: 0px;
+    padding-left:0.8em;
+   padding-right:0.8em;
+    flex-wrap:wrap;
+   }
+    }
+    
+@media all and (max-width: 780px) {
+    
+.double-column-blog{
+height:auto;
+width:auto;
+margin-left:5%;
+margin-right:5%;
+-webkit-flex-flow: column;
+flex-direction: column;
+}
+    
+.double-column-blog > .column-blog {
+    display:flex;
+    width:100%;
+    height:auto;
+    margin: 0px;
+    padding-left:0;
+    padding-right:0;
+    flex-wrap:wrap;
+   }
+    }
+    
+</style>
+
+
+<section class="small-hero">
+        <ul id="breadcrumb">
+        <li><a href="/" title="Home"><img src="http://cssdeck.com/uploads/media/items/6/6f4WQkA.gif" alt="Home" class="home" /></a></li>
+            <li><a href="/naati" title="NAATIサービスの概要">O<span style="font-size:0.9em">UTLINE</span></a></li>
+            <li>P<span style="font-size:0.9em">ROCESS</span></li>
+            <li><a href="/naati/pricing-and-schedule" title="料金とスケジュール">P<span style="font-size:0.9em">RICING</span></a></li>
+            <li><a href="/enquiry" title="ご注文">O<span style="font-size:0.9em">RDER</span></a></li>
+    </ul>
+    <div class="hero-bottom-symbol"> <img src="../images/logos/Penhawk-logo-symbol.svg" alt="penhawk-logo" /> </div>
+</section>
+<div class="page-title">
+    <h2>BLOG</h2>
+    <h1>Penhawkのブログ</h1></div>
+
+<div class="double-column-blog">
+    <% blog.articles[0...10].each do |article| %>
+        <div class = "column-blog">
+            <div class="blog-post">
+            <a href="<%= article.url %>"><%= image_tag(article.data.image, :class => 'blog-thumbnail', :overflow => :hidden) %></a>
+            <div class = "by-when">
+                <div class="by"><%= article.data.by %></div>
+                <div class ="when"><%= article.data.date %></div>
+            </div>
+<div class="blog-title"><h3><a href="<%= article.url %>"><%= article.title %></a></h3></div>
+    
+    <div class="introtext">
+        <p><%= article.data.introtext %></p>
+        <div id="button-line" style="box-shadow:none">
+            <div class="button-blog"><a href="<%= article.url %>">さらに詳しく</a> </div>
+        </div>
+    </div>
+    </div>
+
+</div>
+<% end %>
+    </div>

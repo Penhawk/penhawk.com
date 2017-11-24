@@ -1,0 +1,533 @@
+@charset "utf-8";
+@import "normalize";
+@import "footer";
+@import "header";
+
+body {
+  background: image_url("images/background2.jpg");
+  margin:0;
+  padding:0;
+}
+
+
+/* Colors
+  --------------------------------------------- */
+$logo-color: rgb(115,103,89);
+$header-color: #1F1715;
+$hero-heading: #ffffff;
+$charcoal-headings: #54504E;
+$general-text: #241E1B;
+$heading-text-font-stack: "a-otf-futo-min-a101-pr6n", 'Droid Serif', serif;
+$general-text-font-stack: "a-otf-gothic-bbb-pr6n", 'Droid Sans', sans-serif;
+
+
+.headings{font-family: heading-text-font-stack; font-style:normal; font-weight:400; text-align:center; color:$charcoal-headings;}
+
+/* No use
+  --------------------------------------------- */
+h2{@extend .headings; font-size: 2.5em;line-height: 120%; color: blue; margin-bottom: 0.5em}
+
+
+/* See NAATI Page Section Headings / NAATI Process Page Step Descriptions
+  --------------------------------------------- */
+h3{@extend .headings; font-weight: 700; font-size:1.8em; padding-bottom:0em;}
+
+
+/* See NAATI Process Page Steps / Terms of Service Page
+  --------------------------------------------- */
+h4{@extend .headings; font-size:1.5em; margin-bottom:0em}
+
+
+/* See Enquiry Page right-side box headings
+  --------------------------------------------- */
+h5{@extend .headings}
+
+
+/* See Enquiry Page right-side box subheadings
+  --------------------------------------------- */
+h6{@extend .headings;}
+
+.general-text{font-family: $general-text-font-stack; font-weight: 400; font-size: 1em; color: $general-text;}
+
+p{@extend .general-text}
+
+.lede{@extend .general-text; font-family: heading-text-font-stack; font-size:1.4em; font-weight: 600; margin-top:1em}
+
+.byline{@extend .general-text; font-size:0.9em; padding-bottom:0.2em; margin-top:1em; margin-bottom:0em; width:100%;}
+
+/* See Terms of Service Page
+  --------------------------------------------- */
+.single-column > ol > li{@extend .general-text; margin-top:1em; margin-bottom:1em;}
+
+/* See Terms of Service Page
+  --------------------------------------------- */
+.double-column > .column > ul > li{@extend .general-text; margin-bottom:1em}
+
+.double-column > .column > ol > li{@extend .general-text; margin-bottom:1em}
+
+ol{padding-left:1em}
+ul{padding-right:2em;}
+
+
+ /* hero image adjustment
+  --------------------------------------------- */
+
+.hero {
+   position:relative;
+   max-width:100%;
+    position:relative;
+   display: -webkit-flex;
+   display:         flex; 
+}
+
+.full-hero {
+  @extend .hero;
+   height: 95vh;
+   }
+
+.small-hero {
+  @extend .hero;
+   height: 70vh;  
+}
+
+.no-hero {
+   @extend .hero;
+   height: 25vh;  
+}
+
+.full-hero > .hero-heading {
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        top: 85%;
+    -webkit-transform: translate(0%, -50%);
+        transform: translate(0%, -50%);
+}
+
+.about-hero {
+    @extend .full-hero;
+    flex-flow:row;
+}
+
+.full-hero > .about-heading-left {
+    width:10%;
+    top:65%;
+}
+
+.full-hero > .about-heading {
+    max-width:100%;
+    min-height:0;
+    position:relative;
+    text-align:center;
+    top: 80%;
+    -webkit-transform: translate(0%, -50%);
+        transform: translate(0%, -50%);
+}
+
+.hero-heading > h1, .about-heading > h1{@extend .headings; font-size:3.5em; line-height: 120%; color: $hero-heading;}
+
+ /* symbol adjustment
+  --------------------------------------------- */
+
+  .symbol{
+  position:absolute;
+  text-align:center;
+  left:0%;
+  width:100%;
+  color:#fff;
+  -ms-transform: translate(0,-50%); /* IE 9 */
+  -webkit-transform: translate(0,-50%); /* Safari */
+  transform: translate(0,-50%); 
+  z-index:1; 
+}
+
+  .hero-about-symbol{
+  @extend .symbol;
+  text-align:center;
+  padding-left:20%;
+  top:35%;
+  height:120px;
+}
+.hero-about-symbol > img{width:120px}
+
+  .hero-bottom-symbol{
+  @extend .symbol;
+  top:85%;
+  height:90px;
+}
+.hero-bottom-symbol > img{width:90px}
+
+  .hero-mid-symbol{
+  @extend .symbol;
+  top:65%;
+  height:90px;
+}
+.hero-mid-symbol > img{width:90px}
+
+  .hero-home-symbol{
+  @extend .symbol;
+  top:100%;
+  height:100px;
+}
+.hero-home-symbol > img{width:100px}
+
+
+
+ /* breadcrumb
+  --------------------------------------------- */
+
+#breadcrumb {
+    display:flex;
+    position:absolute;
+    top:0%;
+    font-size:0.8em;
+    font-family: "a-otf-futo-min-a101-pr6n", 'Droid Serif', serif;
+    background: #eeeeee;
+    background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc));
+    background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%);
+    background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%);
+    background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%);
+    background: linear-gradient(top, #eeeeee 0%,#cccccc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+    height: 30px;
+    line-height: 30px;
+    color: #9b9b9b;
+    border: solid 1px #cacaca;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+#breadcrumb li {
+    list-style-type: none;
+    padding-left: 10px;
+     height: 30px;
+    display: flex;
+    background-image: url('http://cssdeck.com/uploads/media/items/5/5VfAk4P.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 15px;
+}
+
+#breadcrumb a {
+    text-decoration: none;
+    color: #454545;
+}
+
+    #breadcrumb li:nth-of-type(5n+0){background-image:none}
+
+.home {
+    border: none;
+    margin: 8px 0px;
+}
+
+#breadcrumb a:hover { color: #736759 }
+
+
+ /* page and article titles
+  --------------------------------------------- */
+
+.page-title{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  margin-top:0em;
+  margin-bottom:30px;
+  -webkit-box-shadow: 0px 8px 5px -5px rgba(107,96,107,0.85);
+  -moz-box-shadow: 0px 8px 5px -5px rgba(107,96,107,0.85);
+  box-shadow: 0px 8px 5px -5px rgba(107,96,107,0.85); 
+  flex-flow:column;
+  text-align:center;
+  justify-content:center;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top:15px;
+  height:110px;
+  align-items:center;
+  width:72%;
+}
+
+.blog-page-title{
+  @extend .page-title; 
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin-bottom: 0px;
+}
+
+.page-title > h1{
+@extend .headings; font-size:2.4em; margin-top:0; color:#54504E;}
+
+.page-title > h2{
+@extend .headings; font-size: 1em; letter-spacing:2px; margin-bottom:10px; color: #54504E;}
+
+.blog-page-title > h1{
+  @extend .headings;
+  font-size:4em;
+  margin-bottom:5px;
+}
+
+ /* columns
+  --------------------------------------------- */
+
+  .single-column {
+   height:auto;
+   margin-top:0px;
+   margin-left: auto;
+   margin-right:auto;
+   width:960px;
+   padding-left:1.5em;
+   padding-right:1.5em;
+   margin-bottom: 20px;
+   padding-bottom:0px;
+   display: -webkit-flex;
+   display:         flex;
+　　justify-content:center;
+   -webkit-flex-flow: wrap;
+           flex-flow: wrap;
+   }
+
+  .blog-single-column {
+   @extend .single-column;
+   width:720px;
+   }
+
+  .double-column {
+   height:auto;
+   margin-top:0px;
+   margin-left: auto;
+   margin-right:auto;
+   width:1084px;
+   margin-bottom: 50px;
+   padding-bottom:0px;
+   display: -webkit-flex;
+   display:         flex;
+　　justify-content:center;
+   -webkit-flex-flow: wrap;
+           flex-flow: wrap;
+   }
+    
+   .double-column > .column{
+   display: -webkit-flex;
+   display:flex;
+   width:50%;
+   height:auto;
+   margin: 0px;
+   padding-left:1.5em;
+   padding-right:1.5em;
+		   flex-flow:wrap;
+   }
+
+
+ /* button adjustment
+  --------------------------------------------- */
+
+#button-line{
+display:flex;
+margin-left:5%;
+margin-right:5%;
+justify-content:center;
+-webkit-box-shadow: 0px -8px 5px -5px rgba(107,96,107,0.85);
+-moz-box-shadow: 0px -8px 5px -5px rgba(107,96,107,0.85);
+box-shadow: 0px -8px 5px -5px rgba(107,96,107,0.85);
+	  }
+
+.button {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 45px;
+    margin-top: 50px;
+    margin-bottom:50px;
+    background: url(../images/buttonbg.jpg);
+    text-align: center;
+    font-family: $heading-text-font-stack;
+    border: 1px solid rgb(205,101,14);
+    border-radius: 5px;
+    box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.5),0px 2px 0px 0px rgba(185,91,12,1),inset 0px 1px 0px 0px rgba(255,255,255,0.5);
+    cursor: pointer;
+}
+.button a, .button-home a, .button-regular a, .button-wide a {
+    color: #401300;
+    text-decoration: none;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.25);
+}
+.button:hover, button-home:hover, button-regular:hover, button-wide:hover {
+    background: url(../images/buttonbg_o.jpg);
+}
+
+.button-home {
+    @extend .button;
+    width: 225px;
+    height: 45px;
+    font-size: 1.9em;
+}
+
+.button-regular {
+    @extend .button;
+    width: 225px;
+    height: 45px;
+    font-size: 1.4em;
+}
+
+.button-wide {
+    @extend .button;
+    width: 350px;
+    height: 45px;
+    font-size: 1.4em;
+}
+
+.button-blog {
+    @extend .button;
+    background:none;
+    width: 150px;
+    height: 35px;
+    margin-top: 0px;
+    margin-bottom:0px;
+    font-size: 1em;
+    font-family: $general-text-font-stack;
+    border: 2px solid $logo-color;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.button-blog a {
+    color: $logo-color;
+    text-decoration: none;
+    text-shadow: none;}
+
+.button-blog:hover {
+    background: none;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.5),inset 0px 1px 0px 0px rgba(255,255,255,0.5);
+}
+
+
+/* media queries
+  --------------------------------------------- */
+
+@media all and (max-width: 1156px) {
+
+.double-column{
+height:auto;
+width:700px;
+-webkit-flex-flow: column;
+flex-direction: column;
+}
+    
+.double-column > .column, {
+    display:flex;
+    width:100%;
+    height:auto;
+    margin: 0px;
+    padding-left:0;
+    padding-right:0;
+    flex-wrap:wrap;
+   }
+
+    .single-column{padding-left:0; padding-right:0; width:auto; margin-left:5%; margin-right:5%;}
+    
+    .blog-single-column {
+   width:720px;
+   margin-left:auto;
+   margin-right:auto;
+   }
+}
+
+@media all and (min-width: 780px){
+    .about-heading > img {width:120px}
+}
+
+    @media all and (max-width: 780px){
+        .hero-heading > h1{font-size:3em}
+        .blog-single-column {
+   width:auto;
+   margin-left:5%;
+   margin-right:5%;
+   }
+            .full-hero > .about-heading-left {
+    display:none;
+}
+        .full-hero > .about-heading {
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        top: 75%;
+    -webkit-transform: translate(0%, -50%);
+        transform: translate(0%, -50%);
+}
+        .about-heading > img {width:100px}
+}
+
+    @media all and (max-width: 740px){
+    .double-column, .single-column{width:auto; margin-left:5%;margin-right:5%}
+        
+    }
+
+@media all and (max-width: 640px) {
+
+.page-title > h1{
+font-size:2em;}
+ 
+.page-title > h2{
+font-size:0.9em;}
+    
+.blog-page-title > h1{
+  font-size:4em;
+  margin-bottom:5px;
+}
+
+h3 {
+font-size: 1.5em;}
+    
+.hero-home-symbol{
+  height:80px;
+}
+.hero-home-symbol > img{width:80px}
+    
+    
+.page-title{
+  width:75%;
+}
+}
+
+@media all and (max-width: 540px) {
+.small-hero {
+   min-height: 75vh;  
+}
+    
+.no-hero {
+   height: 30vh;  
+}    
+    
+    .hero-heading > h1{font-size:2.2em}
+    
+.page-title{height:90px; width:86%; margin-bottom:20px}
+ 
+.page-title > h1{
+font-size:1.85em;}
+
+.blog-page-title{height:80px; width:86%; margin-bottom:1px}   
+
+.blog-page-title > h1{
+  font-size:3.2em;
+  margin-bottom:5px;
+}
+
+h4, .lede{font-size:1.2em}
+p, .double-column > .column > ol > li, .double-column > .column > ul > li, .single-column > ol > li, .single-column > ul > li{font-size:0.9em}
+
+.button-regular {width: 185px; height: 40px; font-size: 1em;}
+
+    .button-wide {width: 250px; height: 40px; font-size: 1em;}
+
+}
+
+@media all and (max-width: 460px) {
+    .about-heading > h1{font-size:2.8em}
+.lede{font-size:1.15em;}
+.page-title{
+  width:90%;
+}
+}
