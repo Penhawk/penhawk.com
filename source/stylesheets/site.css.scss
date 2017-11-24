@@ -82,12 +82,12 @@ ul{padding-right:2em;}
 
 .full-hero {
   @extend .hero;
-   height: 90vh;
+   height: 95vh;
    }
 
 .small-hero {
   @extend .hero;
-   height: 40%;  
+   height: 70vh;  
 }
 
 .no-hero {
