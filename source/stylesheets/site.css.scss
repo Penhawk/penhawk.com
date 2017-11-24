@@ -17,15 +17,15 @@ $header-color: #1F1715;
 $hero-heading: #ffffff;
 $charcoal-headings: #54504E;
 $general-text: #241E1B;
-$heading-text-font-stack: "a-otf-futo-min-a101-pr6n", 'Droid Serif', serif;
-$general-text-font-stack: "a-otf-gothic-bbb-pr6n", 'Droid Sans', sans-serif;
+$heading-text-font-stack: 'Droid Serif', serif;
+$general-text-font-stack: 'Droid Sans', sans-serif;
 
 
 .headings{font-family: heading-text-font-stack; font-style:normal; font-weight:400; text-align:center; color:$charcoal-headings;}
 
 /* No use
   --------------------------------------------- */
-h2{@extend .headings; font-size: 2.5em;line-height: 120%; color: blue; margin-bottom: 0.5em; font-family: $heading-text-font-stack;}
+h2{@extend .headings; font-size: 2.5em;line-height: 120%; color: blue; margin-bottom: 0.5em}
 
 
 /* See NAATI Page Section Headings / NAATI Process Page Step Descriptions
