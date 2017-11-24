@@ -13,6 +13,178 @@ title: NAATI認定翻訳　ー　ご利用手順
         box-sizing: border-box;
     }
 
+    @import url("http://fonts.googleapis.com/css?family=Open+Sans:300");
+@import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+header {
+  display: flex;
+  -webkit-flex-flow: row;
+            flex-direction: row;
+    font-size: 1em;}
+
+#sc3 {
+  display: flex;
+  min-height:50px;
+  width:100%;
+  -webkit-flex-flow: row;
+            flex-direction: row;
+  background-color: #1F1715;
+  }
+  
+  #logo {
+  display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+  -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: flex-start;
+   justify-content: flext-start;
+  font-size:1em;
+  width:200px;
+  padding: 4px 0 0 10px;
+}
+
+
+.hamburger-checkbox {
+  display:flex;
+  margin-left:auto;
+  opacity:0;
+}
+
+.hamburger-label {
+  position:absolute;
+  margin-left:auto;
+  align-items:center;
+  top:3px;
+  right: 12px;
+  z-index: 1;
+  width: 42px;
+  height: 42px;
+  font: 36px/42px fontawesome;
+  text-align: center;
+  color: #736759;
+  cursor: pointer;
+}
+
+.hamburger-checkbox:checked ~ .hamburger-label:before {
+  content: '\f00d';
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  width: 42px;
+  height: 42px;
+  font: 36px/42px fontawesome;
+  text-align: center;
+  color: #eee;
+}
+
+
+.sidebar {
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  background: #736759;
+  border-left: solid 1px #2b2b2b;
+  border-bottom: 1px solid #2b2b2b;
+  color: #fff;
+  transition: all .3s;
+}
+
+.hamburger-checkbox:checked ~ .sidebar {
+  width: 50%;
+  height: auto;
+  padding-top: 4em;
+  overflow-x:scroll;
+  z-index:0;
+}
+
+.menu { list-style: none; padding:0;}
+
+.menu li {
+  padding: 1em 0em;
+  border-top: 1px solid #2b2b2b;
+  white-space:nowrap;
+  font-size:0.9em;
+    font-family: "a-otf-futo-min-a101-pr6n", 'Droid Serif', serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.menu li:last-child {padding-bottom:0%;}
+
+.menu li a {
+    text-decoration: none;
+    list-style:none;
+    color:#fff;
+}
+
+.menu li a:hover {
+    color:#bbb;
+}
+
+#mainmenu {
+  display: flex;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-align-items: center;
+   align-items: center;
+  font-size:0.9em;
+  list-style: none;
+  margin: 0 0 0 0;
+  margin-left:auto;
+  padding: 0;
+}
+
+#mainmenu > li {
+  background-image: linear-gradient(to bottom, transparent 50%, #111 50%, #111 65%, #111 95%);
+  background-size: 100% 200%;
+  background-position: top center;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+	font-family: "a-otf-futo-min-a101-pr6n", 'Droid Serif', serif;
+	font-style: normal;
+	font-weight: 400;
+  transition: all .25s ease-in-out;
+}
+
+#mainmenu > li:hover {
+  background-position: bottom center;
+  color: rgba(0, 0, 0, 0.75);
+}
+#mainmenu > li a {
+  color: #fff;
+  text-decoration:none;
+  display: flex;
+  padding: 1rem 0;
+  transition: all .25s ease-in-out;
+}
+
+#sc3 ul a {
+  padding: 1rem 1.5rem;
+}
+
+@media screen and (min-width: 781px) {
+.hamburger-checkbox{display:none;}
+.hamburger-label{display:none;}
+
+.sidebar {
+  display:none;
+}
+}
+
+ @media all and (max-width: 780px) {
+
+#mainmenu{display: none;
+}
+ }
+
+ @media all and (max-width: 540px) {
+#logo{width: 150px;
+}
+ }
 
     /* top section
 --------------------------------------------- */
