@@ -25,7 +25,7 @@ $general-text-font-stack: "a-otf-gothic-bbb-pr6n", 'Droid Sans', sans-serif;
 
 /* No use
   --------------------------------------------- */
-h2{@extend .headings; font-size: 2.5em;line-height: 120%; color: blue; margin-bottom: 0.5em}
+h2{@extend .headings; font-size: 2.5em;line-height: 120%; color: blue; margin-bottom: 0.5em; font-family: $heading-text-font-stack;}
 
 
 /* See NAATI Page Section Headings / NAATI Process Page Step Descriptions
