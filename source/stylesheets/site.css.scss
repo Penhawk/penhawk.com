@@ -493,6 +493,9 @@ font-size: 1.5em;}
 }
 
 @media all and (max-width: 540px) {
+    .full-hero {
+   height: 90vh;
+   }
 .small-hero {
    height: 67vh;  
 }
