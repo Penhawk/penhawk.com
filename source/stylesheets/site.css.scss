@@ -533,6 +533,9 @@ p, .double-column > .column > ol > li, .double-column > .column > ul > li, .sing
 .page-title{
   width:90%;
 }
+}
+
+@media all and (max-width: 430px) {
     .page-title > h1{
 font-size:1.55em;}
 }
