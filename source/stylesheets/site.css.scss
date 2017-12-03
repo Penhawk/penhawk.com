@@ -493,6 +493,17 @@ font-size: 1.5em;}
 }
 }
 
+@media all and (max-device-height: 570px) {
+    .hero-home-symbol{
+  height:80px;
+}
+.hero-home-symbol > img{width:80px}
+
+.hero-bottom-symbol {height:80px;}
+
+.hero-bottom-symbol > img{width:80px}
+}
+
 @media all and (max-width: 540px) {
     .full-hero {
    height: 90vh;

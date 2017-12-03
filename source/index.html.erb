@@ -404,7 +404,7 @@ title: Penhawk
             .button-home {
                 width: 130px;
                 height: 40px;
-                font-size: 1.1em;
+                font-size: 1.2em;
             }
         .hero-heading > h1 {
                 font-style: normal;
@@ -417,8 +417,30 @@ title: Penhawk
 /* media queries (iPads)
   --------------------------------------------- */
     
-
-
+@media all and (max-device-height:600px) and (orientation:landscape) {
+        article {
+            min-height: 85vh;
+        }
+    
+        .button-home {
+                width: 150px;
+                height: 40px;
+                font-size: 1.1em;
+            }
+          
+        
+    article > .hero-heading {
+                bottom: 5%;
+    }
+            .hero-heading > h1 {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.8em;
+                line-height: 170%;
+                color: #fff;
+            }   
+    
+    }
   
 </style>
 <article>
