@@ -47,7 +47,6 @@ title: NAATI認定翻訳
     
     .parallax__group__why {
         position: relative;
-        height: 565px;
         /* fallback for older browsers */
         height: 100vh;
         -webkit-transform-style: preserve-3d;
@@ -56,7 +55,6 @@ title: NAATI認定翻訳
     
     .parallax__group__how {
         position: relative;
-        height: 545px;
         /* fallback for older browsers */
         height: 90vh;
         -webkit-transform-style: preserve-3d;
@@ -65,7 +63,6 @@ title: NAATI認定翻訳
     
     .parallax__group__what {
         position: relative;
-        height: 300px;
         /* fallback for older browsers */
         height: 50vh;
         -webkit-transform-style: preserve-3d;
@@ -407,6 +404,15 @@ title: NAATI認定翻訳
     
 
     
+    @media all and (max-width: 869px) {
+        h3 {
+            font-size: 1.55em;
+        }
+           
+    }
+    
+
+    
     @media all and (min-width: 1025px) {
         .whycontent > img {
             display: none;
@@ -420,60 +426,10 @@ title: NAATI認定翻訳
         }
     }
     
-    @media all and (max-device-width: 1024px) and (max-device-height: 1366px) {
-
-        .parallax__layer--back,
-        .parallax__layer--fore {
-            display: none;
+    @media all and (max-width: 1024px) {
+        h1 {
+            font-size: 2.2em;
         }
-        .parallax__group__why {
-            height: 90vh;
-        }
-        .whycontent {
-            position: absolute;
-            justify-content: center;
-            top: 50%;
-            width: 90%;
-            left: 50%;
-            text-align: justify;
-        }
-        .parallax__group__how {
-            height: 90vh;
-        }
-        .howword {
-            position: absolute;
-            justify-content: center;
-            top: 50%;
-            width: 90%;
-            left: 50%;
-            text-align: justify;
-        }
-        .howword > img {
-            width: 50%;
-            margin: 0% 30% 5% 30%;
-        }
-        .parallax__group__what {
-            height: 50vh;
-        }
-        .whatcontent {
-            position: absolute;
-            justify-content: center;
-            top: 55%;
-            width: 90%;
-            left: 50%;
-            text-align: justify;
-        }
-        .container {
-            margin-top: 0em;
-        }
-        .dropdown {
-            width: 85%;
-            left: 8%;
-        }
-    }
-
-    @media all and (max-device-width: 1024px) and (max-device-height: 1024px) {
-
         .parallax__layer--back,
         .parallax__layer--fore {
             display: none;
@@ -521,6 +477,55 @@ title: NAATI認定翻訳
         .dropdown {
             width: 85%;
             left: 8%;
+        }
+    }
+    
+    @media all and (min-width: 540px) and (max-width: 1024px) and (min-device-width: 1350px) {
+
+        .parallax__group__why {
+            height: 150vh;
+        }
+        .parallax__group__how {
+            height: 125vh;
+        }
+        .parallax__group__what {
+            height: 90vh;
+    }
+    }
+    
+        @media all and (min-device-width: 770px) 
+  and (max-device-width: 1040px) 
+  and (orientation: portrait) {
+        .parallax__group__why {
+            height: 85vh;
+        }
+        .parallax__group__how {
+            height: 75vh;
+        }
+      
+      .parallax__group__what {
+            height: 50vh;
+    }
+        .howcontent {
+            top: 53%;
+        }
+    }
+    
+        @media all and (min-device-width: 600px) 
+  and (max-device-width: 769px) 
+  and (orientation: portrait) {
+        .parallax__group__why {
+            height: 90vh;
+        }
+        .parallax__group__how {
+            height: 80vh;
+        }
+      
+      .parallax__group__what {
+            height: 60vh;
+    }
+        .howcontent {
+            top: 53%;
         }
     }
     
