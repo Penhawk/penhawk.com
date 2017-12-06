@@ -152,14 +152,14 @@ ul{padding-right:2em;}
 
   .hero-bottom-symbol{
   @extend .symbol;
-  top:85%;
+  bottom:0%;
   height:90px;
 }
 .hero-bottom-symbol > img{width:90px}
 
   .hero-mid-symbol{
   @extend .symbol;
-  top:65%;
+  bottom:20%;
   height:90px;
 }
 .hero-mid-symbol > img{width:90px}

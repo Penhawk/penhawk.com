@@ -405,26 +405,9 @@ title: NAATI認定翻訳
         .dropdown > .dropdown-menu > .small-hide {display:none}
     }
     
-    @media all and (max-width: 869px) {
-        h3 {
-            font-size: 1.55em;
-        }
-           
-    }
+
     
-    @media all and (min-width: 765px) and (max-width:869px) {
-        .parallax__group__why {
-            height: 115vh;
-        }
-        .parallax__group__how {
-            height: 100vh;
-        }
-        .howcontent {
-            top: 53%;
-        }
-    }
-    
-    @media all and (min-width: 766px) {
+    @media all and (min-width: 1025px) {
         .whycontent > img {
             display: none;
         }
@@ -437,10 +420,60 @@ title: NAATI認定翻訳
         }
     }
     
-    @media all and (max-width: 765px) {
-        h1 {
-            font-size: 2.2em;
+    @media all and (max-device-width: 1024px) and (max-device-height: 1366px) {
+
+        .parallax__layer--back,
+        .parallax__layer--fore {
+            display: none;
         }
+        .parallax__group__why {
+            height: 90vh;
+        }
+        .whycontent {
+            position: absolute;
+            justify-content: center;
+            top: 50%;
+            width: 90%;
+            left: 50%;
+            text-align: justify;
+        }
+        .parallax__group__how {
+            height: 90vh;
+        }
+        .howword {
+            position: absolute;
+            justify-content: center;
+            top: 50%;
+            width: 90%;
+            left: 50%;
+            text-align: justify;
+        }
+        .howword > img {
+            width: 50%;
+            margin: 0% 30% 5% 30%;
+        }
+        .parallax__group__what {
+            height: 50vh;
+        }
+        .whatcontent {
+            position: absolute;
+            justify-content: center;
+            top: 55%;
+            width: 90%;
+            left: 50%;
+            text-align: justify;
+        }
+        .container {
+            margin-top: 0em;
+        }
+        .dropdown {
+            width: 85%;
+            left: 8%;
+        }
+    }
+
+    @media all and (max-device-width: 1024px) and (max-device-height: 1024px) {
+
         .parallax__layer--back,
         .parallax__layer--fore {
             display: none;
