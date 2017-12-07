@@ -141,7 +141,7 @@ title: NAATI認定翻訳
         left: 22%;
         top: 50%;
         width: 36.24%;
-        max-width: 600px;
+        max-width: 680px;
         text-align: center;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
@@ -402,16 +402,8 @@ title: NAATI認定翻訳
         .dropdown > .dropdown-menu > .small-hide {display:none}
     }
     
-
-    
-    @media all and (max-width: 869px) {
-        h3 {
-            font-size: 1.55em;
-        }
-           
-    }
-    
-
+     /* Clearing out mobile layout for parallax scrolling on computers
+  --------------------------------------------- */
     
     @media all and (min-width: 1025px) {
         .whycontent > img {
@@ -425,6 +417,10 @@ title: NAATI認定翻訳
             display: none;
         }
     }
+    
+    
+     /* Clearing out parallax scrolling for mobile layout
+  --------------------------------------------- */
     
     @media all and (max-width: 1024px) {
         h1 {
@@ -480,10 +476,14 @@ title: NAATI認定翻訳
         }
     }
     
+    
+         /* Creating sufficient space for Why, How and What groups on MacBook Air
+  --------------------------------------------- */
+    
     @media all and (min-width: 540px) and (max-width: 1024px) and (min-device-width: 1350px) {
 
         .parallax__group__why {
-            height: 150vh;
+            height: 160vh;
         }
         .parallax__group__how {
             height: 125vh;
@@ -492,6 +492,9 @@ title: NAATI認定翻訳
             height: 90vh;
     }
     }
+  
+         /* Keeping space in check for Why, How and What groups on iPad Pro -- Portrait
+  --------------------------------------------- */    
     
         @media all and (min-device-width: 770px) 
   and (max-device-width: 1040px) 
@@ -510,6 +513,10 @@ title: NAATI認定翻訳
             top: 53%;
         }
     }
+  
+
+         /* Keeping space in check for Why, How and What groups on older iPads -- Portrait
+  --------------------------------------------- */    
     
         @media all and (min-device-width: 600px) 
   and (max-device-width: 769px) 
@@ -527,6 +534,35 @@ title: NAATI認定翻訳
         .howcontent {
             top: 53%;
         }
+    }
+  
+         /* Creating sufficient space for Why, How and What groups on mobiles -- landscape
+  --------------------------------------------- */
+
+    @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px)
+        and (orientation: landscape) {
+        .parallax__group__why {
+            height: 200vh;
+        }
+        .parallax__group__how {
+            height: 175vh;
+        }
+      
+      .parallax__group__what {
+            height: 120vh;
+    }
+        .howcontent {
+            top: 53%;
+        }    
+    }
+    
+        @media all and (max-width: 600px) {
+        h3 {
+            font-size: 1.55em;
+        }
+           
     }
     
     @media all and (max-width: 540px) {
