@@ -519,7 +519,25 @@ title: NAATI認定翻訳
     
         @media all and (min-device-width: 600px) 
   and (max-device-width: 769px) 
-  and (orientation: portrait) {
+  and ((orientation: portrait)) {
+        .parallax__group__why {
+            height: 90vh;
+        }
+        .parallax__group__how {
+            height: 80vh;
+        }
+      
+      .parallax__group__what {
+            height: 60vh;
+    }
+        .howcontent {
+            top: 53%;
+        }
+    }
+    
+        @media all and (min-device-width: 1000px) 
+  and (max-device-width: 1400px) 
+  and (orientation: landscape) {
         .parallax__group__why {
             height: 90vh;
         }
