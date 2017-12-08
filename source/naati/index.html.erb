@@ -536,11 +536,11 @@ title: NAATI認定翻訳
         }
     }
   
-         /* Creating sufficient space for Why, How and What groups on mobiles -- landscape
+         /* Creating sufficient space for Why, How and What groups on larger mobiles -- landscape
   --------------------------------------------- */
 
     @media only screen 
-  and (min-device-width: 375px) 
+  and (min-device-width: 733px) 
   and (max-device-width: 812px)
         and (orientation: landscape) {
         .parallax__group__why {
@@ -552,6 +552,30 @@ title: NAATI認定翻訳
       
       .parallax__group__what {
             height: 120vh;
+    }
+        .howcontent {
+            top: 53%;
+        }    
+    }
+    
+
+         /* Creating sufficient space for Why, How and What groups on smaller mobiles -- landscape
+  --------------------------------------------- */
+
+    @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 732px)
+        and (orientation: landscape) {
+        .parallax__group__why {
+            height: 240vh;
+        }
+            
+        .parallax__group__how {
+            height: 200vh;
+        }
+      
+      .parallax__group__what {
+            height: 130vh;
     }
         .howcontent {
             top: 53%;

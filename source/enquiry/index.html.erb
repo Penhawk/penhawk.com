@@ -49,6 +49,7 @@ title: Penhawk ご注文・お問い合わせ
     .form-group {
         border:none;
     }
+    
     .form-control {
         font-family: "a-otf-gothic-bbb-pr6n", 'Droid Sans', sans-serif;
         font-size:1em;
@@ -149,8 +150,18 @@ flex-direction: column;
     -webkit-flex-flow: column;
 flex-direction: column;
 }
+        
         .contact-information {display:none}
    }
+    
+
+    @media all and (max-width:360px) {
+.form-group > .form-control-file {
+    background:blue;
+    max-width:280px;
+    }
+    }
+    
 </style>
 
 <section class="no-hero">
@@ -161,7 +172,7 @@ flex-direction: column;
             <li><a href="/naati/pricing-and-schedule" title="料金とスケジュール">P<span style="font-size:0.9em">RICING</span></a></li>
             <li>O<span style="font-size:0.9em">RDER</span></li>
     </ul>
-    <div class="hero-mid-symbol"> <img src="../images/logos/Penhawk-logo-symbol.svg" alt="logo" /> </div>
+    <div class="hero-enquiry-symbol"> <img src="../images/logos/Penhawk-logo-symbol.svg" alt="logo" /> </div>
 </section>
 <div class="page-title">
     <h2>ORDERS & ENQUIRIES</h2>
@@ -343,7 +354,7 @@ flex-direction: column;
   <fieldset class="form-group">
     <label for="InputFile"></label>
     <input type="file" class="form-control-file" id="InputFile"><br>
-    <small class="text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+    <small class="text-muted">Click "Choose File" to upload file for translation.</small>
   </fieldset>
   <fieldset class="form-group">
       <div id="button-line" style="box-shadow:none">

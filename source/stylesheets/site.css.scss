@@ -92,7 +92,7 @@ ul{padding-right:2em;}
 
 .no-hero {
    @extend .hero;
-   height: 25vh;  
+   height: 25vh;
 }
 
 .full-hero > .hero-heading {
@@ -163,6 +163,13 @@ ul{padding-right:2em;}
   height:90px;
 }
 .hero-mid-symbol > img{width:90px}
+
+  .hero-enquiry-symbol{
+  @extend .symbol;
+  top:65%;
+  height:90px;
+}
+.hero-enquiry-symbol > img{width:90px}
 
   .hero-home-symbol{
   @extend .symbol;
@@ -465,6 +472,12 @@ flex-direction: column;
     .double-column, .single-column{width:auto; margin-left:5%;margin-right:5%}
         
     }
+
+@media all and (max-device-width:750px) and (orientation:landscape) {
+    .no-hero {
+   height: 50vh;
+}   
+}
 
 @media all and (max-width: 640px) {
 
