@@ -22,8 +22,6 @@ title: NAATI認定翻訳
   --------------------------------------------- */
     
     .parallax {
-        height: 500px;
-        /* fallback for older browsers */
         height: 100vh;
         overflow-x: hidden;
         overflow-y: auto;
@@ -431,6 +429,12 @@ title: NAATI認定翻訳
         .parallax__layer--fore {
             display: none;
         }
+        
+        body,
+    html, .parallax {
+        overflow: visible;
+    }
+        
         .parallax__group__why {
             height: 135vh;
         }
