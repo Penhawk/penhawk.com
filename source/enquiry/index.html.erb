@@ -181,12 +181,12 @@ flex-direction: column;
     <div class="column">
     <form name="enquiry" data-netlify="true">
 　<fieldset class="form-group">
-    <label for="name">氏名</label>
-    <input type="text" class="form-control" id="name" style="width:100%" required>
-    <label for="postcode">郵便番号</label>
-    <input type="text" class="form-control" id="postcode" style="width:100%" required>
+    <label>氏名<input type="text" class="form-control" name="name" style="width:100%" required></label>
+    
+    <label>郵便番号<input type="text" class="form-control" name="postcode" style="width:100%"></label>
+    
     <label for="prefecture">都道府県</label>
-    <select class="form-control" id="Select" style="width:100%" required>
+    <select class="form-control" id="Select" style="width:100%">
       <option value "" disabled selected>--</option>
       <option>01. 北海道</option>
       <option>02. 青森県</option>
@@ -237,13 +237,13 @@ flex-direction: column;
       <option>47. 沖縄県</option>
     </select>
     <label for="address">住所</label>
-    <input type="text" class="form-control" id="address" style="width:100%" required>
+    <input type="text" class="form-control" id="address" style="width:100%">
     <label for="phone">電話番号</label>
     <input type="tel" class="form-control" id="phone" style="width:100%">
     <label for="email">メール</label>
-    <input type="email" class="form-control" id="email" style="width:100%" required>
+    <input type="email" class="form-control" id="email" style="width:100%">
     <label for="Select1">ご希望の証明書（１）</label>
-    <select class="form-control" id="Select1" style="width:100%" required>
+    <select class="form-control" id="Select1" style="width:100%">
       <option value "" disabled selected>--</option>
       <option>納税証明書</option>
       <option>残高証明書</option>
@@ -342,7 +342,7 @@ flex-direction: column;
       <option>その他</option>
     </select>
     <label for="Select4">希望納期</label>
-    <select class="form-control" id="Select4" style="width:100%" required>
+    <select class="form-control" id="Select4" style="width:100%">
       <option>--</option>
       <option>１０営業日</option>
       <option>　５営業日</option>
