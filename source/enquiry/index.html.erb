@@ -181,7 +181,7 @@ flex-direction: column;
     <div class="column">
     <form name="enquiry" data-netlify="true">
 　<fieldset class="form-group">
-    <label>氏名<input type="text" class="form-control" name="name" style="width:100%" required></label>
+    <label>氏名*<input type="text" class="form-control" name="name" style="width:100%" required></label>
     
     <label>郵便番号<input type="text" class="form-control" name="postcode" style="width:100%"></label>
     
@@ -235,14 +235,15 @@ flex-direction: column;
       <option>46. 鹿児島県</option>
       <option>47. 沖縄県</option>
     </select></label>
+     
+     <label>住所<input type="text" class="form-control" name="address" style="width:100%"></label> 
     <label for="address">住所</label>
-    <input type="text" class="form-control" id="address" style="width:100%">
-    <label for="phone">電話番号</label>
-    <input type="tel" class="form-control" id="phone" style="width:100%">
-    <label for="email">メール</label>
-    <input type="email" class="form-control" id="email" style="width:100%">
-    <label for="Select1">ご希望の証明書（１）</label>
-    <select class="form-control" id="Select1" style="width:100%">
+    
+    <label>電話番号<input type="tel" class="form-control" name="phone" style="width:100%"></label>
+     
+    <label>メール*<input type="email" class="form-control" name="email" style="width:100%" required></label>
+     
+    <label>ご希望の証明書（１）*<select class="form-control" name="document 1" style="width:100%" required>
       <option value "" disabled selected>--</option>
       <option>納税証明書</option>
       <option>残高証明書</option>
@@ -273,9 +274,9 @@ flex-direction: column;
       <option>手紙・メール</option>
       <option>宣誓供述書</option>
       <option>その他</option>
-    </select>
-    <label for="Select2">ご希望の証明書（２）</label>
-    <select class="form-control" id="Select2" style="width:100%">
+    </select></label>
+     
+    <label>ご希望の証明書（２）<select class="form-control" name="document 2" style="width:100%">
       <option value "" disabled selected>--</option>
       <option>納税証明書</option>
       <option>残高証明書</option>
@@ -306,9 +307,9 @@ flex-direction: column;
       <option>手紙・メール</option>
       <option>宣誓供述書</option>
       <option>その他</option>
-    </select>
-    <label for="Select3">ご希望の証明書（３）</label>
-    <select class="form-control" id="Select3" style="width:100%">
+    </select></label>
+     
+    <label>ご希望の証明書（３）<select class="form-control" name="document 3" style="width:100%">
       <option value "" disabled selected>--</option>
       <option>納税証明書</option>
       <option>残高証明書</option>
@@ -339,17 +340,18 @@ flex-direction: column;
       <option>手紙・メール</option>
       <option>宣誓供述書</option>
       <option>その他</option>
-    </select>
-    <label for="Select4">希望納期</label>
-    <select class="form-control" id="Select4" style="width:100%">
+    </select></label>
+     
+    <label>希望納期<select class="form-control" name="timeframe" style="width:100%">
       <option>--</option>
       <option>１０営業日</option>
       <option>　５営業日</option>
       <option>　３営業日</option>
-    </select>
-    <label for="Textarea">翻訳依頼内容</label>
-    <textarea class="form-control" id="Textarea" rows="3" style="width:100%"></textarea>
+    </select></label>
+     
+    <label>翻訳依頼内容<textarea class="form-control" id="Textarea" rows="3" style="width:100%"></textarea></label>
   </fieldset>
+        
   <fieldset class="form-group">
     <label for="InputFile"></label>
     <input type="file" class="form-control-file" id="InputFile"><br>
