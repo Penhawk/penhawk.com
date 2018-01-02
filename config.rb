@@ -45,6 +45,9 @@ end
 
 set :images_dir, 'images/blog-images'
 
+set :url_root, 'http://penhawk.com'
+
+activate :search_engine_sitemap
 
 # Build-specific configuration
 configure :build do
