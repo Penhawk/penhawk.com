@@ -54,3 +54,9 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 end
+
+page "/sitemap.xml", :layout => false
+
+# Sitemap
+set :url_root, 'https://penhawk.netlify.com/'
+activate :search_engine_sitemap
