@@ -1,6 +1,0 @@
----
-title: Article 1
-date: 2017-01-03 04:45 UTC
-tags:
----
-
