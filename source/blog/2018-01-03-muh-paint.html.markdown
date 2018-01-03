@@ -1,0 +1,8 @@
+---
+title: Muh Paint
+date: 2018-01-03
+tags:
+image:
+introtext:
+by: 
+---
