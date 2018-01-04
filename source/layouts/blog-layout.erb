@@ -1,3 +1,5 @@
+<%= partial 'partials/head' %>
+<%= partial 'partials/header' %>
 <section class="small-hero">
         <ul id="breadcrumb">
         <li><a href="/" title="Home"><img src="../images/breadcrumb-home-icon.gif" alt="Home" class="home" /></a></li>
@@ -13,3 +15,5 @@
     <div class="byline"><span style="color:orange; font-style:italic; font-family: 'Droid Serif', serif;">by</span> <span style="color:orange"><%= current_page.data.by %></span>　<span style="color:#54504E"><%= current_page.data.date %></span></div>
 </div>
     <%= yield %>
+<%= partial 'partials/footer' %>
+<%= partial 'partials/foot' %>
