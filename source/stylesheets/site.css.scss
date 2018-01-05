@@ -90,6 +90,13 @@ ul{padding-right:2em;}
    height: 70vh;  
 }
 
+.blog-hero {
+  @extend .hero;
+   height: 70vh;
+    background:cover;
+    background-position: center center;
+}
+
 .no-hero {
    @extend .hero;
    height: 25vh;
