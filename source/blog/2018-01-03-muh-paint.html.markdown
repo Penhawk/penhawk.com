@@ -3,7 +3,7 @@ title: Muh Paint
 date: 2018-01-03
 tags:
 image: melbourne_night1.jpg
-introtext:
+introtext: introtext: "本利用規約は、Penhawk（以下「弊社」）が提供する翻訳の利用について規定するものです。本サービス利用の申し込みを行う者（以下「申込者」）は、本利用規約にご同意いただくことによって、本サービスを利用することができます。"
 by: "RICHARD"
 ---
 
