@@ -2,7 +2,7 @@
 title: Muh Paint
 date: 2018-01-03
 tags:
-image:
+image: melbourne_night1.jpg
 introtext:
 by: 
 ---

@@ -60,5 +60,3 @@ page "/sitemap.xml", :layout => false
 # Sitemap
 set :url_root, 'https://penhawk.com/'
 activate :search_engine_sitemap
-
-activate :directory_indexes
