@@ -1,6 +1,12 @@
 <%= partial 'partials/head' %>
 <%= partial 'partials/header' %>
-<section class="small-hero"><%= current_page.data.image %>
+<style>
+    .small-hero {
+        background-image: url("../images/hero-images/melbourne_night1.jpg");
+        background-position: center center;
+        background-size: cover;
+</style>
+<section class="small-hero">
         <ul id="breadcrumb">
         <li><a href="/" title="Home"><img src="../images/breadcrumb-home-icon.gif" alt="Home" class="home" /></a></li>
             <li><a href="/naati" title="NAATIサービスの概要">R<span style="font-size:0.9em">ECENT POSTS</span></a></li>

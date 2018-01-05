@@ -7,12 +7,7 @@ introtext: "本利用規約は、Penhawk（以下「弊社」）が提供する�
 by: "RICHARD"
 ---
 
-<style>
-    .small-hero {
-        
-        background-position: center center;
-        background-size: cover;
-</style>
+
 
 <div class="blog-single-column">
         <p>本利用規約は、Penhawk（以下「弊社」）が提供する翻訳の利用について規定するものです。本サービス利用の申し込みを行う者（以下「申込者」）は、本利用規約にご同意いただくことによって、本サービスを利用することができます。</p>
