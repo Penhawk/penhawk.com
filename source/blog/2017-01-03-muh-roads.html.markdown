@@ -9,7 +9,7 @@ by: "RICHARD"
 
 <style>
     .small-hero {
-        background-image: url("../images/hero-images/melbourne_night1.jpg");
+        
         background-position: center center;
         background-size: cover;
 </style>
