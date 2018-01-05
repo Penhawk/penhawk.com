@@ -45,6 +45,8 @@ end
 
 set :images_dir, 'images/blog-images'
 
+activate :directory_indexes
+
 
 # Build-specific configuration
 configure :build do
