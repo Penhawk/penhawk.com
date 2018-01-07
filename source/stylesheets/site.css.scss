@@ -3,6 +3,14 @@
 @import "footer";
 @import "header";
 
+*,
+    *:before,
+    *:after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
 body {
   background: image_url("images/background2.jpg");
   margin:0;
@@ -88,13 +96,6 @@ ul{padding-right:2em;}
 .small-hero {
   @extend .hero;
    height: 70vh;  
-}
-
-.blog-hero {
-  @extend .hero;
-   height: 70vh;
-    background:cover;
-    background-position: center center;
 }
 
 .no-hero {
@@ -269,6 +270,8 @@ ul{padding-right:2em;}
   -moz-box-shadow: none;
   box-shadow: none;
   margin-bottom: 0px;
+  height:auto;
+    
 }
 
 .page-title > h1{
@@ -493,9 +496,9 @@ font-size:2em;}
  
 .page-title > h2{
 font-size:0.9em;}
-    
+
 .blog-page-title > h1{
-  font-size:4em;
+  font-size:3.2em;
   margin-bottom:5px;
 }
 
@@ -543,9 +546,9 @@ font-size: 1.5em;}
 .page-title > h1{
 font-size:1.85em;}
 
-.blog-page-title{height:80px; width:86%; margin-bottom:1px}   
-
-.blog-page-title > h1{
+.blog-page-title{height:auto; width:86%; margin-bottom:1px} 
+    
+        .blog-page-title > h1{
   font-size:3.2em;
   margin-bottom:5px;
 }
@@ -565,9 +568,18 @@ p, .double-column > .column > ol > li, .double-column > .column > ul > li, .sing
 .page-title{
   width:90%;
 }
+        .blog-page-title > h1{
+  font-size:3em;
+  margin-bottom:5px;
+}
 }
 
 @media all and (max-width: 430px) {
     .page-title > h1{
 font-size:1.55em;}
+    
+    .blog-page-title > h1{
+  font-size:2.6em;
+  margin-bottom:5px;
+}
 }
