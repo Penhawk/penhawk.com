@@ -9,7 +9,7 @@ by: "Richard"
 
 <style>
     .blog-hero {
-        background: url("../images/blog-images/melbourne.jpg");
+        background: url("/images/blog-images/melbourne.jpg");
         background-size: cover;
         }
 </style>
