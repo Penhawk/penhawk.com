@@ -27,7 +27,7 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
-    concurrent-ruby (1.0.2)
+    concurrent-ruby (1.0.5)
     contracts (0.13.0)
     dotenv (2.1.1)
     em-websocket (0.5.1)
