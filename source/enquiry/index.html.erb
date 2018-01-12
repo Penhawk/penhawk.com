@@ -1,5 +1,5 @@
 ---
-title: ペンホーク ご注文・お問い合わせ
+title: ご注文・お問い合わせ
 ---
 <style>
     *,
@@ -179,7 +179,10 @@ flex-direction: column;
     <h1>ご注文・お問い合わせ</h1></div>
 <div class="form-double-column">
     <div class="column">
-    <form name="enquiry" data-netlify="true">
+    <form name="enquiry" netlify-honeypot="bot-field" action="thank-you" data-netlify="true">
+        <p style="display:none">
+    <label>Don’t fill this out: <input name="bot-field"></label>
+  </p>
 　<fieldset class="form-group">
     <label>氏名*<input type="text" class="form-control" name="name" style="width:100%" required></label>
     
@@ -354,7 +357,7 @@ flex-direction: column;
         
   <fieldset class="form-group">
     <label><input type="file" class="form-control-file" name="InputFile"><br>
-    <small class="text-muted">翻訳依頼のファイルを添付するには、"Choose File" をクリックしてください。</small>
+    <small class="text-muted" style="background:green">翻訳依頼のファイルを添付するには、"Choose File" をクリックしてください。</small>
   </label></fieldset>
   <fieldset class="form-group">
       <div id="button-line" style="box-shadow:none">
