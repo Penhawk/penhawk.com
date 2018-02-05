@@ -1,16 +1,16 @@
 ---
-title: Muh Roads
+title: 無料で楽しめるメルボルン Pt. 1
 date: 2017-01-03 14:14 UTC
 tags:
-image: melbourne_night1.jpg
-introtext: "本利用規約は、Penhawk（以下「弊社」）が提供する翻訳の利用について規定するものです。本サービス利用の申し込みを行う者（以下「申込者」）は、本利用規約にご同意いただくことによって、本サービスを利用することができます。"
+image: space-boy.jpg
+introtext: "「世界で最も住みやすい都市」ランキングで７年連続で首位になっているメルボルンでは、楽しめることが溢れています。しかし、物価も高いメルボルン、そんな時にはフリースポットへ行くのはいかがでしょうか？無料で楽しめるスポットトップ２０を紹介します。"
 by: "RICHARD"
 ---
 
 <style>
     .small-hero {
-        background-image: url("/images/blog-images/melbourne.jpg");
-        background-position: center center;
+        background-image: url("/images/blog-images/space-boy.jpg");
+        background-position: top center;
         background-size: cover;
 </style>
 

@@ -101,7 +101,7 @@ title: ブログ
         background: rgba(255, 255, 255, 0.9);
     }
     
-    .blog-title > h3{text-align:start}
+    .blog-title > h3{text-align:start; font-size:1.6em}
     
      .introtext {
         width:90%;
@@ -130,6 +130,10 @@ height:auto;
 width:960px;
 }
     
+        .blog-title > h3 {
+        font-size:1.4em;
+    }
+    
 .double-column-blog > .column-blog {
     display:flex;
     width:50%;
@@ -141,10 +145,10 @@ width:960px;
    }
 
 @media all and (max-width: 960px) {
-
+    
 .double-column-blog{
 height:auto;
-width:768px;
+width:780px;
 }
     
 .double-column-blog > .column-blog {
@@ -178,6 +182,12 @@ flex-direction: column;
     padding-right:0;
     flex-wrap:wrap;
    }
+    }
+    
+    @media all and (max-width: 460px) {
+            .blog-title > h3 {
+        font-size:1.2em;
+    }
     }
     
 </style>

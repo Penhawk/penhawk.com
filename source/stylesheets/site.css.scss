@@ -261,7 +261,7 @@ ul{padding-right:2em;}
   padding-top:15px;
   height:110px;
   align-items:center;
-  width:72%;
+  width:90%;
 }
 
 .blog-page-title{
@@ -282,7 +282,7 @@ ul{padding-right:2em;}
 
 .blog-page-title > h1{
   @extend .headings;
-  font-size:4em;
+  font-size:2.4em;
   margin-bottom:5px;
 }
 
@@ -453,6 +453,7 @@ flex-direction: column;
    }
 }
 
+
 @media all and (min-width: 780px){
     .about-heading > img {width:120px}
 }
@@ -476,11 +477,11 @@ flex-direction: column;
         transform: translate(0%, -50%);
 }
         .about-heading > img {width:100px}
+
 }
 
     @media all and (max-width: 740px){
     .double-column, .single-column{width:auto; margin-left:5%;margin-right:5%}
-        
     }
 
 @media all and (max-device-width:750px) and (orientation:landscape) {
@@ -498,7 +499,7 @@ font-size:2em;}
 font-size:0.9em;}
 
 .blog-page-title > h1{
-  font-size:3.2em;
+  font-size:2em;
   margin-bottom:5px;
 }
 
@@ -512,7 +513,7 @@ font-size: 1.5em;}
     
     
 .page-title{
-  width:75%;
+  width:90%;
 }
 }
 
@@ -541,15 +542,15 @@ font-size: 1.5em;}
     
     .hero-heading > h1{font-size:2.2em}
     
-.page-title{height:90px; width:86%; margin-bottom:20px}
+.page-title{height:90px; width:90%; margin-bottom:20px}
  
 .page-title > h1{
 font-size:1.85em;}
 
-.blog-page-title{height:auto; width:86%; margin-bottom:1px} 
+.blog-page-title{height:auto; width:90%; margin-bottom:1px} 
     
         .blog-page-title > h1{
-  font-size:3.2em;
+  font-size:1.6em;
   margin-bottom:5px;
 }
 
@@ -564,22 +565,21 @@ p, .double-column > .column > ol > li, .double-column > .column > ul > li, .sing
 
 @media all and (max-width: 460px) {
     .about-heading > h1{font-size:2.8em}
-.lede{font-size:1.15em;}
+.lede{font-size:1.1em;}
 .page-title{
   width:90%;
 }
         .blog-page-title > h1{
-  font-size:3em;
+  font-size:1.6em;
   margin-bottom:5px;
 }
 }
 
 @media all and (max-width: 430px) {
     .page-title > h1{
-font-size:1.55em;}
+font-size:1.5em;}
     
     .blog-page-title > h1{
-  font-size:2.6em;
-  margin-bottom:5px;
-}
+        font-size:1.5em;}
+    
 }

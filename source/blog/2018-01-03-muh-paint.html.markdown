@@ -10,7 +10,7 @@ by: "RICHARD"
 <style>
     .small-hero {
         background-image: url("/images/blog-images/melbourne.jpg");
-        background-position: center center;
+        background-position: 30% 50%;
         background-size: cover;
 </style>
 
