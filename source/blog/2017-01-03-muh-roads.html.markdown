@@ -8,10 +8,12 @@ by: "RICHARD"
 ---
 
 <style>
-    .small-hero {
+    .full-hero {
         background-image: url("/images/blog-images/space-boy.jpg");
         background-position: top center;
-        background-size: cover;
+        background-size: cover;}
+
+    
 </style>
 
 <div class="blog-single-column">
