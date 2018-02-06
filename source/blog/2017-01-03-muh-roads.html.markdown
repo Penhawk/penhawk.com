@@ -8,9 +8,9 @@ by: "RICHARD"
 ---
 
 <style>
-    .full-hero {
+    .small-hero {
         background-image: url("/images/blog-images/space-boy.jpg");
-        background-position: top center;
+        background-position: 10% 50%;
         background-size: cover;}
 
     
