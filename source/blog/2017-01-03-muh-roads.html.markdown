@@ -10,7 +10,7 @@ by: "RICHARD"
 <style>
     .small-hero {
         background-image: url("/images/blog-images/space-boy.jpg");
-        background-position: 10% 50%;
+        background-position: 50% 30%;
         background-size: cover;}
 
     
