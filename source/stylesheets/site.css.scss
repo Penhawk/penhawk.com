@@ -104,7 +104,12 @@ ul{padding-right:2em;}
 
 .blog-image {
   @extend .hero;
-   height: 40vh;
+   height: 50vh;
+    margin-top:20px;
+    margin-bottom:10px;
+    background-size: cover;
+        margin-left:auto;
+        margin-right:auto;
     }
 
 .no-hero {
@@ -518,7 +523,11 @@ flex-direction: column;
 
 .blog-hero {
    height: 40vh;  
-}    
+}
+    
+    .blog-image {
+        height: 37vh;
+    }
     
 .page-title > h1{
 font-size:2em;}
@@ -609,5 +618,12 @@ font-size:1.5em;}
     
     .blog-page-title > h1{
         font-size:1.5em;}
+    
+}
+
+@media all and (max-width: 400px) {
+    .blog-page-title > h1{
+        font-size:1.4em;}
+    .lede{font-size:1em;}
     
 }
