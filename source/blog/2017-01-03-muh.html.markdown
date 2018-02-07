@@ -8,7 +8,7 @@ by: "Richard"
 ---
 
 <style>
-    .small-hero {
+    .blog-hero {
         background: url("/images/blog-images/space-boy.jpg");
         background-size: cover;
         }

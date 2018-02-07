@@ -98,6 +98,11 @@ ul{padding-right:2em;}
    height: 70vh;  
 }
 
+.blog-hero {
+  @extend .hero;
+   height: 50vh;  
+}
+
 .no-hero {
    @extend .hero;
    height: 25vh;
@@ -492,6 +497,10 @@ flex-direction: column;
 
 @media all and (max-width: 640px) {
 
+.blog-hero {
+   height: 40vh;  
+}    
+    
 .page-title > h1{
 font-size:2em;}
  

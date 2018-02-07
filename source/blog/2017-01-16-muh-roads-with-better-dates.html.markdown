@@ -8,7 +8,7 @@ by: "By Richard"
 ---
 
 <style>
-    .small-hero {
+    .blog-hero {
         background: url("/images/blog-images/melbourne.jpg");
         background-size: cover;
         }
