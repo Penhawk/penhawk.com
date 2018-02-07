@@ -29,7 +29,7 @@ $heading-text-font-stack: "a-otf-futo-min-a101-pr6n", 'Droid Serif', serif;
 $general-text-font-stack: "a-otf-gothic-bbb-pr6n", 'Droid Sans', sans-serif;
 
 
-.headings{font-family: $heading-text-font-stack; font-style:normal; font-weight:400; text-align:center; color:$charcoal-headings;}
+.headings{font-family: $heading-text-font-stack; font-style:normal; font-weight:600; text-align:center; color:$charcoal-headings;}
 
 /* No use
   --------------------------------------------- */
@@ -100,7 +100,7 @@ ul{padding-right:2em;}
 
 .blog-hero {
   @extend .hero;
-   height: 50vh;  
+   height: 55vh;  
 }
 
 .no-hero {
