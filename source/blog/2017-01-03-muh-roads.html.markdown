@@ -10,7 +10,7 @@ by: "RICHARD"
 <style>
     .blog-hero {
         background-image: url("/images/blog-images/space-boy.jpg");
-        background-position: 50% 20%;
+        background-position: top center;
         background-size: cover;}
 
 
@@ -19,7 +19,7 @@ by: "RICHARD"
 }
         
         .blog-image:nth-of-type(1){
-        background-image: url("/images/blog-images/space-boy.jpg");
+        background-image: url("/images/blog-images/giant-chess.jpg");
         background-position: 50% 20%;
         }
         

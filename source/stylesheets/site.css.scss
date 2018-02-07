@@ -99,7 +99,7 @@ ul{padding-right:2em;}
 
 .blog-hero {
   @extend .hero;
-   height: 55vh;  
+   height: 70vh;  
 }
 
 .blog-image {
@@ -207,7 +207,7 @@ ul{padding-right:2em;}
 
 #breadcrumb {
     display:flex;
-    position:absolute;
+    position:relative;
     top:0%;
     font-size:0.8em;
     font-family: "a-otf-futo-min-a101-pr6n", 'Droid Serif', serif;
@@ -539,6 +539,8 @@ font-size:0.9em;}
   font-size:2em;
   margin-bottom:5px;
 }
+    
+    .lede {font-size:1.3em}
 
 h3 {
 font-size: 1.5em;}
