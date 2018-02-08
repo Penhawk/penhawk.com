@@ -531,7 +531,7 @@ flex-direction: column;
 }
     
     .blog-image {
-        height: 37vh;
+        height: 42vh;
     }
     
 .page-title > h1{
@@ -570,6 +570,8 @@ font-size: 1.5em;}
 .hero-bottom-symbol {height:80px;}
 
 .hero-bottom-symbol > img{width:80px}
+    
+
 }
 
 @media all and (max-width: 540px) {
@@ -597,9 +599,13 @@ font-size:1.85em;}
   font-size:1.6em;
   margin-bottom:5px;
 }
+    
+        .blog-image {
+        height: 37vh;
+    }
 
 h4, .lede{font-size:1.2em}
-p, .double-column > .column > ol > li, .double-column > .column > ul > li, .single-column > ol > li, .single-column > ul > li{font-size:0.9em}
+p, .double-column > .column > ol > li, .double-column > .column > ul > li, .single-column > ol > li, .single-column > ul > li{font-size:1em}
 
 .button-regular {width: 185px; height: 40px; font-size: 1em;}
 
@@ -632,6 +638,6 @@ font-size:1.5em;}
     .blog-page-title > h1{
         font-size:1.3em;}
     
-    h4, .lede{font-size:1em;}
+    h4, .lede{font-size:1.1em;}
     
 }
