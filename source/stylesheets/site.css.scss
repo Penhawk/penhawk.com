@@ -57,7 +57,7 @@ h6{@extend .headings;}
 
 .general-text{font-family: $general-text-font-stack; font-weight: 400; font-size: 1em; color: $general-text;}
 
-p{@extend .general-text}
+p{@extend .general-text; text-align:left;}
 
 .lede{@extend .general-text; font-family: heading-text-font-stack; font-size:1.4em; font-weight: 600; margin-top:1em}
 
