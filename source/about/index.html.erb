@@ -202,9 +202,7 @@ title: Penhawkとは
   --------------------------------------------- */
     
     @media all and (min-width: 1156px) {
-        .line-break {
-            display: none;
-        }
+
         .double-column > .anagram-tablet {
             display: none;
         }
@@ -224,9 +222,7 @@ title: Penhawkとは
         .anagram-phone {
             display: none;
         }
-        .line-break {
-            display: none;
-        }
+
         .hero-heading, .hero-mid-symbol{
             display:none;
         }
@@ -286,11 +282,16 @@ title: Penhawkとは
             margin-bottom: 20px;
         }
     }
-    
-    @media all and (max-width: 400px) {
-        .line-break {
+
+	
+	 @media all and (min-width: 410px) {
+	.line-break {
             display: none;
         }
+	}
+    
+    @media all and (max-width: 400px) {
+        
         .company-details > .guide {
             width: 35%;
         }
