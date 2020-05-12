@@ -189,7 +189,7 @@ flex-direction: column;
     <label>郵便番号<input type="text" class="form-control" name="postcode" style="width:100%"></label>
     
     <label>都道府県<select class="form-control" name ="prefecture" style ="width:100%">
-      <option value "" disabled selected>--</option>
+      <option>--</option>
       <option>01. 北海道</option>
       <option>02. 青森県</option>
       <option>03. 岩手県</option>
@@ -247,42 +247,58 @@ flex-direction: column;
     <label>メール*<input type="email" class="form-control" name="email" style="width:100%" required></label>
      
     <label>ご希望の証明書（１）*<select class="form-control" name="document 1" style="width:100%" required>
-      <option value "" disabled selected>--</option>
-      <option>納税証明書</option>
-      <option>残高証明書</option>
-      <option>源泉徴収票</option>
-      <option>特別徴収税額の通知書</option>
-      <option>確定申告書</option>
-      <option>申告内容確認票</option>
-      <option>卒業証書・学位記</option>
-      <option>修了見込証明書</option>
-      <option>臨床研修修了証明書</option>
-      <option>医師免許証</option>
-      <option>専門医認定証</option>
-      <option>歯科医師免許証</option>
-      <option>薬剤師免許証</option>
-      <option>理学療法士免許証</option>
-      <option>調理師免許証</option>
-      <option>教諭免許状</option>
+      <option>--</option>
       <option>戸籍抄本</option>
       <option>戸籍謄本（１−３人記録）</option>
       <option>戸籍謄本（４−６人記録）</option>
       <option>改製原戸籍（１−３人記録）</option>
       <option>改製原戸籍（４−６人記録）</option>
-      <option>住民票（１枚）</option>
+      <option>住民票（１−４人記録）</option>
+      <option>住民票（５−７人記録）</option>
       <option>婚姻届受理証明書</option>
+      <option>離婚届受理証明書</option>
       <option>婚姻要件具備証明書</option>
       <option>出生届・出生証明書</option>
       <option>死亡診断書・死体検案書</option>
       <option>自動車運転免許証（両面）</option>
       <option>在留カード（両面）</option>
-      <option>手紙・メール</option>
-      <option>宣誓供述書</option>
+      <option>ガス電気水道代</option>
+      <option>納税証明書</option>
+      <option>残高証明書</option>
+      <option>源泉徴収票</option>
+      <option>特別徴収税額の通知書</option>
+      <option>確定申告書</option>
+      <option>申告内容確認票</option>
+      <option>卒業証書・学位記</option>
+      <option>修了見込証明書</option>
+      <option>臨床研修修了証明書</option>
+      <option>医師免許証</option>
+      <option>専門医認定証</option>
+      <option>歯科医師免許証</option>
+      <option>薬剤師免許証</option>
+      <option>理学療法士免許証</option>
+      <option>調理師免許証</option>
+      <option>教諭免許状</option>
       <option>その他</option>
     </select></label>
      
     <label>ご希望の証明書（２）<select class="form-control" name="document 2" style="width:100%">
-      <option value "" disabled selected>--</option>
+      <option>--</option>
+      <option>戸籍抄本</option>
+      <option>戸籍謄本（１−３人記録）</option>
+      <option>戸籍謄本（４−６人記録）</option>
+      <option>改製原戸籍（１−３人記録）</option>
+      <option>改製原戸籍（４−６人記録）</option>
+      <option>住民票（１−４人記録）</option>
+      <option>住民票（５−７人記録）</option>
+      <option>婚姻届受理証明書</option>
+      <option>離婚届受理証明書</option>
+      <option>婚姻要件具備証明書</option>
+      <option>出生届・出生証明書</option>
+      <option>死亡診断書・死体検案書</option>
+      <option>自動車運転免許証（両面）</option>
+      <option>在留カード（両面）</option>
+      <option>ガス電気水道代</option>
       <option>納税証明書</option>
       <option>残高証明書</option>
       <option>源泉徴収票</option>
@@ -299,22 +315,26 @@ flex-direction: column;
       <option>理学療法士免許証</option>
       <option>調理師免許証</option>
       <option>教諭免許状</option>
-      <option>戸籍抄本</option>
-      <option>戸籍謄本（１−３人記録）</option>
-      <option>戸籍謄本（４−６人記録）</option>
-      <option>住民票（１枚）</option>
-      <option>婚姻届受理証明書</option>
-      <option>婚姻要件具備証明書</option>
-      <option>出生届・出生証明書</option>
-      <option>自動車運転免許証（両面）</option>
-      <option>在留カード（両面）</option>
-      <option>手紙・メール</option>
-      <option>宣誓供述書</option>
       <option>その他</option>
     </select></label>
      
     <label>ご希望の証明書（３）<select class="form-control" name="document 3" style="width:100%">
-      <option value "" disabled selected>--</option>
+      <option>--</option>
+      <option>戸籍抄本</option>
+      <option>戸籍謄本（１−３人記録）</option>
+      <option>戸籍謄本（４−６人記録）</option>
+      <option>改製原戸籍（１−３人記録）</option>
+      <option>改製原戸籍（４−６人記録）</option>
+      <option>住民票（１−４人記録）</option>
+      <option>住民票（５−７人記録）</option>
+      <option>婚姻届受理証明書</option>
+      <option>離婚届受理証明書</option>
+      <option>婚姻要件具備証明書</option>
+      <option>出生届・出生証明書</option>
+      <option>死亡診断書・死体検案書</option>
+      <option>自動車運転免許証（両面）</option>
+      <option>在留カード（両面）</option>
+      <option>ガス電気水道代</option>
       <option>納税証明書</option>
       <option>残高証明書</option>
       <option>源泉徴収票</option>
@@ -331,17 +351,6 @@ flex-direction: column;
       <option>理学療法士免許証</option>
       <option>調理師免許証</option>
       <option>教諭免許状</option>
-      <option>戸籍抄本</option>
-      <option>戸籍謄本（１−３人記録）</option>
-      <option>戸籍謄本（４−６人記録）</option>
-      <option>住民票（１枚）</option>
-      <option>婚姻届受理証明書</option>
-      <option>婚姻要件具備証明書</option>
-      <option>出生届・出生証明書</option>
-      <option>自動車運転免許証（両面）</option>
-      <option>在留カード（両面）</option>
-      <option>手紙・メール</option>
-      <option>宣誓供述書</option>
       <option>その他</option>
     </select></label>
      
@@ -356,7 +365,7 @@ flex-direction: column;
   </fieldset>
         
   <fieldset class="form-group">
-		<small class="text-muted">翻訳依頼のファイルは、三つまで添付することができます。</small>
+		<small class="text-muted">翻訳依頼のファイルは、５つまで添付することができます。</small>
       </fieldset>
         <fieldset class="form-group">
     <label><input type="file" class="form-control-file" name="InputFile" style="font-size:0.8em; padding-top:1em">
@@ -366,6 +375,12 @@ flex-direction: column;
   </label></fieldset>
 		<fieldset class="form-group">
     <label><input type="file" class="form-control-file" name="InputFile3" style="font-size:0.8em">
+  </label></fieldset>
+		<fieldset class="form-group">
+    <label><input type="file" class="form-control-file" name="InputFile4" style="font-size:0.8em">
+  </label></fieldset>
+		<fieldset class="form-group">
+    <label><input type="file" class="form-control-file" name="InputFile5" style="font-size:0.8em">
   </label></fieldset>
   <fieldset class="form-group">
       <div id="button-line" style="box-shadow:none; margin-top:1em">
@@ -378,9 +393,11 @@ flex-direction: column;
         <div class="contact-information">
         <h5>CONTACT INFORMATION</h5>
         <h6>Mailing Address:</h6>
-        <p>〒171-0014東京都豊島区池袋3-28-18</p>
+        <p>〒171–0014東京都豊島区池袋3–28–18</p>
         <h6>Email:</h6>
         <p>richard@penhawk.com</p>
+        <h6>Business hours:</h6>
+        <p>09:00–18:00（休日：土日・祝日）</p>
         <h6>Follow on SNS:</h6>
         <div id=sns>
             <div class=icon><a href="https://twitter.com/realpenhawk"><img src="../images/SNS/twitter.svg" alt="Twitter" style="width:95%; padding-top:5%;"/></a></div>
@@ -390,10 +407,16 @@ flex-direction: column;
             <div class=icon></div>
         </div>
         <h5 style="margin-top:2em">FAQ</h5>
-        <h6>ウェブサイトに載っていないものも翻訳可能ですか？</h6>
-        <p>はい！その場合は、見積もり依頼フォームの「ご希望の証明書」から「その他」を選択して、ファイルを添付していただけたらPenhawkはそれをチェックして２４時間以内にお見積もりを提出いたします。</p>
-        <h6>オンライン・フォームだけで、すぐ注文できませんか？</h6>
-        <p>翻訳は、一回原稿に目を通してみないと、確実にできるとお答えできません。いただいた原稿を確認次第、正式なお見積もりを提出いたします。そして、同意の上、翻訳を開始いたします。</p>
+        <h6>希望納期の１０営業日・５営業日・３営業日では、価格が変わりますか？</h6>
+        <p>はい、１０営業日以内の納品が最も安く、５営業日以内の納品と３営業日以内の納品は段階的に高くなります。より詳しくは<a href="/naati/pricing-and-schedule" title="料金とスケジュール" style="color:#241E1B">「料金とスケジュール」</a>をご覧ください。記載されていない書類の場合は、お気軽にお問い合わせください。</p>
+        <h6>翻訳料金は送料・NAATI認証捺印も含まれますか？</h6>
+        <p>はい、翻訳料金は全て送料（日本国内のみ）・NAATI認証捺印が含まれます。国外の郵送については、送料を負担していただきます。</p>
+        <h6>NAATI認証捺印済みの完成版を発行する前、下書きなどが確認できますか？</h6>
+        <p>はい、翻訳を完成したら認証する前に「仮翻訳版」としてメールにて送らせていただきます。その段階で、翻訳の内容に間違いのないことをご確認いただきます。英訳の内容をご確認いただいた後、サイン・連絡先を含んだ宣言・NAATI認証捺印済みの翻訳をメールにて送信させていただきます。翻訳の原本は、同日に２部を郵送いたします。</p>
+        <h6>支払い方法は？</h6>
+        <p>お支払い方法は口座へのお振込とさせていただいております。お支払い期限は納品後から５営業日以内とさせていただいております。</p>
+        <h6>クレジットカードも可能ですか？</h6>
+        <p>申し訳ございませんが、お支払い方法は現在口座へのお振込のみとさせていただいております。</p>
         </div>
     </div>
 </div>
