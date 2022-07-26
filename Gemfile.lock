@@ -133,9 +133,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  middleman (>= 4.0.0)
+  middleman (>= 4.4.2)
   middleman-blog (~> 4.0)
-  middleman-compass (>= 4.0.0)
+  middleman-compass (>= 4.4.2)
   middleman-livereload
   middleman-search_engine_sitemap
   tzinfo-data
