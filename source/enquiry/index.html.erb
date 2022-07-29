@@ -246,7 +246,17 @@ flex-direction: column;
      
     <label>メール*<input type="email" class="form-control" name="email" style="width:100%" required></label>
      
-    <label>ご希望の証明書（１）*<select class="form-control" name="document 1" style="width:100%" required>
+    <label>個人・法人 *<select class="form-control" name ="customer category" style ="width:100%" required>
+      <option>--</option>
+      <option>個人</option>
+      <option>法人</option>
+    </select></label>
+     
+    <label>法人名（ご依頼人が法人の場合）<input type="tel" class="form-control" name="business name" style="width:100%" placeholder="例：〇〇株式会社"></label>
+     
+    <label>所属（法人への配送の場合）<input type="tel" class="form-control" name="department" style="width:100%" placeholder="例：〇〇部〇〇課"></label>
+     
+    <label>翻訳対象書類（１）*<select class="form-control" name="document 1" style="width:100%" required>
       <option>--</option>
       <option>戸籍抄本</option>
       <option>戸籍謄本（１−３人記録）</option>
@@ -255,16 +265,15 @@ flex-direction: column;
       <option>改製原戸籍（４−６人記録）</option>
       <option>住民票（１−４人記録）</option>
       <option>住民票（５−７人記録）</option>
-      <option>婚姻届受理証明書</option>
-      <option>離婚届受理証明書</option>
-      <option>婚姻要件具備証明書</option>
+      <option>受理証明書</option>
       <option>出生届記載事項証明書</option>
       <option>死亡診断書・死体検案書</option>
       <option>死亡届記載事項証明書</option>
       <option>自動車運転免許証（両面）</option>
       <option>在留カード（両面）</option>
-      <option>健康保険証</option>
-      <option>ガス電気水道代</option>
+      <option>健康保険証（両面）</option>
+      <option>個人番号カード（両面）</option>
+      <option>在籍証明書</option>
       <option>卒業証明書・学位記</option>
       <option>卒業・修了見込証明書</option>
       <option>臨床研修修了証明書</option>
@@ -283,7 +292,7 @@ flex-direction: column;
       <option>その他</option>
     </select></label>
      
-    <label>ご希望の証明書（２）<select class="form-control" name="document 2" style="width:100%">
+    <label>翻訳対象書類（２）<select class="form-control" name="document 2" style="width:100%">
       <option>--</option>
       <option>戸籍抄本</option>
       <option>戸籍謄本（１−３人記録）</option>
@@ -292,16 +301,15 @@ flex-direction: column;
       <option>改製原戸籍（４−６人記録）</option>
       <option>住民票（１−４人記録）</option>
       <option>住民票（５−７人記録）</option>
-      <option>婚姻届受理証明書</option>
-      <option>離婚届受理証明書</option>
-      <option>婚姻要件具備証明書</option>
+      <option>受理証明書</option>
       <option>出生届記載事項証明書</option>
       <option>死亡診断書・死体検案書</option>
       <option>死亡届記載事項証明書</option>
       <option>自動車運転免許証（両面）</option>
       <option>在留カード（両面）</option>
-      <option>健康保険証</option>
-      <option>ガス電気水道代</option>
+      <option>健康保険証（両面）</option>
+      <option>個人番号カード（両面）</option>
+      <option>在籍証明書</option>
       <option>卒業証明書・学位記</option>
       <option>卒業・修了見込証明書</option>
       <option>臨床研修修了証明書</option>
@@ -320,7 +328,7 @@ flex-direction: column;
       <option>その他</option>
     </select></label>
      
-    <label>ご希望の証明書（３）<select class="form-control" name="document 3" style="width:100%">
+    <label>翻訳対象書類（３）<select class="form-control" name="document 3" style="width:100%">
       <option>--</option>
       <option>戸籍抄本</option>
       <option>戸籍謄本（１−３人記録）</option>
@@ -329,16 +337,15 @@ flex-direction: column;
       <option>改製原戸籍（４−６人記録）</option>
       <option>住民票（１−４人記録）</option>
       <option>住民票（５−７人記録）</option>
-      <option>婚姻届受理証明書</option>
-      <option>離婚届受理証明書</option>
-      <option>婚姻要件具備証明書</option>
+      <option>受理証明書</option>
       <option>出生届記載事項証明書</option>
       <option>死亡診断書・死体検案書</option>
       <option>死亡届記載事項証明書</option>
       <option>自動車運転免許証（両面）</option>
       <option>在留カード（両面）</option>
-      <option>健康保険証</option>
-      <option>ガス電気水道代</option>
+      <option>健康保険証（両面）</option>
+      <option>個人番号カード（両面）</option>
+      <option>在籍証明書</option>
       <option>卒業証明書・学位記</option>
       <option>卒業・修了見込証明書</option>
       <option>臨床研修修了証明書</option>
@@ -357,14 +364,14 @@ flex-direction: column;
       <option>その他</option>
     </select></label>
      
-    <label>希望納期<select class="form-control" name="timeframe" style="width:100%">
+    <label>ご希望納期<select class="form-control" name="timeframe" style="width:100%">
       <option>--</option>
       <option>１０営業日</option>
       <option>　５営業日</option>
       <option>　３営業日</option>
     </select></label>
      
-    <label>翻訳依頼内容<textarea class="form-control" name="Textarea" rows="3" style="width:100%"></textarea></label>
+    <label>必須情報・コメント<textarea class="form-control" name="Textarea" rows="3" style="width:100%" placeholder="例：書類に記載されているご本人やご親族などのお名前の英語の綴り"></textarea></label>
   </fieldset>
         
   <fieldset class="form-group">
@@ -417,7 +424,7 @@ flex-direction: column;
         <h6>NAATI認証捺印済みの完成版を発行する前、下書きなどが確認できますか？</h6>
         <p>はい、翻訳が完成したら認証する前に「仮翻訳版」としてメールにて送らせていただきます。その段階で、翻訳の内容に間違いのないことをご確認いただきます。英訳の内容をご確認いただいた後、サイン・連絡先を含んだ宣言・NAATI認証捺印済みの翻訳をメールにて送信させていただきます。翻訳の原本は、同日に２部を郵送いたします。</p>
         <h6>支払い方法は？</h6>
-        <p>お支払い方法は口座へのお振込とさせていただいております。お支払い期限は納品後から５営業日以内とさせていただいております。</p>
+        <p>お支払い方法は口座へのお振込とさせていただいております。お支払い期限は納品後から５営業日以内とさせていただいております。（法人の場合は、翌月末日までとなります。）</p>
         <h6>クレジットカードも可能ですか？</h6>
         <p>申し訳ございませんが、お支払い方法は現在口座へのお振込のみとさせていただいております。</p>
         </div>
