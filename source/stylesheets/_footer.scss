@@ -36,7 +36,7 @@ footer {
 	   display:flex;
 	   justify-content:center;
 	   width:100%;
-	   height:33.33%;
+	   height:50%;
 	   -webkit-flex: 1 1 0;
            flex: 1 1 0;
 	   }
@@ -72,7 +72,7 @@ footer {
 	   text-align:center;
 	   flex-direction:row;
 	   width:100%;
-	   height:33.33%;
+	   height:25%;
 	   color:#ddd;
 	   font-family: "kozuka-gothic-pr6n", 'Droid Sans', sans-serif;
 	   font-size:0.6em;
@@ -113,7 +113,7 @@ footer {
 	   text-align:center;
 	   flex-wrap:wrap;
 	   width:100%;
-	   height:33.33%;
+	   height:25%;
 	   color:#ddd;
 	   font-family: "a-otf-gothic-bbb-pr6n", 'Droid Sans', sans-serif;
 	   font-size:0.6em;
@@ -122,13 +122,12 @@ footer {
 @media all and (max-width: 640px) {
 	 
 	 #footer-bar{
-		 min-height:80px;
-         max-height:100px;
+		 height:160px;
 		 }
 	 
 #footer-center{
 		   display:flex;
-		   width:100%;
+		   width:320px;
 		   height:100%;
 		   flex-direction:column;
 		   }	 
@@ -136,8 +135,8 @@ footer {
 #footer-top-center > .footer-section-top-center-half{
 	   flex-direction:column;
 	   justify-content:flex-end;
-	   width:100%;
-	   height:20%;
+	   width:40%;
+	   height:100%;
 	   }
 	   
 	    .footer-section-top-center-half > .footer-section-top-center-half-logo{
@@ -145,7 +144,7 @@ footer {
 	   justify-content:center;
 	   align-items:center;
 	   width:100%;
-	   height:40%;
+	   height:100%;
 	   }
 	   
  }
