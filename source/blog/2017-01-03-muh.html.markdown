@@ -2,14 +2,14 @@
 title: muh
 date: 2017-01-03 14:30 UTC
 tags:
-image: space-boy.jpg
+image: space-boy.webp
 introtext: "blah, blah, blah, and more blah, blah, and endless blah blah, blah, because blah, blah, blah goes on for ever and ever and ever."
 by: "Richard"
 ---
 
 <style>
     .blog-hero {
-        background: url("/images/blog-images/space-boy.jpg");
+        background: url("/images/blog-images/space-boy.webp");
         background-size: cover;
         }
 </style>
