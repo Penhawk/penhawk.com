@@ -13,6 +13,7 @@ by: "RICHARD"
         background-position: 30% 50%;
         background-size: cover;
 </style>
+<!DOCTYPE html>
 <html lang="ja">
   <!--document head and body-->
 <div class="blog-single-column">
