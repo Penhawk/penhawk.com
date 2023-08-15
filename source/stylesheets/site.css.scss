@@ -12,7 +12,7 @@
     }
 
 body {
-  background-image: url("../images/background2.jpg");
+  background-image: url("../images/background2.webp");
   margin:0;
   padding:0;
 }
@@ -392,7 +392,7 @@ box-shadow: 0px -8px 5px -5px rgba(107,96,107,0.85);
     height: 45px;
     margin-top: 50px;
     margin-bottom:50px;
-    background: url(../images/buttonbg.jpg);
+    background: url(../images/buttonbg.webp);
     text-align: center;
     font-family: $heading-text-font-stack;
     border: 1px solid rgb(205,101,14);
@@ -406,7 +406,7 @@ box-shadow: 0px -8px 5px -5px rgba(107,96,107,0.85);
     text-shadow: 2px 2px 0px rgba(0,0,0,0.25);
 }
 .button:hover, button-home:hover, button-regular:hover, button-wide:hover {
-    background: url(../images/buttonbg_o.jpg);
+    background: url(../images/buttonbg_o.webp);
 }
 
 .button-home {
