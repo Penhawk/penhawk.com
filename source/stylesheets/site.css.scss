@@ -515,7 +515,7 @@ flex-direction: column;
 }
 
     @media all and (max-width: 740px){
-    .double-column, .single-column{width:auto; margin-left:5%;margin-right:5%;}
+    .double-column, .single-column{width:auto; margin-left:5%; margin-right:5%;}
     }
 
 @media all and (max-device-width:750px) and (orientation:landscape) {
