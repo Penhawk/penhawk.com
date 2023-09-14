@@ -55,7 +55,7 @@ h5{@extend .headings;}
   --------------------------------------------- */
 h6{@extend .headings;}
 
-.general-text{font-family: $general-text-font-stack; font-weight: 300; font-size: 1em; color: $general-text; font-display: swap;}
+.general-text{font-family: $general-text-font-stack; font-weight: 400; font-size: 1em; color: $general-text; font-display: swap;}
 
 p{@extend .general-text; text-align:left;}
 
