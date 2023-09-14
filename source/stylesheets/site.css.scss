@@ -335,7 +335,7 @@ ul{padding-right:2em;}
    padding-bottom:0px;
    display: -webkit-flex;
    display:         flex;
-　　justify-content:center;
+justify-content:center;
    -webkit-flex-flow: wrap;
            flex-flow: wrap;
    }
@@ -355,7 +355,7 @@ ul{padding-right:2em;}
    padding-bottom:0px;
    display: -webkit-flex;
    display:         flex;
-　　justify-content:center;
+justify-content:center;
    -webkit-flex-flow: wrap;
            flex-flow: wrap;
    }
@@ -464,7 +464,7 @@ box-shadow: 0px -8px 5px -5px rgba(107,96,107,0.85);
 .double-column{
 height:auto;
 width:700px;
--webkit-flex-flow: column;
+flex-flow: column;
 flex-direction: column;
 }
     
