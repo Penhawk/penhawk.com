@@ -12,7 +12,156 @@ title: お問い合わせ｜ペンホークNAATI認証翻訳
     
     /* form
 --------------------------------------------- */
+    
+    .form-double-column {
+   height:auto;
+   margin-top:0px;
+   margin-left: auto;
+   margin-right:auto;
+   max-width:1084px;
+   margin-bottom: 50px;
+   padding-bottom:0px;
+   display: -webkit-flex;
+   display:         flex;
+　 justify-content: center;
+   -webkit-flex-flow: wrap;
+           flex-flow: wrap;
+   }
 
+    .form-double-column > .column{
+   display: -webkit-flex;
+   display:flex;
+   width:50%;
+   height:auto;
+   margin: 0px;
+   padding-left:1.5em;
+   padding-right:1.5em;
+   -webkit-flex-flow: column;
+           flex-flow: column;
+   }
+    
+    form {
+        font-family: "a-otf-gothic-bbb-pr6n", 'Noto Sans JP', sans-serif;
+        font-size:1em;
+        border:none;
+    }
+    
+    .form-group {
+        border:none;
+        width:100%;
+    }
+    
+    .form-control {
+        font-family: "a-otf-gothic-bbb-pr6n", 'Noto Sans JP', sans-serif;
+        font-size:1em;
+        margin-bottom:1em;
+    }
+    
+    /* contact information
+--------------------------------------------- */
+    .contact-information {
+        width:96%;
+        background: white;
+        margin-top:3.35em;
+        border: 1px solid #ccc;
+        padding:1em;
+        padding-top:0.4em;
+    }
+    
+    .contact-information > h5 {margin-top: 0; margin-left:auto; margin-right:auto; text-align:center; font-size:1em; font-weight:700;}
+    
+    .contact-information > h6{font-style:italic; font-weight: 600; font-size: 1em;text-align:left; margin-top:0.4em; margin-bottom:0;}
+    
+    .contact-information > p{font-size:0.9em; margin-top:0.1em; color: #6f6f6f;}
+    
+    .contact-information > h6:nth-of-type(1n+4){font-size:1em; font-style:normal; margin-top:0.5em;}
+    
+    .contact-information > p:nth-of-type(1n+4){margin-bottom:1.5em;}
+    
+    #sns{
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: flex-start;
+    }
+    
+    #sns > *{
+        -webkit-flex: 0 1 auto;
+        flex: 0 1 auto;
+        height: 50px;
+        width: 50px;
+    }
+    
+    #sns > .icon {
+        padding:2%;
+    }
+    
+    #sns > .leftover {
+        -webkit-flex: 5 1 auto;
+        flex: 1 5 auto;
+    }
+    
+    /* button
+--------------------------------------------- */
+    button {
+        align-items: center;
+    justify-content: center;
+    display: inline;
+    height: 45px;
+    width:100%;
+    max-width:500px;
+    margin-left:auto;
+    margin-right:auto;
+    background: url(../images/buttonbg.webp);
+    text-align: center;
+        align-self:center;
+    font-family: "a-otf-futo-min-a101-pr6n", 'Noto Serif JP', serif;
+    border: 1px solid rgb(205,101,14);
+    border-radius: 5px;
+    box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.5),0px 2px 0px 0px rgba(185,91,12,1),inset 0px 1px 0px 0px rgba(255,255,255,0.5);
+    cursor: pointer;
+    }
+    
+    button a {
+    color: #401300;
+    text-decoration: none;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.25);
+}
+button:hover {
+    background: url(../images/buttonbg_o.webp);
+}
+    
+    /* media queries
+  --------------------------------------------- */
+  
+    @media all and (max-width: 768px) {
+    .form-double-column{
+height:auto;
+width:92%;
+-webkit-flex-flow: column;
+flex-direction: column;
+}
+    
+.form-double-column > .column {
+    display:flex;
+    width:100%;
+    height:auto;
+    margin: 0px;
+    padding-left:0;
+    padding-right:0;
+    -webkit-flex-flow: column;
+flex-direction: column;
+}
+        
+        .contact-information {display:none;}
+   }
+    
+
+    @media all and (max-width:560px) {
+.form-group > .form-control-file {
+    width:80%;
+    }
+    }
+    
 </style>
 <ul id="breadcrumb">
         <li><a href="/" title="Home"><img src="../images/breadcrumb-home-icon.gif" alt="Home" class="home" /></a></li>
