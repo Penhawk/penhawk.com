@@ -1,0 +1,44 @@
+---
+title: 無料で楽しめるメルボルン Pt. 1
+date: 2017-01-03 14:14 UTC
+tags:
+image: space-boy.jpg
+introtext: "「世界で最も住みやすい都市」ランキングで７年連続で首位になっているメルボルンでは、楽しめることが溢れています。しかし、物価も高いメルボルン、そんな時にはフリースポットへ行くのはいかがでしょうか？無料で楽しめるスポットトップ２０を紹介します。"
+by: "RICHARD"
+---
+
+<style>
+    .blog-hero {
+        background-image: url("/images/blog-images/space-boy.jpg");
+        background-position: top center;
+        background-size: cover;}
+
+
+    .blog-image {
+    width:100%;
+}
+        
+        .blog-image:nth-of-type(1){
+        background-image: url("/images/blog-images/giant-chess.jpg");
+        background-position: 50% 20%;
+        }
+        
+        .blog-image:nth-of-type(2){
+        background-image: url("/images/blog-images/melbourne_night1.jpg");
+    background-position: center center;
+        }
+    
+</style>
+
+
+<div class="blog-single-column">
+        <div class="blog-page-sub">
+    <h4>1. クイーンビクトリアマーケット</h4></div>
+    <section class="blog-image"></section>
+        <p>Penhawk（以下「弊社」）が提供する翻訳の利用について規定するものです。本サービス利用の申し込みを行う者（以下「申込者」）は、本利用規約にご同意いただくことによって、本サービスを利用することができます。</p>
+        <p>Penhawk（以下「弊社」）が提供する翻訳の利用について規定するものです。本サービス利用の申し込みを行う者（以下「申込者」）は、本利用規約にご同意いただくことによって、本サービスを利用することができます。</p>
+        <div class="blog-page-sub">
+    <h4>2. State Library</h4></div>
+    <section class="blog-image"></section>
+        <p>Penhawk（以下「弊社」）が提供する翻訳の利用について規定するものです。本サービス利用の申し込みを行う者（以下「申込者」）は、本利用規約にご同意いただくことによって、本サービスを利用することができます。</p>
+</div>
