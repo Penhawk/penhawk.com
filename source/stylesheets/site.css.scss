@@ -25,15 +25,15 @@ $header-color: #1F1715;
 $hero-heading: #ffffff;
 $charcoal-headings: #54504E;
 $general-text: #241E1B;
-$heading-text-font-stack: "a-otf-futo-min-a101-pr6n", 'Noto Serif JP', serif;
-$general-text-font-stack: "a-otf-gothic-bbb-pr6n", 'Noto Sans JP', sans-serif;
+$heading-text-font-stack: "a-otf-futo-min-a101-pr6n", 'Droid Serif', serif;
+$general-text-font-stack: "a-otf-gothic-bbb-pr6n", 'Droid Sans', sans-serif;
 
 
-.headings{font-family: $heading-text-font-stack; font-style:normal; font-weight:500; text-align:center; color:$charcoal-headings; font-display: swap;}
+.headings{font-family: $heading-text-font-stack; font-style:normal; font-weight:500; text-align:center; color:$charcoal-headings;}
 
 /* No use
   --------------------------------------------- */
-h2{@extend .headings; font-size: 2.5em;line-height: 120%; color: blue; margin-bottom: 0.5em;}
+h2{@extend .headings; font-size: 2.5em;line-height: 120%; color: blue; margin-bottom: 0.5em}
 
 
 /* See NAATI Page Section Headings / NAATI Process Page Step Descriptions
@@ -43,23 +43,23 @@ h3{@extend .headings; font-weight: 700; font-size:1.8em; padding-bottom:0em;}
 
 /* See NAATI Process Page Steps / Terms of Service Page
   --------------------------------------------- */
-h4{@extend .headings; font-size:1.5em; margin-bottom:0em;}
+h4{@extend .headings; font-size:1.5em; margin-bottom:0em}
 
 
 /* See Enquiry Page right-side box headings
   --------------------------------------------- */
-h5{@extend .headings;}
+h5{@extend .headings}
 
 
 /* See Enquiry Page right-side box subheadings
   --------------------------------------------- */
 h6{@extend .headings;}
 
-.general-text{font-family: $general-text-font-stack; font-weight: 300; font-size: 1em; color: $general-text; font-display: swap;}
+.general-text{font-family: $general-text-font-stack; font-weight: 400; font-size: 1em; color: $general-text;}
 
 p{@extend .general-text; text-align:left;}
 
-.lede{@extend .general-text; font-family: heading-text-font-stack; font-size:1.4em; font-weight: 600; margin-top:1em;}
+.lede{@extend .general-text; font-family: heading-text-font-stack; font-size:1.4em; font-weight: 600; margin-top:1em}
 
 .byline{@extend .general-text; font-size:0.9em; padding-bottom:0.2em; margin-top:1em; margin-bottom:0em; width:100%;}
 
@@ -69,11 +69,11 @@ p{@extend .general-text; text-align:left;}
 
 /* See Terms of Service Page
   --------------------------------------------- */
-.double-column > .column > ul > li{@extend .general-text; margin-bottom:1em;}
+.double-column > .column > ul > li{@extend .general-text; margin-bottom:1em}
 
-.double-column > .column > ol > li{@extend .general-text; margin-bottom:1em;}
+.double-column > .column > ol > li{@extend .general-text; margin-bottom:1em}
 
-ol{padding-left:1em;}
+ol{padding-left:1em}
 ul{padding-right:2em;}
 
 
@@ -170,35 +170,35 @@ ul{padding-right:2em;}
   top:35%;
   height:120px;
 }
-.hero-about-symbol > img{width:120px;}
+.hero-about-symbol > img{width:120px}
 
   .hero-bottom-symbol{
   @extend .symbol;
   bottom:0%;
   height:90px;
 }
-.hero-bottom-symbol > img{width:90px;}
+.hero-bottom-symbol > img{width:90px}
 
   .hero-mid-symbol{
   @extend .symbol;
   bottom:20%;
   height:90px;
 }
-.hero-mid-symbol > img{width:90px;}
+.hero-mid-symbol > img{width:90px}
 
   .hero-enquiry-symbol{
   @extend .symbol;
   top:65%;
   height:90px;
 }
-.hero-enquiry-symbol > img{width:90px;}
+.hero-enquiry-symbol > img{width:90px}
 
   .hero-home-symbol{
   @extend .symbol;
   top:100%;
   height:100px;
 }
-.hero-home-symbol > img{width:100px;}
+.hero-home-symbol > img{width:100px}
 
 
 
@@ -210,7 +210,7 @@ ul{padding-right:2em;}
     position:relative;
     top:0%;
     font-size:0.8em;
-    font-family: "a-otf-futo-min-a101-pr6n", 'Noto Serif JP', serif;
+    font-family: "a-otf-futo-min-a101-pr6n", 'Droid Serif', serif;
     background: #eeeeee;
     background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc));
@@ -245,14 +245,14 @@ ul{padding-right:2em;}
     color: #454545;
 }
 
-    #breadcrumb li:nth-of-type(5n+0){background-image:none;}
+    #breadcrumb li:nth-of-type(5n+0){background-image:none}
 
 .home {
     border: none;
     margin: 8px 0px;
 }
 
-#breadcrumb a:hover { color: #736759; }
+#breadcrumb a:hover { color: #736759 }
 
 
  /* page and article titles
@@ -335,7 +335,7 @@ ul{padding-right:2em;}
    padding-bottom:0px;
    display: -webkit-flex;
    display:         flex;
-justify-content:center;
+　　justify-content:center;
    -webkit-flex-flow: wrap;
            flex-flow: wrap;
    }
@@ -355,7 +355,7 @@ justify-content:center;
    padding-bottom:0px;
    display: -webkit-flex;
    display:         flex;
-justify-content:center;
+　　justify-content:center;
    -webkit-flex-flow: wrap;
            flex-flow: wrap;
    }
@@ -464,11 +464,11 @@ box-shadow: 0px -8px 5px -5px rgba(107,96,107,0.85);
 .double-column{
 height:auto;
 width:700px;
-flex-flow: column;
+-webkit-flex-flow: column;
 flex-direction: column;
 }
     
-.double-column > .column {
+.double-column > .column, {
     display:flex;
     width:100%;
     height:auto;
@@ -488,11 +488,11 @@ flex-direction: column;
 }
 
 @media all and (min-width: 780px){
-    .about-heading > img {width:120px;}
+    .about-heading > img {width:120px}
 }
 
     @media all and (max-width: 780px){
-        .hero-heading > h1{font-size:3em;}
+        .hero-heading > h1{font-size:3em}
         .blog-single-column {
    width:auto;
    margin-left:5%;
@@ -509,13 +509,13 @@ flex-direction: column;
     -webkit-transform: translate(0%, -50%);
         transform: translate(0%, -50%);
 }
-        .about-heading > img {width:100px;}
+        .about-heading > img {width:100px}
         
 
 }
 
     @media all and (max-width: 740px){
-    .double-column, .single-column{width:auto; margin-left:5%; margin-right:5%;}
+    .double-column, .single-column{width:auto; margin-left:5%;margin-right:5%}
     }
 
 @media all and (max-device-width:750px) and (orientation:landscape) {
@@ -545,7 +545,7 @@ font-size:0.9em;}
   margin-bottom:5px;
 }
     
-    .lede {font-size:1.3em;}
+    .lede {font-size:1.3em}
 
 h3 {
 font-size: 1.5em;}
@@ -553,7 +553,7 @@ font-size: 1.5em;}
 .hero-home-symbol{
   height:80px;
 }
-.hero-home-symbol > img{width:80px;}
+.hero-home-symbol > img{width:80px}
     
     
 .page-title{
@@ -565,11 +565,11 @@ font-size: 1.5em;}
     .hero-home-symbol{
   height:80px;
 }
-.hero-home-symbol > img{width:80px;}
+.hero-home-symbol > img{width:80px}
 
 .hero-bottom-symbol {height:80px;}
 
-.hero-bottom-symbol > img{width:80px;}
+.hero-bottom-symbol > img{width:80px}
     
 
 }
@@ -586,14 +586,14 @@ font-size: 1.5em;}
    height: 30vh;  
 }    
     
-    .hero-heading > h1{font-size:2.2em;}
+    .hero-heading > h1{font-size:2.2em}
     
-.page-title{height:90px; width:90%; margin-bottom:20px;}
+.page-title{height:90px; width:90%; margin-bottom:20px}
  
 .page-title > h1{
 font-size:1.85em;}
 
-.blog-page-title{height:auto; width:90%; margin-bottom:1px;} 
+.blog-page-title{height:auto; width:90%; margin-bottom:1px} 
     
         .blog-page-title > h1{
   font-size:1.6em;
@@ -604,9 +604,9 @@ font-size:1.85em;}
         height: 37vh;
     }
 
-h4, .lede{font-size:1.2em;}
-p, .double-column > .column > ol > li, .double-column > .column > ul > li, .single-column > ol > li, .single-column > ul > li{font-size:0.95em;}
-    .company-details > .guide > p, .company-details > .info > p {font-size:0.9em;}
+h4, .lede{font-size:1.2em}
+p, .double-column > .column > ol > li, .double-column > .column > ul > li, .single-column > ol > li, .single-column > ul > li{font-size:0.95em}
+    .company-details > .guide > p, .company-details > .info > p {font-size:0.9em}
 
 .button-regular {width: 185px; height: 40px; font-size: 1em;}
 
@@ -615,7 +615,7 @@ p, .double-column > .column > ol > li, .double-column > .column > ul > li, .sing
 }
 
 @media all and (max-width: 460px) {
-    .about-heading > h1{font-size:2.8em;}
+    .about-heading > h1{font-size:2.8em}
 .lede{font-size:1.1em;}
 .page-title{
   width:90%;
