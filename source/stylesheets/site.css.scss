@@ -25,8 +25,8 @@ $header-color: #1F1715;
 $hero-heading: #ffffff;
 $charcoal-headings: #54504E;
 $general-text: #241E1B;
-$heading-text-font-stack: "a-otf-futo-min-a101-pr6n", 'Noto Serif JP', serif;
-$general-text-font-stack: "a-otf-gothic-bbb-pr6n", 'Noto Sans JP', sans-serif;
+$heading-text-font-stack: "a-otf-futo-min-a101-pr6n";
+$general-text-font-stack: "a-otf-gothic-bbb-pr6n";
 
 
 .headings{font-family: $heading-text-font-stack; font-style:normal; font-weight:500; text-align:center; color:$charcoal-headings; font-display: swap;}
@@ -210,7 +210,7 @@ ul{padding-right:2em;}
     position:relative;
     top:0%;
     font-size:0.8em;
-    font-family: "a-otf-futo-min-a101-pr6n", 'Noto Serif JP', serif;
+    font-family: "a-otf-futo-min-a101-pr6n";
     background: #eeeeee;
     background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc));
