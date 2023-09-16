@@ -1,17 +1,17 @@
 ---
-title: Muh Paint
-date: 2018-01-03
+title: muh
+date: 2017-01-03 14:30 UTC
 tags:
-image: melbourne_night1.jpg
-introtext: "本利用規約は、Penhawk（以下「弊社」）が提供する翻訳の利用について規定するものです。本サービス利用の申し込みを行う者（以下「申込者」）は、本利用規約にご同意いただくことによって、本サービスを利用することができます。"
-by: "RICHARD"
+image: space-boy.jpg
+introtext: "blah, blah, blah, and more blah, blah, and endless blah blah, blah, because blah, blah, blah goes on for ever and ever and ever."
+by: "Richard"
 ---
 
 <style>
     .blog-hero {
-        background-image: url("/images/blog-images/melbourne.jpg");
-        background-position: 30% 50%;
+        background: url("/images/blog-images/space-boy.jpg");
         background-size: cover;
+        }
 </style>
 
 <div class="blog-single-column">
