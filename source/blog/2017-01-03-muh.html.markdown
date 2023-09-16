@@ -3,7 +3,7 @@ title: muh
 date: 2017-01-03 14:30 UTC
 tags:
 image: space-boy.jpg
-introtext: "blah, blah, blah, and more blah, blah, and endless blah blah, blah, because blah, blah, blah goes on for ever and ever and ever."
+introtext: "blah, blah, blah, and more blah, blah, and endless blah blah, blah, because blah, blah, blah goes on for ever and ever and."
 by: "Richard"
 ---
 
