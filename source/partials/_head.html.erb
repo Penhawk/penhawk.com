@@ -1,7 +1,18 @@
-<html>
+<!DOCTYPE html>
+<html lang="ja">
   <head>
-      <script src="https://use.typekit.net/wog4shc.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'obq6dgi',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
@@ -11,10 +22,6 @@
     <% if current_page.data.description %>
     <meta name="description" content="<%= current_page.data.description %>">
   <% end %>
-
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700" rel="stylesheet" type="text/css">
-
     <%= stylesheet_link_tag :site %>
     <%= javascript_include_tag :all %>
     <link rel="shortcut icon" href="../../images/logos/Penhawk-logo-symbol-favicon.png">
