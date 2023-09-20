@@ -2,17 +2,14 @@
 title: NAATI認証翻訳｜ペンホーク
 description: 日本人がもっとスムーズにオーストラリアとつながれ立派な生活できるように、その架け橋となるNAATI認証翻訳サービスです。
 ---
-
-<style>
-        *,
+*,
     *:before,
     *:after {
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
     }
-    
-    h1 {
+<style>    h1 {
         font-size: 3.5em;
     }
     
@@ -62,6 +59,9 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
         -webkit-flex-flow: column;
         flex-flow: column;
         min-height: 85vh;
+        background-image: url("images/hero-images/yarra_river2.webp");
+        background-position: center center;
+        background-size: cover;
     }
     
     
@@ -307,7 +307,7 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
 /* media queries (Anything below MacBook Air 11")
   --------------------------------------------- */
     
-    @media all and (max-width: 960px) {
+    @media print and (max-width: 960px) {
         #main1 {
             display: -webkit-flex;
             display: flex;
@@ -337,7 +337,7 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
     }
     }
  
-	    @media all and (max-width:800px) {
+	    @media print and (max-width:800px) {
 		
 		        .hero-heading > h1 {
             font-style: normal;
@@ -348,7 +348,7 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
         
     }
     
-    @media all and (max-width:720px) {
+    @media print and (max-width:720px) {
 		
 		        .hero-heading > h1 {
             font-style: normal;
@@ -359,7 +359,7 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
         
     }
     
-    @media all and (max-width: 650px){
+    @media print and (max-width: 650px){
         
 		
 		        article {
@@ -395,7 +395,7 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
          
     }
             
-        @media all and (max-width: 500px) {    
+        @media print and (max-width: 500px) {    
             
             .button-home {
                 width: 150px;
@@ -427,7 +427,7 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
             }
         }
     
-    @media all and (max-width: 390px) {
+    @media print and (max-width: 390px) {
 
             .button-home {
                 width: 130px;
@@ -445,7 +445,7 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
 /* media queries (iPads)
   --------------------------------------------- */
     
-@media all and (max-device-height:600px) and (orientation:landscape) {
+@media print and (max-device-height:600px) and (orientation:landscape) {
         article {
             min-height: 85vh;
         }
@@ -468,11 +468,9 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
                 color: #fff;
             }   
     
-    }
-  
-</style>
+    }</style>
 
-<article style="background-image: url('images/hero-images/yarra_river2.webp'); background-position: center center; background-size: cover">
+<article>
     <div class="hero-heading">
         <h1> もっと身近に、オーストラリア<br>NAATI認証翻訳はこちら！</h1>
         <div id="button-line" style="box-shadow:none">
