@@ -12,8 +12,10 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
         box-sizing: border-box;
     }
     
-    h1 {
-        font-size: 3.5em;
+    .hero-heading > h1 {
+        font-size: 1.4em;
+        line-height: 170%;
+        
     }
     
     h3 {
@@ -61,12 +63,11 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
         display: flex;
         -webkit-flex-flow: column;
         flex-flow: column;
-        min-height: 85vh;
-        background-image: url("images/hero-images/yarra_river2.webp");
+        min-height: 60vh;
+        background-image: url("images/hero-images/yarra_river2m.webp");
         background-position: center center;
         background-size: cover;
     }
-    
     
     article > .hero-heading {
         position:absolute;
@@ -75,12 +76,19 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
         width: 100%;
     }
     
+      .hero-home-symbol{
+  @extend .symbol;
+  top:100%;
+  height:80px;
+}
+.hero-home-symbol > img{width:80px;}
+    
     
     #main1 {
         display: -webkit-flex;
         display: flex;
-        -webkit-flex-flow: row;
-        flex-flow: row;
+        -webkit-flex-flow: column;
+        flex-flow: column;
         -webkit-flex: 0 1 auto;
         flex: 0 1 auto;
         height:auto;
@@ -95,9 +103,10 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
     #main1 > .section {
         width: 100%;
         min-height:9em;
-        max-height: 11em;
+        max-height: 10em;
         margin: 0px;
         padding: 1em;
+        padding-top: 2em;
         justify-content: center;
         border: solid 1px #fff;
         background-size:cover;
@@ -157,8 +166,8 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
         padding: 0px;
         display: -webkit-flex;
         display: flex;
-        -webkit-flex-flow: row;
-        flex-flow: row;
+        -webkit-flex-flow: column;
+        flex-flow: column;
     }
     
     #main > aside {
@@ -166,8 +175,8 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
         display: flex;
         height: auto;
         padding: 5px 5px 30px 5px;
-        -webkit-flex: 1 1 50%;
-        flex: 1 1 50%;
+        -webkit-flex: 1 1 auto;
+        flex: 1 1 auto;
         -webkit-align-items:flex-start;
     }
     
@@ -175,16 +184,16 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
         background: none;
         -webkit-order: 1;
         order: 1;
-        -webkit-justify-content:flex-end;
-        justify-content:flex-end;
+        -webkit-justify-content:center;
+        justify-content:center;
     }
     
     #main > aside:nth-of-type(2) {
         background: rgba(127, 200, 227, 0.5);
         -webkit-order: 2;
         order: 2;
-        -webkit-justify-content:flex-start;
-        justify-content:flex-start;
+        -webkit-justify-content:center;
+        justify-content:center;
     }
     
     .workholder {
@@ -193,6 +202,8 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
         -webkit-flex-flow: column;
         flex-flow: column;
         width:auto;
+        -webkit-justify-content:center;
+        justify-content: center;
     }
     
     .articlecontent {
@@ -200,6 +211,7 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
         padding-right: 10%;
         padding-left: 10%;
         max-width:46em;
+        height: auto;
     }
     
     .worklogos {
@@ -211,7 +223,6 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
         vertical-align: center;
         position: relative;
         max-width:40em;
-        max-height:10em;
     }
     
     #canon {
@@ -306,172 +317,94 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
     }
 
 
-            
-/* media queries (Anything below MacBook Air 11")
+
+/* media queries (Above old mobile)
+  --------------------------------------------- */
+    @media all and (min-width: 360px) {
+    .hero-heading > h1 {
+        font-size: 1.6em;
+        }
+    
+/* media queries (Above modern mobile)
   --------------------------------------------- */
     
-    @media all and (max-width: 960px) {
+    @media all and (min-width: 540px) {
+        .hero-heading > h1 {
+        font-size: 2.4em;
+        line-height:120%;
+        }
+              .hero-home-symbol{
+  @extend .symbol;
+  top:100%;
+  height:100px;
+}
+.hero-home-symbol > img{width:100px;}
+        .hero-home-symbol > img{width:100px;}    
         #main1 {
-            display: -webkit-flex;
-            display: flex;
             -webkit-flex-flow: wrap;
             flex-direction: wrap;
         }
         
-                #main {
-            display: -webkit-flex;
-            display: flex;
-            -webkit-flex-flow: column;
-            flex-direction: column;
-        }
-
-        #main > aside {
-            -webkit-flex: 1 1 auto;
-            flex: 1 1 auto;
-        }
+                .button-home {
+    @extend .button;
+    width: 225px;
+    height: 45px;
+    font-size: 1.9em;
+    margin-top:1em;
+}
         
-        #main > aside:nth-of-type(1) {
-        -webkit-justify-content:center;
-        justify-content:center;
+            #main1 > .section {
+        padding-top: 1em;
     }
-        #main > aside:nth-of-type(2) {
-        -webkit-justify-content:center;
-        justify-content:center;
-    }
-    }
- 
-	    @media all and (max-width:800px) {
-		
-		        .hero-heading > h1 {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 3em;
-            line-height: 170%;
-        }
         
-    }
-    
-    @media all and (max-width:720px) {
-		
-		        .hero-heading > h1 {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 2.4em;
-            line-height: 170%;
-        }
-        
-    }
-    
-    @media all and (max-width: 650px){
-        
-		
-		        article {
-            min-height: 60vh;
-        }
-		
-				        .hero-heading > h1 {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 2.2em;
-            line-height: 170%;
-        }
-		
-        #main1 {
-            display: -webkit-flex;
-            display: flex;
-            -webkit-flex-flow: column;
-            flex-direction: column;
-        }
-        
-        #main1 > .section {
-        min-height:9em;
-        max-height: 10em;
-        padding-top:2em;
-        }
-        
-        
-        .worklogos {
-            width: 90%;
-            margin-left: 5%;
-            margin-right: 5%;
-        }
-         
-    }
-            
-        @media all and (max-width: 500px) {    
-            
-            .button-home {
-                width: 150px;
-                height: 40px;
-                font-size: 1.2em;
-            }
-            
-            .hero-heading > h1 {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 1.6em;
-                line-height: 170%;
-                color: #fff;
-            }
-
-            h3 {
-                font-size: 1.8em
-            }
-            h4 {
-                font-size: 1.3em
-            }
-            
-            h5 {
-                font-size: 1.2em
-            }
-            
-            h6 {
-                font-size: 0.95em
-            }
-        }
-    
-    @media all and (max-width: 390px) {
-
-            .button-home {
-                width: 130px;
-                height: 40px;
-                font-size: 1.2em;
-            }
-        .hero-heading > h1 {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 1.4em;
-                color: #fff;
-            }
+    article {
+        background-image: url("images/hero-images/yarra_river2b.webp");
     }
 
-/* media queries (iPads)
+    }
+
+/* media queries (Above menu breakpoint)
   --------------------------------------------- */
-    
-@media all and (max-device-height:600px) and (orientation:landscape) {
-        article {
-            min-height: 85vh;
-        }
-    
-        .button-home {
-                width: 150px;
-                height: 40px;
-                font-size: 1.1em;
-            }
-          
+    @media all and (min-width: 849px) {
         
-    article > .hero-heading {
-                bottom: 5%;
-    }
             .hero-heading > h1 {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 1.8em;
-                line-height: 170%;
-                color: #fff;
-            }   
-    
+        font-size: 3em;
+        }
+            article {
+        min-height: 85vh;
     }
+        }
+        
+/* media queries (Enough space for #main1)
+  --------------------------------------------- */
+    @media all and (min-width: 972px) {
+        
+            .hero-heading > h1 {
+        font-size: 3.5em;
+        }
+    #main1 {
+        -webkit-flex-flow: row;
+        flex-flow: row;
+    }
+        
+    #main1 > .section {
+        max-height: 11em;}
+
+    #main {
+        -webkit-flex-flow: row;
+        flex-flow: row;
+    }
+        
+    #main > aside:nth-of-type(1) {
+        -webkit-justify-content:flex-end;
+        justify-content:flex-end;
+    }
+    
+    #main > aside:nth-of-type(2) {
+        -webkit-justify-content:flex-start;
+        justify-content:flex-start;
+    }
+        }
   
 </style>
 
