@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <link rel="shortcut icon" href="../../images/logos/Penhawk-logo-symbol-favicon.png">
-       <%= stylesheet_link_tag :site %>
-    <%= javascript_include_tag :all %>   
+
+      
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title %></title>
-    <meta name="description" content="<%= current_page.data.description %>>"/>
+    <meta name="description" content="<%= current_page.data.description %>" />
   <% end %>
+    <%= stylesheet_link_tag :site %>
+    <%= javascript_include_tag :all %>
+    <link rel="shortcut icon" href="../../images/logos/Penhawk-logo-symbol-favicon.png">
   </head>
 
   <body class="<%= page_classes %>">
