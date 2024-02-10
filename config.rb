@@ -34,6 +34,13 @@ end
 #   end
 # end
 
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
+end
+
+activate :minify_html
+
 activate :blog do |blog|
   blog.name = "blog"
     blog.prefix = "blog"
