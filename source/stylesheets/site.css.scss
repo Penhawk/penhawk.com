@@ -20,7 +20,7 @@ body {
 
 /* Colors
   --------------------------------------------- */
-$logo-color: rgb(115,103,89);
+$logo-color: #736759;
 $header-color: #1F1715;
 $hero-heading: #ffffff;
 $charcoal-headings: #54504E;
@@ -59,7 +59,7 @@ h6{@extend .headings;}
 
 p{@extend .general-text; text-align:left;}
 
-.lede{@extend .general-text; font-family: heading-text-font-stack; font-size:1.4em; font-weight: 600; margin-top:1em;}
+.lede{@extend .general-text; font-family: $heading-text-font-stack; font-size:1.4em; font-weight: 600; margin-top:1em;}
 
 .byline{@extend .general-text; font-size:0.9em; padding-bottom:0.2em; margin-top:1em; margin-bottom:0em; width:100%;}
 
@@ -92,9 +92,21 @@ ul{padding-right:2em;}
    height: 95vh;
    }
 
-.small-hero {
+    .small-hero {
   @extend .hero;
-   height: 70vh;  
+   height: 66vh;  
+}
+
+.full-hero picture > img {
+        width:cover;
+        position:relative;
+        height:90vh;
+}
+
+.small-hero picture > img {
+        width:cover;
+        position:relative;
+        height:66vh;
 }
 
 .blog-hero {
@@ -118,10 +130,11 @@ ul{padding-right:2em;}
 }
 
 .full-hero > .hero-heading {
-        text-align: center;
-        position: absolute;
-        width: 100%;
-        top: 85%;
+    max-width:100%;
+    min-height:0;
+    position:relative;
+    text-align:center;
+    top: 80%;
     -webkit-transform: translate(0%, -50%);
         transform: translate(0%, -50%);
 }
@@ -133,6 +146,11 @@ ul{padding-right:2em;}
 
 .full-hero > .about-heading-left {
     width:10%;
+    top:65%;
+}
+
+.full-hero > .about-heading-center {
+    width:100%;
     top:65%;
 }
 
@@ -576,9 +594,6 @@ font-size: 1.5em;}
     .full-hero {
    height: 90vh;
    }
-.small-hero {
-   height: 67vh;  
-}
     
 .no-hero {
    height: 30vh;  
@@ -636,6 +651,9 @@ font-size:1.5em;}
 @media all and (max-width: 400px) {
     .blog-page-title > h1{
         font-size:1.3em;}
+    
+    h3 {
+font-size: 1.35em;}
     
     h4, .lede{font-size:1.1em;}
     

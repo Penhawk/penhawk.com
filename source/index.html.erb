@@ -12,11 +12,7 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
         box-sizing: border-box;
     }
     
-    .hero-heading > h1 {
-        font-size: 1.4em;
-        line-height: 170%;
-        
-    }
+
     
     h3 {
         font-weight: 100;
@@ -59,26 +55,29 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
     article {
         position: relative;
         width: cover;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-flow: column;
-        flex-flow: column;
-        min-height: 60vh;
-        background-image: url("images/hero-images/yarra_river2m.webp");
-        background-position: center center;
-        background-size: cover;
+        height: 60vh;
     }
     
-    article > .hero-heading {
-        position:absolute;
-        bottom: 10%;
-        text-align: center;
-        width: 100%;
+         article > .hero > picture > img {
+        width:cover;
+        position:relative;
+        height:60vh;        
+    }
+    
+    article > .hero > picture > .hero-heading{
+            position:absolute; top:35%; left:2.5%; right:2.5%;
+    }
+    
+     article > .hero > picture > .hero-heading > h1 {
+        color:#ffffff;
+        font-size: 1.4em;
+        line-height: 170%;
+        
     }
     
       .hero-home-symbol{
   @extend .symbol;
-  top:100%;
+  top:98.5%;
   height:80px;
 }
 .hero-home-symbol > img{width:80px;}
@@ -118,42 +117,42 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
     }
     
     #main1 > .section:nth-of-type(1) {
-    background-image:url("/images/hero-images/flinders_st1a.webp");
+    background-image:url("/images/hero-images/Flinders_Station1a.jpg");
     background-position:center center;
     }
     
     #main1 > .section:nth-of-type(1):hover {
-    background-image:url("/images/hero-images/flinders_st1b.webp");
+    background-image:url("/images/hero-images/Flinders_Station1b.jpg");
     background-position:center center;
     }
     
     #main1 > .section:nth-of-type(2) {
-    background-image:url("/images/hero-images/degraves2a.webp");
+    background-image:url("/images/hero-images/Degraves_St2a.jpg");
     background-position:center center;
     }
     
     #main1 > .section:nth-of-type(2):hover {
-    background-image:url("/images/hero-images/degraves2b.webp");
+    background-image:url("/images/hero-images/Degraves_St2b.jpg");
     background-position:center center;
     }
     
     #main1 > .section:nth-of-type(3) {
-    background-image:url("/images/hero-images/botanic_gardensa.webp");
+    background-image:url("/images/hero-images/Botanic_Gardens1a.jpg");
     background-position:center center;
     }
     
     #main1 > .section:nth-of-type(3):hover {
-    background-image:url("/images/hero-images/botanic_gardensb.webp");
+    background-image:url("/images/hero-images/Botanic_Gardens1b.jpg");
     background-position:center center;
     }
     
     #main1 > .section:nth-of-type(4) {
-    background-image:url("/images/hero-images/richard-profile1a.webp");
+    background-image:url("/images/hero-images/Richard_profile1a.jpg");
     background-position:center right;
     }
     
     #main1 > .section:nth-of-type(4):hover {
-    background-image:url("/images/hero-images/richard-profile1b.webp");
+    background-image:url("/images/hero-images/Richard_profile1b.jpg");
     background-position:center right;
     }
     
@@ -320,26 +319,45 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
 
 /* media queries (Above old mobile)
   --------------------------------------------- */
-    @media all and (min-width: 360px) {
-    .hero-heading > h1 {
-        font-size: 1.6em;
+    @media all and (min-width: 361px) {
+    article > .hero > picture > .hero-heading > h1 {
+        font-size: 1.55em;
         }
+
+        
+/* media queries (Modern mobile)
+  --------------------------------------------- */
+    @media all and (min-width: 390px) {
+        
+        article > .hero > picture > .hero-heading{
+            top:40%;
+    }
+        
+    article > .hero > picture > .hero-heading > h1 {
+        font-size: 1.65em;
+        }
+    }
+        
     
 /* media queries (Above modern mobile)
   --------------------------------------------- */
     
-    @media all and (min-width: 540px) {
-        .hero-heading > h1 {
-        font-size: 2.4em;
+    @media all and (min-width: 570px) {
+        
+            article > .hero > picture > .hero-heading{
+            top:30%;
+    }
+    
+     article > .hero > picture > .hero-heading > h1 {
         line-height:120%;
-        }
+        font-size: 2.4em;        
+    }
               .hero-home-symbol{
-  @extend .symbol;
-  top:100%;
   height:100px;
 }
 .hero-home-symbol > img{width:100px;}
-        .hero-home-symbol > img{width:100px;}    
+        .hero-home-symbol > img{width:100px;}
+        
         #main1 {
             -webkit-flex-flow: wrap;
             flex-direction: wrap;
@@ -356,22 +374,23 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
             #main1 > .section {
         padding-top: 1em;
     }
-        
-    article {
-        background-image: url("images/hero-images/yarra_river2b.webp");
-    }
 
+    }
+        
+/* media queries
+  --------------------------------------------- */
+    @media all and (min-width: 700px) {
+        
+    article > .hero > picture > .hero-heading{
+    top:35%;
     }
 
 /* media queries (Above menu breakpoint)
   --------------------------------------------- */
-    @media all and (min-width: 849px) {
+    @media all and (min-width: 800px) {
         
-            .hero-heading > h1 {
-        font-size: 3em;
-        }
-            article {
-        min-height: 85vh;
+     article > .hero > picture > .hero-heading > h1 {
+        font-size: 2.6em;        
     }
         }
         
@@ -379,9 +398,23 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
   --------------------------------------------- */
     @media all and (min-width: 972px) {
         
-            .hero-heading > h1 {
-        font-size: 3.5em;
-        }
+    article > .hero > picture > .hero-heading{
+    top:40%;
+    }
+        
+                article {
+        height: 85vh;
+    }
+        
+             article > .hero > picture > img {
+        height:85vh;
+        
+    }
+        
+             article > .hero > picture > .hero-heading > h1 {
+        font-size: 3.2em;        
+    }
+        
     #main1 {
         -webkit-flex-flow: row;
         flex-flow: row;
@@ -409,14 +442,36 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
 </style>
 
 <article>
-    <div class="hero-heading">
-        <h1> もっと身近に、オーストラリア<br>NAATI認証翻訳はこちら！</h1>
-        <div id="button-line" style="box-shadow:none">
+    <div class="hero">
+        <picture style="width:100%; height:auto">
+            <source media="(orientation: landscape)" srcset=
+            "images/HP/HP-L1700.jpg 1700w,
+            images/HP/HP-L2000.jpg 2000w,
+            images/HP/HP-L2400.jpg 2400w,
+            images/HP/HP-L2900.jpg 2900w,
+            images/HP/HP-L3500.jpg 3500w"
+            sizes="100vw"
+            style="width:100%; object-fit:cover">
+            <source media="(orientation: portrait)" srcset=
+            "images/HP/HP-P800.jpg 800w,
+            images/HP/HP-P1100.jpg 1100w,
+            images/HP/HP-P1300.jpg 1300w,
+            images/HP/HP-P1500.jpg 1500w,
+            images/HP/HP-P1700.jpg 1700w,
+            images/HP/HP-P2100.jpg 2100w,"
+            sizes="100vw"
+            style="width:100%; object-fit:cover">
+            <img src="../../images/HP/HP-L2400.jpg 2400w" alt="ヤラ川" style="width:100%; object-fit:cover">
+            <div class="hero-heading">
+                    <h1>もっと身近に、オーストラリア<br>NAATI認証翻訳はこちら！</h1>
+                 <div id="button-line" style="box-shadow:none">
             <div class="button-home"><a href="naati/">さらに詳しく</a> </div>
-        </div>
+                </div>
+                </div>
+            </picture>
+    <div class="hero-home-symbol"> <img src="../images/logos/Penhawk-logo-symbol.svg" alt="Penhawkのロゴ" /> </div>
     </div>
-    <div class="hero-home-symbol"> <img src="../images/logos/Penhawk-logo-symbol.svg" alt="penhawk-logo" /> </div>
-</article>
+        </article>
 <div id="main1">
     <div class="section">
         <a href="naati/">
@@ -425,19 +480,19 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
         </a>
     </div>
     <div class="section">
-        <a href="naati/process">
+        <a href="naati/process/">
         <h5>ご利用手順</h5>
         <h6>６ステップで<br>わかりやすくスムーズに</h6>
         </a>
     </div>
     <div class="section">
-        <a href="naati/pricing-and-schedule">
+        <a href="naati/pricing-and-schedule/">
         <h5>料金とスケジュール</h5>
         <h6>３タイプから選べる<br>お客様に合わせた納期・料金</h6>
         </a>
     </div>
     <div class="section">
-        <a href="about">
+        <a href="about/">
         <h5>PENHAWKについて</h5>
         <h6>どんな翻訳者か知って安心<br>納得出来るお取引へ</h6>
         </a>
@@ -452,12 +507,12 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
             <p>NAATI認証翻訳では、個人や中小企業のための翻訳を重点的に取り組んでいますが、日本の大企業30社以上との翻訳経験も豊富です。 </p>
         </div>
         <div class="worklogos">
-            <section id="canon"> <img src="../images/logos/bCanon.svg" alt="logo" style="width:100%" /> </section>
-            <section id="fujifilm"> <img src="../images/logos/bFujifilm.svg" alt="logo" style="width: 100%" /> </section>
-            <section id="marubeni"> <img src="../images/logos/bMarubeni.svg" alt="logo" style="width: 100%" /> </section>
-            <section id="mitsui"> <img src="../images/logos/bMitsui.svg" alt="logo" style="width: 100%" /> </section>
-            <section id="nomura"> <img src="../images/logos/bNomura.svg" alt="logo" style="width: 100%" /> </section>
-            <section id="sumitomo"> <img src="../images/logos/bSumitomo.svg" alt="logo" style="width:100%" /> </section>
+            <section id="canon"> <img src="../images/logos/bCanon.svg" alt="キャノンのロゴ" style="width:100%" /> </section>
+            <section id="fujifilm"> <img src="../images/logos/bFujifilm.svg" alt="富士フィルムのロゴ" style="width: 100%" /> </section>
+            <section id="marubeni"> <img src="../images/logos/bMarubeni.svg" alt="丸紅のロゴ" style="width: 100%" /> </section>
+            <section id="mitsui"> <img src="../images/logos/bMitsui.svg" alt="三井物産のロゴ" style="width: 100%" /> </section>
+            <section id="nomura"> <img src="../images/logos/bNomura.svg" alt="野村のロゴ" style="width: 100%" /> </section>
+            <section id="sumitomo"> <img src="../images/logos/bSumitomo.svg" alt="住友商事のロゴ" style="width:100%" /> </section>
         </div>
             </div>
     </aside>
@@ -469,9 +524,9 @@ description: 日本人がもっとスムーズにオーストラリアとつな�
             <p>翻訳業の中で基準が最も高い「NAATI」というオーストラリア唯一の翻訳・通訳資格認定政府機関に認可を受け、また「AUSIT」と「JAT」というオーストラリアと日本の翻訳者協会に入会中です。</p>
         </div>
         <div class="affiliatelogos">
-            <section id="ausit"> <img src="../images/logos/Ausit-logo.webp" alt="AUSIT" style="width: 100%" /> </section>
-            <section id="naati"> <img src="../images/logos/NAATI-Prac-Logo-Translator_1.webp" alt="JAT" style="width:100%" /> </section>
-            <section id="jat"> <img src="../images/logos/JAT-logo.webp" alt="JAT" style="width:100%" /> </section>
+            <section id="ausit"> <img src="../images/logos/Ausit-logo.webp" alt="AUSITのロゴ" style="width: 100%" /> </section>
+            <section id="naati"> <img src="../images/logos/NAATI-Prac-Logo-Translator_1.webp" alt="NAATI公認翻訳者のロゴ" style="width:100%" /> </section>
+            <section id="jat"> <img src="../images/logos/JAT-logo.webp" alt="JATのロゴ" style="width:100%" /> </section>
         </div>
             </div>
     </aside>
