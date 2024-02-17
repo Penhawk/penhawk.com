@@ -89,34 +89,34 @@ ul{padding-right:2em;}
 
 .full-hero {
   @extend .hero;
-   height: 95vh;
+   height: 95svh;
    }
 
     .small-hero {
   @extend .hero;
-   height: 66vh;  
+   height: 66svh;  
 }
 
 .full-hero picture > img {
         width:cover;
         position:relative;
-        height:90vh;
+        height:90svh;
 }
 
 .small-hero picture > img {
         width:cover;
         position:relative;
-        height:66vh;
+        height:66svh;
 }
 
 .blog-hero {
   @extend .hero;
-   height: 70vh;  
+   height: 70svh;  
 }
 
 .blog-image {
   @extend .hero;
-   height: 50vh;
+   height: 50svh;
     margin-top:20px;
     margin-bottom:10px;
     background-size: cover;
@@ -126,7 +126,7 @@ ul{padding-right:2em;}
 
 .no-hero {
    @extend .hero;
-   height: 25vh;
+   height: 25svh;
 }
 
 .full-hero > .hero-heading {
@@ -536,18 +536,18 @@ flex-direction: column;
 
 @media all and (max-device-width:750px) and (orientation:landscape) {
     .no-hero {
-   height: 50vh;
+   height: 50svh;
 }   
 }
 
 @media all and (max-width: 640px) {
 
 .blog-hero {
-   height: 40vh;  
+   height: 40svh;  
 }
     
     .blog-image {
-        height: 42vh;
+        height: 42svh;
     }
     
 .page-title > h1{
@@ -592,11 +592,11 @@ font-size: 1.5em;}
 
 @media all and (max-width: 540px) {
     .full-hero {
-   height: 90vh;
+   height: 90svh;
    }
     
 .no-hero {
-   height: 30vh;  
+   height: 30svh;  
 }    
     
     .hero-heading > h1{font-size:2.2em;}
@@ -614,7 +614,7 @@ font-size:1.85em;}
 }
     
         .blog-image {
-        height: 37vh;
+        height: 37svh;
     }
 
 h4, .lede{font-size:1.2em;}
