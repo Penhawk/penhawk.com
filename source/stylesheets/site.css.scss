@@ -109,21 +109,6 @@ ul{padding-right:2em;}
         height:66svh;
 }
 
-.blog-hero {
-  @extend .hero;
-   height: 70svh;  
-}
-
-.blog-image {
-  @extend .hero;
-   height: 50svh;
-    margin-top:20px;
-    margin-bottom:10px;
-    background-size: cover;
-        margin-left:auto;
-        margin-right:auto;
-    }
-
 .no-hero {
    @extend .hero;
    height: 25svh;
@@ -296,46 +281,11 @@ ul{padding-right:2em;}
     font-weight:600;
 }
 
-.blog-page-title{
-  @extend .page-title; 
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  margin-bottom: 0px;
-  height:auto;
-  width:100%;  
-}
-
-.blog-page-title > h1{
-    font-weight:600;
-}
-
-.blog-page-sub{
-  @extend .blog-page-title; 
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  margin-bottom: 0px;
-    justify-content:flex-start;
-    margin-left:0;
-  margin-right:auto;
-    text-align:left;
-    align-items: flex-start;
-  height:auto;
-  width:100%;  
-}
-
 .page-title > h1{
 @extend .headings; font-size:2.4em; margin-top:0; color:#54504E;}
 
 .page-title > h2{
 @extend .headings; font-size: 1em; letter-spacing:2px; margin-bottom:10px; color: #54504E;}
-
-.blog-page-title > h1{
-  @extend .headings;
-  font-size:2.4em;
-  margin-bottom:5px;
-}
 
  /* columns
   --------------------------------------------- */
@@ -355,11 +305,6 @@ ul{padding-right:2em;}
 justify-content:center;
    -webkit-flex-flow: wrap;
            flex-flow: wrap;
-   }
-
-  .blog-single-column {
-   @extend .single-column;
-   width:720px;
    }
 
   .double-column {
@@ -448,30 +393,6 @@ box-shadow: 0px -8px 5px -5px rgba(107,96,107,0.85);
     font-size: 1.4em;
 }
 
-.button-blog {
-    @extend .button;
-    background:none;
-    width: 150px;
-    height: 35px;
-    margin-top: 0px;
-    margin-bottom:0px;
-    font-size: 1em;
-    font-family: $general-text-font-stack;
-    border: 2px solid $logo-color;
-    border-radius: 5px;
-    box-shadow: none;
-}
-
-.button-blog a {
-    color: $logo-color;
-    text-decoration: none;
-    text-shadow: none;}
-
-.button-blog:hover {
-    background: none;
-    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.5),inset 0px 1px 0px 0px rgba(255,255,255,0.5);
-}
-
 
 /* media queries
   --------------------------------------------- */
@@ -496,12 +417,6 @@ flex-direction: column;
    }
 
     .single-column{padding-left:0; padding-right:0; width:auto; margin-left:5%; margin-right:5%;}
-    
-    .blog-single-column {
-   width:720px;
-   margin-left:auto;
-   margin-right:auto;
-   }
 }
 
 @media all and (min-width: 780px){
@@ -510,11 +425,7 @@ flex-direction: column;
 
     @media all and (max-width: 780px){
         .hero-heading > h1{font-size:3em;}
-        .blog-single-column {
-   width:auto;
-   margin-left:5%;
-   margin-right:5%;
-   }
+        
             .full-hero > .about-heading-left {
     display:none;
 }
@@ -542,25 +453,12 @@ flex-direction: column;
 }
 
 @media all and (max-width: 640px) {
-
-.blog-hero {
-   height: 40svh;  
-}
-    
-    .blog-image {
-        height: 42svh;
-    }
     
 .page-title > h1{
 font-size:2em;}
  
 .page-title > h2{
 font-size:0.9em;}
-
-.blog-page-title > h1{
-  font-size:2em;
-  margin-bottom:5px;
-}
     
     .lede {font-size:1.3em;}
 
@@ -607,17 +505,6 @@ font-size: 1.5em;}
 .page-title > h1{
 font-size:1.85em;}
 
-.blog-page-title{height:auto; width:90%; margin-bottom:1px;} 
-    
-        .blog-page-title > h1{
-  font-size:1.6em;
-  margin-bottom:5px;
-}
-    
-        .blog-image {
-        height: 37svh;
-    }
-
 h4, .lede{font-size:1.2em;}
 p, .double-column > .column > ol > li, .double-column > .column > ul > li, .single-column > ol > li, .single-column > ul > li{font-size:0.95em;}
     .company-details > .guide > p, .company-details > .info > p {font-size:0.9em;}
@@ -634,24 +521,16 @@ p, .double-column > .column > ol > li, .double-column > .column > ul > li, .sing
 .page-title{
   width:90%;
 }
-        .blog-page-title > h1{
-  font-size:1.6em;
-  margin-bottom:5px;
-}
+
 }
 
 @media all and (max-width: 430px) {
     .page-title > h1{
 font-size:1.5em;}
     
-    .blog-page-title > h1{
-        font-size:1.5em;}
-    
 }
 
 @media all and (max-width: 400px) {
-    .blog-page-title > h1{
-        font-size:1.3em;}
     
     h3 {
 font-size: 1.35em;}
