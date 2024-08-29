@@ -296,7 +296,12 @@ input[type="file"]::file-selector-button:active {
     
     /* media queries
   --------------------------------------------- */
-  
+	 @media all and (min-width: 890px) {
+	.line-break {
+            display: none;
+        }
+	}
+    
     @media all and (max-width: 860px) {
     .form-double-column{
 height:auto;
@@ -337,7 +342,7 @@ flex-direction: column;
 </style>
 <ul id="breadcrumb">
         <li><a href="/" title="Home"><img src="../images/breadcrumb-home-icon.gif" alt="Home" class="home" /></a></li>
-            <li><a href="/naati/" title="サービス概要">O<span style="font-size:0.9em;">UTLINE</span></a></li>
+            <li><a href="/naati/" title="NAATI認証翻訳">O<span style="font-size:0.9em;">UTLINE</span></a></li>
             <li><a href="/naati/pricing-and-schedule/" title="料金とスケジュール">P<span style="font-size:0.9em;">RICING</span></a></li>        
             <li><a href="/naati/process/" title="ご利用手順">P<span style="font-size:0.9em;">ROCESS</span></a></li>
             <li>E<span style="font-size:0.9em;">NQUIRY</span></li>
@@ -634,7 +639,7 @@ flex-direction: column;
         <div class="contact-information">
         <h5>CONTACT INFORMATION</h5>
         <h6>Mailing Address:</h6>
-        <p>〒171–0014東京都豊島区池袋3–28–18</p>
+        <p>〒389–0111 <br class="line-break" />長野県北佐久郡軽井沢町長倉4469–9</p>
         <h6>Email:</h6>
         <p>richard@penhawk.com</p>
         <h6>Business hours:</h6>
