@@ -17,3 +17,4 @@ gem "middleman-blog", "~> 4.0"
 
 # Other Gems
 gem "mutex_m"
+gem "webrick"
