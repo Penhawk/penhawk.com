@@ -141,7 +141,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  middleman
+  middleman (~> 4.0)
   middleman-blog
   middleman-compass
   middleman-livereload
