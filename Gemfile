@@ -9,13 +9,11 @@ gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
 # Middleman Gems
-gem "middleman", "~> 4.0"
+gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
-gem 'middleman-compass'
+gem 'middleman-compass', '>= 4.0.0'
 gem 'middleman-search_engine_sitemap'
-gem "middleman-blog"
+gem "middleman-blog", "~> 4.0"
 
-# Other Gems
-gem "mutex_m"
+gem 'mutex_m'
 gem "webrick"
-gem "padrino-helpers"
