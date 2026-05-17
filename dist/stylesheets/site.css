@@ -390,30 +390,24 @@ header {
 
 .hamburger-label {
   position: absolute;
-  margin-left: auto;
-  align-items: center;
   top: 3px;
   right: 12px;
   z-index: 1;
   width: 42px;
   height: 42px;
-  font: 36px/42px fontawesome;
-  text-align: center;
   color: #736759;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hamburger-checkbox:checked ~ .hamburger-label:before {
-  content: '\f00d';
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
+.hamburger-label .hamburger-icon-close { display: none; }
+
+.hamburger-checkbox:checked ~ .hamburger-label .hamburger-icon-open { display: none; }
+
+.hamburger-checkbox:checked ~ .hamburger-label .hamburger-icon-close {
   display: block;
-  width: 42px;
-  height: 42px;
-  font: 36px/42px fontawesome;
-  text-align: center;
   color: #eee;
 }
 
@@ -533,7 +527,7 @@ header {
 }
 
 body {
-  background-image: url("/images/background2.jpg");
+  background-image: image-set(url('/images/background2.webp') type('image/webp'), url('/images/background2.jpg') type('image/jpeg'));
   margin: 0;
   padding: 0;
 }
