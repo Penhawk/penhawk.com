@@ -383,9 +383,11 @@ header {
 }
 
 .hamburger-checkbox {
-  display: flex;
-  margin-left: auto;
+  position: absolute;
+  width: 1px;
+  height: 1px;
   opacity: 0;
+  pointer-events: none;
 }
 
 .hamburger-label {
@@ -597,6 +599,17 @@ h5 {
   text-align: center;
   color: #54504E;
   font-display: swap;
+}
+
+.card-heading {
+  font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25em;
+  line-height: 1%;
+  margin-bottom: 0;
+  color: orange;
+  text-align: center;
 }
 
 h6 {
