@@ -368,6 +368,7 @@ header {
   flex-flow: row;
   flex-direction: row;
   background-color: #1F1715;
+  position: relative;
 }
 
 #logo {
@@ -414,6 +415,9 @@ header {
 }
 
 .sidebar {
+  position: absolute;
+  top: 100%;
+  left: 0;
   overflow: hidden;
   width: 0;
   height: 0;
@@ -425,11 +429,10 @@ header {
 }
 
 .hamburger-checkbox:checked ~ .sidebar {
-  width: 50%;
+  width: 100%;
   height: auto;
-  padding-top: 4em;
   overflow-x: scroll;
-  z-index: 0;
+  z-index: 100;
 }
 
 .menu {
