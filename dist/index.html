@@ -81,13 +81,13 @@
 
     <header><div id="sc3">
       <div id="logo">
-        <a href="/"><img src="/images/Penhawk-logo-name-white.svg" alt="Penhawk" width="1134" height="155" style="width:100%; height:auto;"/></a>
+        <a href="/"><img src="/images/Penhawk-logo-name-white.png" alt="Penhawk" style="width:100%"/></a>
       </div>
       <input id="hamburger" type="checkbox" class="hamburger-checkbox">
       <label for="hamburger" class="hamburger-label" role="button" aria-label="メニュー"><svg class="hamburger-icon-open" viewBox="0 0 36 36" width="36" height="36" aria-hidden="true"><line x1="6" y1="11" x2="30" y2="11" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><line x1="6" y1="18" x2="30" y2="18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><line x1="6" y1="25" x2="30" y2="25" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg><svg class="hamburger-icon-close" viewBox="0 0 36 36" width="36" height="36" aria-hidden="true"><line x1="9" y1="9" x2="27" y2="27" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><line x1="9" y1="27" x2="27" y2="9" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></label>
       <nav class="sidebar">
         <ul class="menu">
-          <li><a href="/">ホーム</a></li>
+          <li><span class="menu-current">ホーム</span></li>
           <li><a href="/naati/">NAATI認証翻訳</a></li>
           <li><a href="/naati/pricing-and-schedule/">料金とスケジュール</a></li>
           <li><a href="/about/">PENHAWKについて</a></li>
@@ -149,57 +149,80 @@
         color: #54504E;
       }
 
+      .hero-and-nav {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto auto;
+        row-gap: 0;
+      }
+
+      .hero-and-nav > nav {
+        grid-column: 1 / -1;
+      }
+
       .hero-section {
-        position: relative;
-        width: cover;
+        grid-column: 1 / -1;
+        grid-row: 1;
+        display: grid;
+        grid-template-areas: 'stack';
+        overflow: hidden;
         height: 60svh;
       }
 
-      .hero-section > .hero > picture > img {
-        width: cover;
-        position: relative;
+      .hero-section > picture,
+      .hero-section > .hero-heading {
+        grid-area: stack;
+      }
+
+      .hero-section > picture {
+        inline-size: 100%;
+        block-size: 100%;
+      }
+
+      .hero-section > picture > img {
+        inline-size: 100%;
+        block-size: 100%;
         height: 60svh;
+        object-fit: cover;
       }
 
-      .hero-section > .hero > picture > .hero-heading {
-        position: absolute;
-        top: 35%;
-        left: 2.5%;
-        right: 2.5%;
+      .hero-section > .hero-heading {
+        align-self: start;
+        justify-self: center;
+        margin-block-start: 24svh;
+        padding-inline: 2.5%;
+        text-align: center;
       }
 
-      .hero-section > .hero > picture > .hero-heading > h1 {
+      .hero-section > .hero-heading > h1 {
         color: #ffffff;
         font-size: 1.4em;
         line-height: 170%;
       }
 
       .hero-home-symbol {
-        position: absolute;
+        position: static;
+        grid-row: 2;
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: auto;
+        height: auto;
+        block-size: 0;
+        line-height: 0;
+        z-index: 2;
+        transform: none;
+        translate: 0 -50%;
         text-align: center;
-        left: 0%;
-        width: 100%;
-        color: #fff;
-        -ms-transform: translate(0,-50%);
-        -webkit-transform: translate(0,-50%);
-        transform: translate(0,-50%);
-        z-index: 1;
-        top: 98.5%;
-        height: 80px;
       }
-      .hero-home-symbol > img { width: 80px; }
+      .hero-home-symbol > img { width: 80px; translate: 0 -50%; }
 
       #main1 {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-flow: column;
-        flex-flow: column;
-        -webkit-flex: 0 1 auto;
-        flex: 0 1 auto;
-        height: auto;
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
+        grid-column: 1 / -1;
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 0;
         background-color: #1F1715;
         border-top: solid #1F1715 4px;
         border-bottom: solid #1F1715 4px;
@@ -207,19 +230,21 @@
 
       #main1 > .section {
         width: 100%;
+        justify-self: stretch;
         min-height: 9em;
         max-height: 10em;
-        margin: 0px;
+        margin: 0;
         padding: 1em;
         padding-top: 2em;
         justify-content: center;
         border: solid 1px #fff;
         background-size: cover;
-        -webkit-flex: 1 1 50%;
-        flex: 1 1 50%;
-        -webkit-order: 1;
-        order: 1;
-        flex-wrap: wrap;
+      }
+
+      #main1 > .section > a {
+        display: block;
+        width: 100%;
+        height: 100%;
       }
 
       #main1 > .section:nth-of-type(1) {
@@ -404,38 +429,30 @@
       }
 
       @media all and (min-width: 361px) {
-        .hero-section > .hero > picture > .hero-heading > h1 {
+        .hero-section > .hero-heading > h1 {
           font-size: 1.55em;
         }
       }
 
       @media all and (min-width: 390px) {
-        .hero-section > .hero > picture > .hero-heading {
-          top: 40%;
-        }
-        .hero-section > .hero > picture > .hero-heading > h1 {
+        .hero-section > .hero-heading > h1 {
           font-size: 1.65em;
         }
       }
 
       @media all and (min-width: 570px) {
-        .hero-section > .hero > picture > .hero-heading {
-          top: 30%;
+        .hero-section > .hero-heading {
+          margin-block-start: 16svh;
         }
-        .hero-section > .hero > picture > .hero-heading > h1 {
+        .hero-section > .hero-heading > h1 {
           line-height: 120%;
           font-size: 2.4em;
-        }
-        .hero-home-symbol {
-          height: 100px;
         }
         .hero-home-symbol > img {
           width: 100px;
         }
         #main1 {
-          -webkit-flex-flow: wrap;
-          flex-direction: row;
-          flex-wrap: wrap;
+          grid-template-columns: 1fr 1fr;
         }
         .button-home {
           align-items: center;
@@ -459,34 +476,27 @@
         }
       }
 
-      @media all and (min-width: 700px) {
-        .hero-section > .hero > picture > .hero-heading {
-          top: 35%;
-        }
-      }
-
       @media all and (min-width: 800px) {
-        .hero-section > .hero > picture > .hero-heading > h1 {
+        .hero-section > .hero-heading > h1 {
           font-size: 2.6em;
         }
       }
 
       @media all and (min-width: 972px) {
-        .hero-section > .hero > picture > .hero-heading {
-          top: 40%;
-        }
         .hero-section {
           height: 85svh;
         }
-        .hero-section > .hero > picture > img {
+        .hero-section > picture > img {
           height: 85svh;
         }
-        .hero-section > .hero > picture > .hero-heading > h1 {
+        .hero-section > .hero-heading {
+          margin-block-start: 36svh;
+        }
+        .hero-section > .hero-heading > h1 {
           font-size: 3.2em;
         }
         #main1 {
-          -webkit-flex-flow: row;
-          flex-flow: row;
+          grid-template-columns: repeat(4, 1fr);
         }
         #main1 > .section {
           max-height: 11em;
@@ -507,52 +517,50 @@
     </style>
 
     <main>
+    <div class="hero-and-nav">
     <section class="hero-section" aria-label="ヒーロー">
-      <div class="hero">
-        <picture style="width:100%; height:auto">
-          <source type="image/webp" media="(orientation: landscape)" srcset="
-            /images/HP/HP-L1700.webp 1700w,
-            /images/HP/HP-L2000.webp 2000w,
-            /images/HP/HP-L2400.webp 2400w,
-            /images/HP/HP-L2900.webp 2900w,
-            /images/HP/HP-L3500.webp 3500w"
-            sizes="100vw">
-          <source media="(orientation: landscape)" srcset="
-            /images/HP/HP-L1700.jpg 1700w,
-            /images/HP/HP-L2000.jpg 2000w,
-            /images/HP/HP-L2400.jpg 2400w,
-            /images/HP/HP-L2900.jpg 2900w,
-            /images/HP/HP-L3500.jpg 3500w"
-            sizes="100vw"
-            style="width:100%; object-fit:cover">
-          <source type="image/webp" media="(orientation: portrait)" srcset="
-            /images/HP/HP-P800.webp 800w,
-            /images/HP/HP-P1100.webp 1100w,
-            /images/HP/HP-P1300.webp 1300w,
-            /images/HP/HP-P1500.webp 1500w,
-            /images/HP/HP-P1700.webp 1700w,
-            /images/HP/HP-P2100.webp 2100w"
-            sizes="100vw">
-          <source media="(orientation: portrait)" srcset="
-            /images/HP/HP-P800.jpg 800w,
-            /images/HP/HP-P1100.jpg 1100w,
-            /images/HP/HP-P1300.jpg 1300w,
-            /images/HP/HP-P1500.jpg 1500w,
-            /images/HP/HP-P1700.jpg 1700w,
-            /images/HP/HP-P2100.jpg 2100w"
-            sizes="100vw"
-            style="width:100%; object-fit:cover">
-          <img src="/images/HP/HP-L2400.jpg" alt="ヤラ川" width="1100" height="1375" style="width:100%; object-fit:cover" fetchpriority="high" loading="eager">
-          <div class="hero-heading">
-            <h1>もっと身近に、オーストラリア<br>NAATI認証翻訳はこちら！</h1>
-            <div id="button-line" style="box-shadow:none">
-              <div class="button-home"><a href="/naati/">さらに詳しく</a></div>
-            </div>
-          </div>
-        </picture>
-        <div class="hero-home-symbol"><img src="/images/logos/Penhawk-logo-symbol.svg" alt="Penhawkのロゴ" width="97" height="97" /></div>
+      <picture>
+        <source type="image/webp" media="(orientation: landscape)" srcset="
+          /images/HP/HP-L1700.webp 1700w,
+          /images/HP/HP-L2000.webp 2000w,
+          /images/HP/HP-L2400.webp 2400w,
+          /images/HP/HP-L2900.webp 2900w,
+          /images/HP/HP-L3500.webp 3500w"
+          sizes="100vw">
+        <source media="(orientation: landscape)" srcset="
+          /images/HP/HP-L1700.jpg 1700w,
+          /images/HP/HP-L2000.jpg 2000w,
+          /images/HP/HP-L2400.jpg 2400w,
+          /images/HP/HP-L2900.jpg 2900w,
+          /images/HP/HP-L3500.jpg 3500w"
+          sizes="100vw">
+        <source type="image/webp" media="(orientation: portrait)" srcset="
+          /images/HP/HP-P800.webp 800w,
+          /images/HP/HP-P1100.webp 1100w,
+          /images/HP/HP-P1300.webp 1300w,
+          /images/HP/HP-P1500.webp 1500w,
+          /images/HP/HP-P1700.webp 1700w,
+          /images/HP/HP-P2100.webp 2100w"
+          sizes="100vw">
+        <source media="(orientation: portrait)" srcset="
+          /images/HP/HP-P800.jpg 800w,
+          /images/HP/HP-P1100.jpg 1100w,
+          /images/HP/HP-P1300.jpg 1300w,
+          /images/HP/HP-P1500.jpg 1500w,
+          /images/HP/HP-P1700.jpg 1700w,
+          /images/HP/HP-P2100.jpg 2100w"
+          sizes="100vw">
+        <img src="/images/HP/HP-L2400.jpg" alt="ヤラ川" width="1100" height="1375" fetchpriority="high" loading="eager">
+      </picture>
+      <div class="hero-heading">
+        <h1>もっと身近に、オーストラリア<br>NAATI認証翻訳はこちら！</h1>
+        <div id="button-line" style="box-shadow:none">
+          <div class="button-home"><a href="/naati/">さらに詳しく</a></div>
+        </div>
       </div>
     </section>
+
+    <span class="hero-home-symbol" aria-hidden="true"><img src="/images/logos/Penhawk-logo-symbol.svg" alt="" width="97" height="97" /></span>
 
     <nav aria-label="主要ページ">
       <ul id="main1">
@@ -582,6 +590,7 @@
         </li>
       </ul>
     </nav>
+    </div>
 
     <div id="main">
       <section>

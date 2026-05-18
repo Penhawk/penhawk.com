@@ -418,40 +418,34 @@ header {
   position: absolute;
   top: 100%;
   left: 0;
+  width: 100%;
+  max-height: 0;
   overflow: hidden;
-  width: 0;
-  height: 0;
-  background: #736759;
-  border-left: solid 1px #2b2b2b;
-  border-bottom: 1px solid #2b2b2b;
+  background: #1F1715;
   color: #fff;
-  transition: all .3s;
+  transition: max-height .3s ease;
 }
 
 .hamburger-checkbox:checked ~ .sidebar {
-  width: 100%;
-  height: auto;
-  overflow-x: scroll;
+  max-height: 300px;
   z-index: 100;
 }
 
 .menu {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .menu li {
-  padding: 1em 0em;
-  border-top: 1px solid #2b2b2b;
+  padding: 1.2em 0;
+  border-top: 1px solid #3a3a3a;
   white-space: nowrap;
   font-size: 0.9em;
   font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
   font-style: normal;
   font-weight: 400;
-}
-
-.menu li:last-child {
-  padding-bottom: 0%;
+  text-align: center;
 }
 
 .menu li a {
@@ -461,7 +455,12 @@ header {
 }
 
 .menu li a:hover {
-  color: #bbb;
+  color: #aaa;
+}
+
+.menu-current {
+  color: #736759;
+  cursor: default;
 }
 
 #mainmenu {
