@@ -1201,6 +1201,7 @@ ul { padding-right: 2em; }
   background: url(/images/buttonbg.webp);
   text-align: center;
   font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+  color: #401300;
   border: 1px solid rgb(205,101,14);
   border-radius: 5px;
   box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.5),0px 2px 0px 0px rgba(185,91,12,1),inset 0px 1px 0px 0px rgba(255,255,255,0.5);
