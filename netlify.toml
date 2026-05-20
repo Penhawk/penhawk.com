@@ -1,6 +1,7 @@
 [build]
   command = ""
   publish = "dist"
+  ignore_html_forms = true
 
 [[headers]]
   for = "/images/*"
