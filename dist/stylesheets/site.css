@@ -1208,6 +1208,10 @@ ul { padding-right: 2em; }
   cursor: pointer;
 }
 
+button.button {
+  color: #401300;
+}
+
 .button a, .button-home a, .button-regular a, .button-wide a {
   color: #401300;
   text-decoration: none;
