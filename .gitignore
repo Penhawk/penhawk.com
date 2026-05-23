@@ -16,3 +16,10 @@
 
 # Ignore .DS_store file
 .DS_Store
+
+# Middleman/Ruby build environment — kept locally but not deployed to Netlify
+.ruby-version
+Gemfile
+Gemfile.lock
+config.rb
+config.ru
