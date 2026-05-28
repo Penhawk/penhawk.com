@@ -1413,7 +1413,7 @@ button.button {
   text-align: left;
   margin: 0.15em 0 0;
 }
-.mobile-accordion-content .faq-section dd a { color: inherit; text-decoration: none; }
+.mobile-accordion-content .faq-section dd a { color: inherit; text-decoration: underline; }
 
 .contact-information .faq-section dt {
   font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
@@ -1429,4 +1429,4 @@ button.button {
   color: #6f6f6f;
   margin: 0.1em 0 1.5em;
 }
-.contact-information .faq-section dd a { color: inherit; text-decoration: none; }
+.contact-information .faq-section dd a { color: inherit; text-decoration: underline; }
