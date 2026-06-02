@@ -67,11 +67,6 @@
           "@type": "Organization",
           "name": "AUSIT",
           "url": "https://ausit.org"
-        },
-        {
-          "@type": "Organization",
-          "name": "JAT",
-          "url": "https://www.jat.org"
         }
       ],
       "priceRange": "¥3,960〜"
@@ -415,13 +410,6 @@
         height: 60px;
         margin: 7px 7px 15px 7px;
       }
-      #jat {
-        display: inline-block;
-        vertical-align: top;
-        width: 100px;
-        height: 60px;
-        margin: 7px 7px 15px 7px;
-      }
       #naati {
         display: inline-block;
         vertical-align: top;
@@ -516,6 +504,12 @@
           justify-content: flex-start;
         }
       }
+
+      @media (orientation: landscape) and (max-height: 500px) {
+        .hero-section { height: 108svh; }
+        .hero-section > picture > img { height: 108svh; }
+        .hero-section > .hero-heading { margin-block-start: 28svh; }
+      }
     </style>
 
     <main>
@@ -600,7 +594,7 @@
           <div class="articlecontent">
             <h3 lang="en">PEACE OF MIND</h3>
             <h4>安心</h4>
-            <p>NAATI認証翻訳を専門とし、1,800名以上の個人のお客様から日本の大企業200社以上まで幅広く対応してまいりました。翻訳書は出版業界標準のAdobe InDesignにて作成し、認証前に仮翻訳版をご確認頂けます。後払いで安心してご利用頂けます。</p>
+            <p>NAATI認証翻訳を専門とし、10年以上にわたり1,800名以上の個人のお客様から日本の大企業200社以上まで幅広く対応してまいりました。翻訳書は出版業界標準のAdobe InDesignにて作成し、認証前に仮翻訳版をご確認頂けます。後払いで安心してご利用頂けます。</p>
           </div>
           <ul class="worklogos">
             <li id="canon"><img src="/images/logos/bCanon.svg" alt="キャノンのロゴ" width="1721" height="360" style="width:100%; height:auto"/></li>
@@ -617,12 +611,11 @@
           <div class="articlecontent">
             <h3 lang="en">AFFILIATIONS</h3>
             <h4>業界関係</h4>
-            <p>オーストラリア政府が設立した唯一の翻訳・通訳資格認定機関「NAATI」の公認翻訳者として活動しております。オーストラリアの政府機関・大学・各種団体等への提出書類は、NAATI認証翻訳でなければ受理されないケースがほとんどです。また、「AUSIT」と「JAT」というオーストラリアと日本の翻訳者協会にも加入しております。</p>
+            <p>オーストラリア政府が設立した唯一の翻訳・通訳国家資格認定機関「NAATI」の公認翻訳者として活動しております。オーストラリアの政府機関・大学・各種団体等への提出翻訳は、NAATI認証済みでなければ受理されないことが原則です。「AUSIT」というオーストラリアの翻訳・通訳者協会にも加入しております。</p>
           </div>
           <ul class="affiliatelogos">
             <li id="ausit"><img src="/images/logos/Ausit-logo.webp" alt="AUSITのロゴ" width="462" height="207" style="width:100%; height:auto"/></li>
             <li id="naati"><img src="/images/logos/NAATI-Prac-Logo-Translator_1.webp" alt="NAATI公認翻訳者のロゴ" width="363" height="146" style="width:100%; height:auto"/></li>
-            <li id="jat"><img src="/images/logos/JAT-logo.webp" alt="JATのロゴ" width="348" height="248" style="width:100%; height:auto"/></li>
           </ul>
         </div>
       </section>

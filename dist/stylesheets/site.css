@@ -1346,6 +1346,7 @@ button.button {
 
 @media all and (max-width: 540px) {
   .full-hero { height: 90svh; }
+  .full-hero picture > img { height: 90svh; }
   .no-hero { height: 30svh; }
   .hero-heading > h1 { font-size: 2.2em; }
   .page-title { height: 90px; width: 90%; margin-bottom: 1.25rem; }
