@@ -1344,6 +1344,11 @@ button.button {
   .hero-bottom-symbol > img { width: 80px; }
 }
 
+@media (orientation: landscape) and (max-height: 500px) {
+  .full-hero { height: 140svh; }
+  .full-hero picture > img { height: 140svh; }
+}
+
 @media all and (max-width: 540px) {
   .full-hero { height: 90svh; }
   .full-hero picture > img { height: 90svh; }
