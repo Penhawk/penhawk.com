@@ -1345,8 +1345,8 @@ button.button {
 }
 
 @media (orientation: landscape) and (max-height: 500px) {
-  .full-hero { height: 126svh; }
-  .full-hero picture > img { height: 126svh; }
+  .full-hero { height: 130dvh; }
+  .full-hero picture > img { height: 130dvh; }
 }
 
 @media all and (max-width: 540px) {
