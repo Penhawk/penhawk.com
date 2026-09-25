@@ -102,7 +102,7 @@
           "name": "お願いしたいものは料金表に載っていませんが、それ以外も英訳を行っていますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "はい、翻訳用文書を電子コピー（PDF又はJPEGのスキャンデータなど）で頂きましたら、納期別のお見積金額をお知らせ致しますので、お気軽にお問い合わせください。"
+            "text": "翻訳用文書を電子コピー（PDF又はJPEGのスキャンデータなど）で頂きましたら、原文書のレイアウトや状態等を踏まえた上で、対応可否とお見積金額をお知らせ致します。"
           }
         },
         {
@@ -110,7 +110,7 @@
           "name": "受付時間の〆切等はありますでしょうか。",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "はい、ご注文の確定を営業日の１７時までとさせて頂いております。例えば、月曜日の１７時までに３営業日以内の納品をメールにてご注文の確認頂いた場合は、遅くとも翌々日の水曜日までに納品致します。１７時以降の場合は、木曜日までとさせて頂きます。"
+            "text": "はい、ご注文の確定を営業日の１６時までとさせて頂いております。例えば、月曜日の１６時までに３営業日以内の納品をメールにてご注文の確認頂いた場合は、遅くとも翌々日の水曜日までに納品致します。１６時以降の場合は、木曜日までとさせて頂きます。"
           }
         },
         {
@@ -1073,9 +1073,9 @@
                 <h3 id="faq-heading-mobile" lang="en">FAQ</h3>
                 <dl>
                     <dt>お願いしたいものは料金表に載っていませんが、それ以外も英訳を行っていますか？</dt>
-                    <dd>はい、翻訳用文書を電子コピー（PDF又はJPEGのスキャンデータなど）で頂きましたら、納期別のお見積金額をお知らせ致しますので、お気軽にお問い合わせください。</dd>
+                    <dd>翻訳用文書を電子コピー（PDF又はJPEGのスキャンデータなど）で頂きましたら、原文書のレイアウトや状態等を踏まえた上で、対応可否とお見積金額をお知らせ致します。</dd>
                     <dt>受付時間の〆切等はありますでしょうか。</dt>
-                    <dd>はい、ご注文の確定を営業日の１７時までとさせて頂いております。例えば、月曜日の１７時までに３営業日以内の納品をメールにてご注文の確認頂いた場合は、遅くとも翌々日の水曜日までに納品致します。１７時以降の場合は、木曜日までとさせて頂きます。</dd>
+                    <dd>はい、ご注文の確定を営業日の１６時までとさせて頂いております。例えば、月曜日の１６時までに３営業日以内の納品をメールにてご注文の確認頂いた場合は、遅くとも翌々日の水曜日までに納品致します。１６時以降の場合は、木曜日までとさせて頂きます。</dd>
                     <dt>翻訳料金はNAATI認証も含まれますか？</dt>
                     <dd>はい、翻訳料金は全てNAATI認証が含まれます。</dd>
                     <dt>NAATI認証済みの完成版を発行する前、下書きなどが確認できますか？</dt>
@@ -1188,6 +1188,7 @@
                             <p class="doc-hint" hidden></p>
                         </div>
                     </div>
+                    <p id="other-doc-note" class="doc-hint" hidden>翻訳用ファイルをご共有頂きましたら、対応可否と見積金額をメールにてお知らせ致します。</p>
                     <button type="button" id="add-document-btn" class="btn-add-document">+ 文書を追加</button>
 
                     <div class="field">
@@ -1335,9 +1336,9 @@
                     <h3 id="faq-heading-desktop" lang="en">FAQ</h3>
                     <dl>
                         <dt>お願いしたいものは料金表に載っていませんが、それ以外も英訳を行っていますか？</dt>
-                        <dd>はい、翻訳用文書を電子コピー（PDF又はJPEGのスキャンデータなど）で頂きましたら、納期別のお見積金額をお知らせ致しますので、お気軽にお問い合わせください。</dd>
+                        <dd>翻訳用文書を電子コピー（PDF又はJPEGのスキャンデータなど）で頂きましたら、原文書のレイアウトや状態等を踏まえた上で、対応可否とお見積金額をお知らせ致します。</dd>
                         <dt>受付時間の〆切等はありますでしょうか。</dt>
-                        <dd>はい、ご注文の確定を営業日の１７時までとさせて頂いております。例えば、月曜日の１７時までに３営業日以内の納品をメールにてご注文の確認頂いた場合は、遅くとも翌々日の水曜日までに納品致します。１７時以降の場合は、木曜日までとさせて頂きます。</dd>
+                        <dd>はい、ご注文の確定を営業日の１６時までとさせて頂いております。例えば、月曜日の１６時までに３営業日以内の納品をメールにてご注文の確認頂いた場合は、遅くとも翌々日の水曜日までに納品致します。１６時以降の場合は、木曜日までとさせて頂きます。</dd>
                         <dt>翻訳料金はNAATI認証も含まれますか？</dt>
                         <dd>はい、翻訳料金は全てNAATI認証が含まれます。</dd>
                         <dt>NAATI認証済みの完成版を発行する前、下書きなどが確認できますか？</dt>
@@ -1756,10 +1757,15 @@
             return Array.prototype.some.call(select.options, function (o) { return o.value === value; });
           }
 
+          /* --- other-document note: shown while any document dropdown has その他 selected --- */
+          var otherDocNote = document.getElementById('other-doc-note');
+
           function syncTimeframeAvailability() {
             var docSelects = Array.from(docContainer.querySelectorAll('select[name="document[]"]'));
             var docs = docSelects.map(function (s) { return s.value; }).filter(function (v) { return v !== ''; });
             var anyOther = docs.some(function (v) { return v === 'その他'; });
+
+            otherDocNote.hidden = !anyOther;
 
             var showSelect = anyOther ? timeframeAll    : timeframeListed;
             var hideSelect = anyOther ? timeframeListed : timeframeAll;
