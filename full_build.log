@@ -170,20 +170,20 @@
 == Change (#<Set: {:source}>): images/logos/Penhawk-logo-symbol-signature.png
 == Change (#<Set: {:source}>): images/logos/NAATI.png
 == Change (#<Set: {:source}>): images/logos/Linked.svg
-== Change (#<Set: {:source}>): images/logos/Payment-Button.svg
+== Change (#<Set: {:source}>): images/logos/Payment-button.svg
 == Change (#<Set: {:source}>): images/logos/bSumitomo.svg
 == Change (#<Set: {:source}>): images/logos/Ausit.svg
 == Change (#<Set: {:source}>): images/logos/LinkedIn.svg
 == Change (#<Set: {:source}>): images/logos/bMitsui.svg
 == Change (#<Set: {:source}>): images/logos/Marubeni.png
 == Change (#<Set: {:source}>): images/logos/Twitter.svg
-== Change (#<Set: {:source}>): images/logos/Submit-product-Button.svg
+== Change (#<Set: {:source}>): images/logos/Submit-product-button.svg
 == Change (#<Set: {:source}>): images/logos/bNomura.svg
 == Change (#<Set: {:source}>): images/logos/NAATI-Prac-Logo-Translator_1.ai
 == Change (#<Set: {:source}>): images/logos/Facebook.png
 == Change (#<Set: {:source}>): images/logos/Mitsui.svg
 == Change (#<Set: {:source}>): images/logos/Confirm.svg
-== Change (#<Set: {:source}>): images/logos/Submit-files-Button.svg
+== Change (#<Set: {:source}>): images/logos/Submit-files-button.svg
 == Change (#<Set: {:source}>): images/logos/Nomura.svg
 == Change (#<Set: {:source}>): images/logos/Menu.svg
 == Change (#<Set: {:source}>): images/logos/Sumitomo.svg
@@ -493,20 +493,20 @@ Loaded extensions:
 == Change (#<Set: {:source}>): images/logos/Penhawk-logo-symbol-signature.png
 == Change (#<Set: {:source}>): images/logos/NAATI.png
 == Change (#<Set: {:source}>): images/logos/Linked.svg
-== Change (#<Set: {:source}>): images/logos/Payment-Button.svg
+== Change (#<Set: {:source}>): images/logos/Payment-button.svg
 == Change (#<Set: {:source}>): images/logos/bSumitomo.svg
 == Change (#<Set: {:source}>): images/logos/Ausit.svg
 == Change (#<Set: {:source}>): images/logos/LinkedIn.svg
 == Change (#<Set: {:source}>): images/logos/bMitsui.svg
 == Change (#<Set: {:source}>): images/logos/Marubeni.png
 == Change (#<Set: {:source}>): images/logos/Twitter.svg
-== Change (#<Set: {:source}>): images/logos/Submit-product-Button.svg
+== Change (#<Set: {:source}>): images/logos/Submit-product-button.svg
 == Change (#<Set: {:source}>): images/logos/bNomura.svg
 == Change (#<Set: {:source}>): images/logos/NAATI-Prac-Logo-Translator_1.ai
 == Change (#<Set: {:source}>): images/logos/Facebook.png
 == Change (#<Set: {:source}>): images/logos/Mitsui.svg
 == Change (#<Set: {:source}>): images/logos/Confirm.svg
-== Change (#<Set: {:source}>): images/logos/Submit-files-Button.svg
+== Change (#<Set: {:source}>): images/logos/Submit-files-button.svg
 == Change (#<Set: {:source}>): images/logos/Nomura.svg
 == Change (#<Set: {:source}>): images/logos/Menu.svg
 == Change (#<Set: {:source}>): images/logos/Sumitomo.svg
@@ -3684,7 +3684,7 @@ undefined method `escape' for module URI
 /Users/ph/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/bundler-2.7.2/exe/bundle:20:in `<top (required)>'
 /Users/ph/.rbenv/versions/3.3.0/bin/bundle:25:in `load'
 /Users/ph/.rbenv/versions/3.3.0/bin/bundle:25:in `<main>'
-       error  build/images/logos/Submit-files-Button.svg
+       error  build/images/logos/Submit-files-button.svg
 undefined method `escape' for module URI
 /Users/ph/Documents/GitHub/penhawk.com/.bundle/ruby/3.3.0/gems/middleman-core-4.3.11/lib/middleman-core/builder.rb:232:in `block in output_resource'
 /Users/ph/Documents/GitHub/penhawk.com/.bundle/ruby/3.3.0/gems/activesupport-5.2.8.1/lib/active_support/notifications.rb:170:in `instrument'
@@ -4071,7 +4071,7 @@ undefined method `escape' for module URI
 /Users/ph/.rbenv/versions/3.3.0/bin/bundle:25:in `load'
 /Users/ph/.rbenv/versions/3.3.0/bin/bundle:25:in `<main>'
        error  build/images/logos/Twitter.svg
-       error  build/images/logos/Submit-product-Button.svg
+       error  build/images/logos/Submit-product-button.svg
 undefined method `escape' for module URI
 /Users/ph/Documents/GitHub/penhawk.com/.bundle/ruby/3.3.0/gems/middleman-core-4.3.11/lib/middleman-core/builder.rb:232:in `block in output_resource'
 /Users/ph/Documents/GitHub/penhawk.com/.bundle/ruby/3.3.0/gems/activesupport-5.2.8.1/lib/active_support/notifications.rb:170:in `instrument'
@@ -4718,7 +4718,7 @@ undefined method `escape' for module URI
 /Users/ph/Documents/GitHub/penhawk.com/.bundle/ruby/3.3.0/gems/parallel-1.22.1/lib/parallel.rb:457:in `work_in_processes'
 /Users/ph/Documents/GitHub/penhawk.com/.bundle/ruby/3.3.0/gems/parallel-1.22.1/lib/parallel.rb:294:in `map'
 /Users/ph/Documents/GitHub/penhawk.com/.bundle/ruby/3.3.0/gems/middleman-core-4.3.11/lib/middleman-core/builder.rb:137:in `output_resources'
-/Users/ph/Documents/GitHu       error  build/images/logos/Payment-Button.svg
+/Users/ph/Documents/GitHu       error  build/images/logos/Payment-button.svg
 b/penhawk.com/.bundle/ruby/3.3.0/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
 /Users/ph/Documents/GitHub/penhawk.com/.bundle/ruby/3.3.0/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
 /Users/ph/Documents/GitHub/penhawk.com/.bundle/ruby/3.3.0/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'

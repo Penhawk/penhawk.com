@@ -54,7 +54,7 @@ title: お問い合わせ｜ペンホーク
     .form-control {
         font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
         font-size:1em;
-        margin-bottom:1em;
+        margin-bottom:1.2em;
         background-color: #fff;
         border-color: #54504E;
         cursor: pointer;
@@ -120,9 +120,9 @@ button:hover {
         -webkit-flex: 0 1 auto;
         flex: 0 1 auto;
         height:auto;
-        width: 100%;
+        width: 95%;
         margin: 0px;
-        margin-bottom: 1em;
+        margin-bottom: 0.5em;
         padding: 0px;
     }
     
@@ -139,7 +139,7 @@ button:hover {
         display:none;
     }
     
-   .stamp-option input:checked + .radio-btns > .radio-btns-right{
+   .stamp-option input:checked + .radio-buttons > .radio-buttons-right{
     background: rgb(84,80,78);
     background: linear-gradient(90deg, rgba(84,80,78,1) 0%, rgba(115,103,89,1) 100%);
     color: #fff;
@@ -147,18 +147,20 @@ button:hover {
     box-shadow: -2px 0px 2px -2px #54504E;
     }
     
-    .radio-btns{
+    .radio-buttons{
         display:flex;
         flex-flow:row;
         background-color:#fff;
-        width:95%;
+        width:100%;
         height: 6em;
-        margin:2.5%;
+        margin: 0;margin-bottom: 1em;
+    padding: 0;
+        padding-left: 1em;
         border-radius:12px;
         cursor:pointer;
     }
     
-    .radio-btns > .radio-btns-left{
+    .radio-buttons > .radio-buttons-left{
         background-color:#fff;
         padding:0.5em;
         border: solid 2px #54504E;
@@ -169,11 +171,11 @@ button:hover {
                 justify-content: center;
     }
     
-    .radio-btns-left img {
+    .radio-buttons-left img {
         display:box;
 }
     
-    .radio-btns > .radio-btns-right{
+    .radio-buttons > .radio-buttons-right{
         border: solid 2px #54504E;
         border-left: none;
         border-radius:0 12px 12px 0;
@@ -181,118 +183,6 @@ button:hover {
         display:flex;
         flex-flow:column;
     }
-
-    
-        /* files for upload
-  --------------------------------------------- */
-    
-    .files{
-        width:90%;
-        height:auto;
-        margin-bottom:2em;
-        flex: 0 1 auto;
-        height:auto;
-        display:flex;
-        flex-flow:wrap;
-        justify-content:center;
-    }
-    
-    .file-box{
-        width:50%;
-        flex: 1 1 50%;
-        -webkit-order: 1;
-        order: 1;
-        height:auto;
-        font-size: 0.7em;
-
-    }
-    
-    input[type="file"] {
-  outline: none;
-  padding: 4px;
-  margin: 0px;
-        width:100%
-}
-
-input[type="file"]:focus-within::file-selector-button,
-input[type="file"]:focus::file-selector-button {
-  outline: 2px solid #54504E;
-  outline-offset: 2px;
-}
-
-input[type="file"]::before {
-  top: 12px;
-}
-
-input[type="file"]::after {
-  top: 8px;
-}
-
-/* ------- From Step 2 ------- */
-
-input[type="file"] {
-  position: relative;
-}
-
-input[type="file"]::file-selector-button {
-  width: 110px;
-  color: transparent;
-}
-
-/* Faked label styles and icon */
-input[type="file"]::before {
-  position: absolute;
-  pointer-events: none;
-  /*   top: 11px; */
-  left: 40px;
-  color: #54504E;
-  content: "ファイルを選択";
-  
-}
-
-input[type="file"]::after {
-  position: absolute;
-  pointer-events: none;
-  /*   top: 10px; */
-  left: 16px;
-  height: 20px;
-  width: 20px;
-  content: "";
-  background-image: url("/images/enquiry/file-upload.svg");
-  background-repeat:no-repeat;
-}
-
-/* ------- From Step 1 ------- */
-
-/* file upload button */
-input[type="file"]::file-selector-button {
-  border-radius: 4px;
-  padding: 0 16px;
-  height: 30px;
-  cursor: pointer;
-  background: #fff;
-  border: 1px solid #54504E;
-  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
-  margin-right: 16px;
-  transition: background-color 200ms;
-}
-
-/* file upload button hover state */
-input[type="file"]::file-selector-button:hover {
-  background-color: #f3f4f6;
-}
-
-/* file upload button active state */
-input[type="file"]::file-selector-button:active {
-  background-color: #e5e7eb;
-}
-    
-    @supports (-moz-appearance: none) {
-  input[type="file"]::file-selector-button {
-    color: #54504E;
-  }
-}
-
     
     /* media queries
   --------------------------------------------- */
@@ -339,6 +229,297 @@ flex-direction: column;
     }
     }
     
+   .file-drop-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #fafafa;
+  position: relative;
+  background-color: #f7f4f1;
+  border: 1px dashed #54504E;
+  transition: background-color 0.2s ease,
+              border-color 0.2s ease,
+              box-shadow 0.2s ease;
+
+}
+
+.file-drop-area:hover {
+  background-color: #efeae5;
+  border-color: #54504E;
+
+}
+    
+
+.file-drop-area:focus {
+  outline: none;
+  border-color: #54504E;
+box-shadow: 0 0 0 2px rgba(84,80,78,0.25);
+}
+
+.file-drop-area.has-files {
+  background-color: #f2eee9;
+  border-color: #54504E;
+}
+
+    .file-drop-area.drag-active {
+  background-color: #e7e1db;
+  border-color: #736759; /* logo color */
+  box-shadow: 0 0 0 2px rgba(115,103,89,0.15);
+}
+
+.file-drop-icon {
+  margin-bottom: 12px;
+  color: #736759;
+  opacity: 0.85;
+  transition: transform 260ms cubic-bezier(.22,.61,.36,1),
+              opacity 200ms ease,
+              color 200ms ease;
+}
+
+.file-drop-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.file-drop-area:hover .file-drop-icon {
+  transform: translateY(-3px);
+  opacity: 1;
+}
+
+.file-drop-area.drag-active .file-drop-icon {
+  color: #54504E;
+  transform: translateY(-4px) scale(1.05);
+}
+
+.file-drop-area.has-files .file-drop-icon {
+  opacity: 0.35;
+  transform: scale(0.95);
+}
+
+.drop-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1F1715;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.drop-sub {
+  font-size: 0.92rem;
+  color: #54504E;
+  text-align: center;
+}
+
+.file-drop-area.drag-active .drop-title {
+  color: #736759;
+}
+
+.file-preview {
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
+  color: #241E1B; /* general text color */
+}
+
+.file-preview ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.file-preview li {
+  padding: 0.25rem 0;
+}
+
+.file-input-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+.file-preview-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* pushes remove button right */
+  gap: 12px;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #e3ded8; /* warm neutral divider */
+  transition: opacity 0.2s ease, 
+              transform 0.2s ease,
+              height 0.2s ease,
+              margin 0.2s ease,
+              padding 0.2s ease;
+}
+
+.file-preview-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1; /* takes remaining width */
+  min-width: 0; /* IMPORTANT for ellipsis to work */
+}
+
+.file-preview-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #241E1B;
+  font-weight: 500;
+  flex: 1;
+}
+
+.file-preview-size {
+  font-size: 13px;
+  color: #736759;
+  margin-left: 12px;
+}
+
+button.disabled,
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.file-type-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  margin-right: 10px;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+width: 52px;
+  text-align: center;
+  background: #EFEAE5;
+  color: #1F1715;
+  font-weight: 500;
+}
+
+.file-preview-item.removing {
+  opacity: 0;
+  transform: translateY(-4px);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.file-preview-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 75%;
+  color: #241E1B;
+  font-weight: 500;
+}
+
+.file-remove-btn {
+  all: unset;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 0.85rem;
+  font-family: inherit;
+  color: #54504E; /* charcoal */
+  margin-left: 12px;
+  padding: 0;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.file-remove-btn:hover {
+      all: unset;
+  color: #1F1715; /* deeper tone */
+  opacity: 0.8;
+    margin-left: 12px;
+  padding: 0;
+    background: transparent;
+  border: none;
+  font-size: 0.85rem;
+  font-family: inherit;
+  text-decoration: underline;
+}
+
+#file-size-display {
+  margin-top: 0.75rem;
+  margin-bottom: 0rem;
+  font-size: 0.85rem;
+  color: #54504E; /* charcoal */
+  transition: 
+    transform 260ms cubic-bezier(.22,.61,.36,1),
+    opacity 200ms ease,
+    color 200ms ease;
+}
+
+.size-updated {
+  transform: translateY(-2px) scale(1.03);
+  opacity: 0.95;
+  transition:
+    transform 280ms cubic-bezier(.22,.61,.36,1),
+    opacity 220ms ease;
+}
+
+#file-size-display.size-warning {
+  color: #8A7C6B; /* warmed gold tone */
+}
+
+#file-size-display.size-limit {
+  color: #8C3B2E; /* muted refined red */
+  font-weight: 500;
+}
+
+.file-alert {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #736759;
+  background: #F6F3EF;
+  border: 1px solid #E6DFD7;
+  padding: 10px 14px;
+  border-radius: 6px;
+
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 200ms ease, transform 200ms ease;
+
+  pointer-events: none;
+}
+
+.file-alert.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional stronger error state */
+.file-alert.error {
+  background: #FDF2F2;
+  border: 1px solid #E4BDBD;
+  color: #7A3E3E;
+}
+
+.file-alert.error {
+  background: #FDF2F2;
+  border: 1px solid #E4BDBD;
+  color: #7A3E3E;
+}
+    
+    .file-invalid {
+  background:#FDF2F2;
+  border-left:3px solid #8C3B2E;
+}
+
 </style>
 <ul id="breadcrumb">
         <li><a href="/" title="Home"><img src="../images/breadcrumb-home-icon.gif" alt="Home" class="home" /></a></li>
@@ -569,11 +750,11 @@ flex-direction: column;
      <div class="stamp-options" name="stamp">
     <label class="stamp-option">
   <input type="radio" name="radio" value="digital" checked/>
-  <div class="radio-btns">
-      <div class="radio-btns-left" style="width:39%">
+  <div class="radio-buttons">
+      <div class="radio-buttons-left" style="width:39%">
       <img src="../images/enquiry/DS-date-covered.png" alt="logo" style="width:100%"/>
           </div>
-      <div class="radio-btns-right" style="width:61%">
+      <div class="radio-buttons-right" style="width:61%">
           <span style="margin-bottom:0.4em; text-align:center;">デジタルスタンプ&nbsp;&nbsp;&nbsp;<span style="color:#fff">✔︎</span></span>
         <span style="font-size:0.7em; text-align:left;">・ご依頼限定のQRコードと発行日入り</span>
         <span style="font-size:0.7em; text-align:left;">・捺印済みの書面は何部でも印刷可能</span>
@@ -583,11 +764,11 @@ flex-direction: column;
       </label>
     <label class="stamp-option">
   <input type="radio" name="radio" value="physical">
-  <div class="radio-btns">
-    <div class="radio-btns-left" style="width:30%">
+  <div class="radio-buttons">
+    <div class="radio-buttons-left" style="width:30%">
       <img src="../images/enquiry/PS-sig-date-covered.png" alt="logo" style="width:100%"/>
                   </div>
-      <div class="radio-btns-right" style="width:70%">
+      <div class="radio-buttons-right" style="width:70%">
           <span style="margin-bottom:0.4em; text-align:center;">（旧）インクスタンプ&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#fff">✔︎</span></span>
         <span style="font-size:0.7em; text-align:left;">・サインと発行日入り</span>
         <span style="font-size:0.7em; text-align:left;">・捺印済みの書面は日本国内で送料無料</span>
@@ -595,9 +776,43 @@ flex-direction: column;
       </div>
   </div>
       </label>
-</div>
+</div>      
 </label>
-     
+ <label>翻訳用ファイル
+<div class="file-drop-area" tabindex="0">
+  <div class="file-drop-inner">
+  <div class="file-drop-icon">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+    <path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/>
+    <path d="M14 2v6h6"/>
+  </svg>
+</div>
+    <p class="drop-title">ここにファイルをドラッグ＆ドロップ</p>
+    <p class="drop-sub">またはクリックして選択</p>
+  </div>
+</div>
+     </label>
+<div class="visually-hidden" id="file-input-container">
+  <input type="file" name="file1">
+  <input type="file" name="file2">
+  <input type="file" name="file3">
+  <input type="file" name="file4">
+  <input type="file" name="file5">
+  <input type="file" name="file6">
+  <input type="file" name="file7">
+  <input type="file" name="file8">
+  <input type="file" name="file9">
+  <input type="file" name="file10">
+  <input type="file" name="file11">
+  <input type="file" name="file12">
+  <input type="file" name="file13">
+  <input type="file" name="file14">
+  <input type="file" name="file15">
+</div>
+<div id="file-preview"></div>
+<p id="file-size-display"></p>
+     <div id="file-alert" class="file-alert"></div>
+ 
     <label>必須情報<textarea class="form-control" name="Textarea" rows="7" style="width:100%; font-size:0.7em;" placeholder="例：戸籍謄本の場合は、「戸籍に記録されている者」と、それぞれの欄内に載っている「父」や「母」、「配偶者」等のご親族・姻族の方全員のお名前の英語綴りをご入力ください。
 
 例：自動車運転免許証や個人番号カード等の場合は、保有者の方のお名前の英語綴りをご入力ください。"></textarea></label>
@@ -607,37 +822,9 @@ flex-direction: column;
       <small class="text-muted"><p>翻訳用ファイルは、<span style="color:red;"><u>合計8mbまで</u></span>添付することができます。また、システムセキュリティのため、オンラインフォームは暗号化したファイルを受け付けることができませんのでご注意ください。合計で8mb以上や暗号化したファイルの場合は、メールにてrichard@penhawk.comまでご送信ください。</p>
       <p>もし受信トレイに返信が届かない場合は、念のため迷惑メールフォルダーもご確認ください。</p></small>
       </fieldset>
-        <fieldset class="form-group">
-<div class="files">
-    <div class="file-box">
-    <label><input type="file" class="form-control-file" name="Input File1" style="font-size:0.8em;">
-  </label>
-            </div>
-    <div class="file-box">
-    <label><input type="file" class="form-control-file" name="Input File2" style="font-size:0.8em;">
-  </label>
-            </div>
-        <div class="file-box">
-    <label><input type="file" class="form-control-file" name="Input File3" style="font-size:0.8em;">
-  </label>
-            </div>
-        <div class="file-box">
-    <label><input type="file" class="form-control-file" name="Input File4" style="font-size:0.8em;">
-  </label>
-            </div>
-        <div class="file-box">
-    <label><input type="file" class="form-control-file" name="Input File5" style="font-size:0.8em;">
-  </label>
-            </div>
-        <div class="file-box">
-    <label><input type="file" class="form-control-file" name="Input File6" style="font-size:0.8em;">
-  </label>
-            </div>
-        </div>
-        </fieldset>
   <fieldset class="form-group">
       <div id="button-line" style="box-shadow:none; margin-top:1em;">
-    <button type="submit" class="btn btn-primary">送信</button>
+    <button type="submit" class="button button-primary">送信</button>
       </div>
   </fieldset>
 
