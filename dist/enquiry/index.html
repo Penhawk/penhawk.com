@@ -694,6 +694,17 @@
         margin-top: 0.55em;
         margin-bottom: 0;
     }
+    .form-top-notice {
+        width: 92%;
+        max-width: 1084px;
+        margin: 0 auto 0;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: left;
+        font-size: 0.95em;
+        color: #6f6f6f;
+        line-height: 1.6;
+    }
 
 /* acknowledgement section
 --------------------------------------------- */
@@ -756,8 +767,9 @@
 --------------------------------------------- */
     @media all and (min-width: 861px) {
         .mobile-accordion { display: none; }
-        .form-double-column { grid-template-columns: 1fr 1fr; width: auto; margin-top: 4em; }
+        .form-double-column { grid-template-columns: 1fr 1fr; width: auto; margin-top: 3em; }
         .form-double-column > .column { padding-left: 2.5em; padding-right: 2.5em; }
+        .form-top-notice { width: auto; padding-left: 2.5em; padding-right: 2.5em; }
         .contact-information { display: block; }
         .line-break { display: none; }
     }
@@ -1055,6 +1067,7 @@
         <p class="page-title-eyebrow" lang="en">ENQUIRIES</p>
         <h1>お問い合わせ</h1>
     </div>
+    <p class="form-top-notice">なお、本フォームからのご送信はご注文の確定ではなく、お問い合わせとして承ります。内容を確認の上、１営業日以内にご返信致します。</p>
     <div class="mobile-accordion" aria-hidden="true">
         <button type="button" class="mobile-accordion-trigger" aria-expanded="false" aria-controls="mobile-contact-content">
             <span lang="en">CONTACT INFORMATION &amp; FAQ</span> <span class="accordion-chevron" aria-hidden="true">▼</span>

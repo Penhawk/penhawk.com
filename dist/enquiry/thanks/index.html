@@ -107,6 +107,11 @@
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
     }
+
+    .line-break { display: none; }
+    @media all and (max-width: 469px) {
+      .line-break { display: block; }
+    }
     </style>
 
     <main>
@@ -128,7 +133,7 @@
         <div class="column">
             <p>この度はお問い合わせ頂き誠にありがとうございます。送信内容を確認の上、１営業日以内に折り返しご連絡を差し上げます。</p>
             <p style="font-size: 0.9em;">※もし受信トレイに返信が届かない場合は、念のため迷惑メールフォルダーもご確認ください。</p>
-            <p style="text-align: center;"><br><img src='/images/richard-millar-signature.png' alt='Richard Millar signature' style='display:block; margin: 0 auto; width: 180px;'>Richard Millar<br>PENHAWK<br>営業時間：09:00~18:00（休日：土日・祝日・12/26~1/3）</p>
+            <p style="text-align: center;"><br><img src='/images/richard-millar-signature.png' alt='Richard Millar signature' style='display:block; margin: 0 auto; width: 180px;'>Richard Millar<br>PENHAWK<br>営業時間：09:00~18:00<br class="line-break"/>（休日：土日・祝日・12/26~1/3）</p>
         </div>
     </div>
     <div id="button-line">
