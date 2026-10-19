@@ -371,7 +371,7 @@
     }
 
     .btn-add-document:hover {
-        background: none;
+        background-color: #efeae5;
         color: #54504E;
         border-bottom-color: #736759;
     }
@@ -380,6 +380,22 @@
         opacity: 0.4;
         cursor: not-allowed;
         border-bottom-color: transparent;
+    }
+
+    .add-doc-btn {
+      display: inline-block;
+      padding: 0.4em 0.8em;
+      padding-bottom: 0.4em !important;
+      text-decoration: none !important;
+      border: 1px solid #736759 !important;
+      border-radius: 8px;
+      background-color: #f7f4f1;
+      background-image: none !important;
+      box-shadow: none !important;
+      color: #736759 !important;
+      cursor: pointer;
+      font-size: 0.8em;
+      line-height: 1;
     }
 
     .btn-remove-document {
@@ -1158,7 +1174,7 @@
 
                     <div id="document-fields">
                         <div class="document-field">
-                            <label for="document-1">翻訳用文書 <span class="req" aria-hidden="true">*</span></label>
+                            <label for="document-1">翻訳用文書 <span class="req" aria-hidden="true">*</span> <span style="font-size:0.9em">（複数可）</span></label>
                             <select id="document-1" class="form-control" name="document[]" required>
                                 <option value="">–</option>
                                 <option>戸籍謄本・抄本（１名記録）</option>
@@ -1202,7 +1218,7 @@
                         </div>
                     </div>
                     <p id="other-doc-note" class="doc-hint" hidden>翻訳用ファイルをご共有頂きましたら、対応可否と見積金額をメールにてお知らせ致します。</p>
-                    <button type="button" id="add-document-btn" class="btn-add-document">+ 文書を追加</button>
+                    <button type="button" id="add-document-btn" class="btn-add-document add-doc-btn">＋ 別の文書も追加する</button>
 
                     <div class="field">
                         <label for="timeframe-listed" id="timeframe-label">ご希望の納期 <span class="req" aria-hidden="true">*</span> <span style="font-size:0.9em">（納期別の料金表は<a href="/naati/pricing-and-schedule/" title="料金とスケジュール" style="color:#241E1B;" target="_blank" rel="noopener noreferrer">こちら</a>）</span></label>
@@ -1270,7 +1286,7 @@
                     </div>
 
                     <div class="field">
-                        <span id="file-label" class="field-label">翻訳用ファイル</span>
+                        <span id="file-label" class="field-label">翻訳用ファイル <span style="font-size:0.9em">（複数可）</span></span>
                         <div class="file-drop-area" tabindex="0" aria-labelledby="file-label" role="button">
                             <div class="file-drop-inner">
                                 <div class="file-drop-icon">
@@ -1446,7 +1462,7 @@
         /* --- dynamic document fields --- */
         var docContainer = document.getElementById('document-fields');
         var addBtn       = document.getElementById('add-document-btn');
-        var MAX_DOCS     = 6;
+        var MAX_DOCS     = 10;
         var docCounter   = 1; // increments only, never resets, keeps IDs unique
 
         function getDocCount() {
